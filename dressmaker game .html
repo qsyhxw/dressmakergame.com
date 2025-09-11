@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Dressmaker - A Cozy Game of Design, Sewing & Creativity</title>
+    <meta name="description" content="Welcome to Dressmaker, a cozy and creative game where you design and sew beautiful dresses. Unleash your inner fashion designer and play for free today!">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.dressmakergame.com/">
+    
+    <!-- Favicon (记得替换成你自己的图标!) -->
+    <link rel="icon" href="https://placehold.co/32x32/E9E9E9/333333?text=D" type="image/png">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter, a clean font similar to Apple's SF Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* A subtle animation for elements fading in on scroll (requires JS to implement, but we set up the base) */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- SEO: JSON-LD Structured Data for Video Game -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Dressmaker",
+      "url": "https://www.dressmakergame.com/",
+      "author": {
+        "@type": "Organization",
+        "name": "elyaradine, sarandipityx, raithza"
+      },
+      "image": "https://placehold.co/1200x630/A6C1EE/FFFFFF?text=Dressmaker+Game",
+      "description": "A cozy and charming game about designing and sewing beautiful dresses.",
+      "gamePlatform": [
+        "PC",
+        "Windows",
+        "MacOS",
+        "Linux"
+      ],
+      "applicationCategory": "Game",
+      "operatingSystem": "Windows, MacOS, Linux",
+      "genre": ["Simulation", "Indie", "Casual"],
+      "playMode": "SinglePlayer",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-lg z-50 border-b border-gray-200">
+        <div class="container mx-auto max-w-5xl px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">Dressmaker</a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 transition-colors">Features</a>
+                <a href="#gallery" class="text-gray-600 hover:text-indigo-600 transition-colors">Gallery</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a>
+                <a href="#download" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">Play Now</a>
+            </nav>
+            <button class="md:hidden text-gray-800">
+                 <!-- Mobile Menu Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="relative text-center py-24 md:py-40 px-6 bg-gray-50 overflow-hidden">
+             <!-- Background decorative shapes -->
+            <div class="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-indigo-100 rounded-full opacity-50 blur-2xl"></div>
+            <div class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-purple-100 rounded-full opacity-50 blur-2xl"></div>
+            <div class="container mx-auto max-w-3xl relative">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-gray-900 leading-tight">
+                    Design Your Dream Dress
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Welcome to Dressmaker, a cozy and charming game about the simple joy of designing and sewing beautiful dresses. Let your creativity bloom.
+                </p>
+                <div class="mt-10">
+                    <a href="#download" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Play for Free
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Key Features Section -->
+        <section id="features" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto max-w-5xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900">Core Features</h2>
+                    <p class="mt-3 text-lg text-gray-600">Everything you need for a relaxing creative session.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-8 bg-gray-50 rounded-2xl transition hover:shadow-xl hover:-translate-y-1">
+                        <div class="inline-block p-4 bg-indigo-100 text-indigo-600 rounded-xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Unleash Creativity</h3>
+                        <p class="text-gray-600">Choose from a delightful selection of fabrics and patterns to bring your unique dress designs to life.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center p-8 bg-gray-50 rounded-2xl transition hover:shadow-xl hover:-translate-y-1">
+                         <div class="inline-block p-4 bg-indigo-100 text-indigo-600 rounded-xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Cozy & Relaxing</h3>
+                        <p class="text-gray-600">No timers, no pressure. Enjoy a peaceful and satisfying experience focused purely on the joy of creation.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center p-8 bg-gray-50 rounded-2xl transition hover:shadow-xl hover:-translate-y-1">
+                         <div class="inline-block p-4 bg-indigo-100 text-indigo-600 rounded-xl mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Simple Controls</h3>
+                        <p class="text-gray-600">An intuitive click-and-drag interface makes the game accessible and enjoyable for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. Screenshot Gallery -->
+        <section id="gallery" class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto max-w-5xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900">A Glimpse Into the Studio</h2>
+                    <p class="mt-3 text-lg text-gray-600">See the dressmaking process in action.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Image 1 -->
+                    <div class="col-span-1 md:col-span-2">
+                        <img src="https://img.itch.zone/aW1nLzIzMDEyOTY4LnBuZw==/original/K4nq0E.png" alt="Screenshot of fabric selection in Dressmaker" class="rounded-2xl w-full h-full object-cover shadow-lg transition duration-300 hover:scale-105">
+                    </div>
+                    <!-- Image 2 -->
+                    <div>
+                         <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTQyOS5wbmc=/794x1000/IaJ%2F4k.png" alt="Screenshot of cutting patterns in Dressmaker" class="rounded-2xl w-full h-full object-cover shadow-lg transition duration-300 hover:scale-105">
+                    </div>
+                    <!-- Image 3 -->
+                    <div>
+                         <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTYzMi5wbmc=/794x1000/fl6N9l.png" alt="Screenshot of a finished dress in Dressmaker" class="rounded-2xl w-full h-full object-cover shadow-lg transition duration-300 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About the Game & Developers -->
+        <section id="about" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto max-w-3xl px-6 text-lg text-gray-600 leading-relaxed">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900">A Labor of Love</h2>
+                </div>
+                <p>
+                    Step into a relaxing and creative world where you become the designer. In Dressmaker, you'll be given a prompt and your task is to bring a unique dress to life. Choose from beautiful fabrics, carefully cut out your patterns, and sew the pieces together to create a fashion masterpiece.
+                </p>
+                <p class="mt-4">
+                    This charming game was lovingly crafted in just <strong>7 days</strong> for the Cozy Spring Jam 2024. It's a testament to the passion and collaboration of its talented creators: <a href="https://elyaradine.itch.io/" target="_blank" class="text-indigo-600 font-semibold hover:underline">elyaradine</a>, <a href="https://sarandipityx.itch.io/" target="_blank" class="text-indigo-600 font-semibold hover:underline">sarandipityx</a>, and <a href="https://raithza.itch.io/" target="_blank" class="text-indigo-600 font-semibold hover:underline">raithza</a>. 
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. Player Testimonials -->
+        <section class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto max-w-5xl px-6">
+                 <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900">What Players Are Saying</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-md">
+                        <p class="text-gray-700 italic">"This is the most relaxing game I've played all year. The music, the simple actions... it's just pure creative bliss. A perfect little gem!"</p>
+                        <p class="mt-4 font-bold text-gray-900">- [Riv_vit]</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-2xl shadow-md">
+                        <p class="text-gray-700 italic">"I love how intuitive it is! I'm not a gamer, but I was able to jump right in and start making beautiful dresses. So satisfying!"</p>
+                        <p class="mt-4 font-bold text-gray-900">- [Kageanei]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Download Section -->
+        <section id="download" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto max-w-3xl px-6 text-center">
+                 <h2 class="text-4xl font-bold tracking-tight text-gray-900">Start Your Creation Journey</h2>
+                 <p class="mt-4 text-lg text-gray-600">The game is completely free to play. Click below to get started right here in your browser.</p>
+                 <div class="mt-10 flex justify-center">
+                    <div class="w-full max-w-[552px] shadow-2xl rounded-2xl overflow-hidden">
+                        <iframe class="w-full" height="167" frameborder="0" src="https://itch.io/embed/3743052">
+                            <a href="https://elyaradine.itch.io/dressmaker">Dressmaker by elyaradine, sarandipityx, raithza</a>
+                        </iframe>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- 7. FAQ Section -->
+        <section class="py-20 md:py-28 bg-gray-50">
+            <div class="container mx-auto max-w-3xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold tracking-tight text-gray-900">Frequently Asked Questions</h2>
+                </div>
+                <div class="space-y-4">
+                    <details class="p-6 border rounded-lg bg-white">
+                        <summary class="font-semibold cursor-pointer">Is the game free to play?</summary>
+                        <p class="mt-4 text-gray-600">Yes, Dressmaker is completely free! It was made for a game jam and is available for everyone to enjoy.</p>
+                    </details>
+                     <details class="p-6 border rounded-lg bg-white">
+                        <summary class="font-semibold cursor-pointer">What platforms can I play it on?</summary>
+                        <p class="mt-4 text-gray-600">You can play it directly in your browser on Windows, MacOS, and Linux through the itch.io embed.</p>
+                    </details>
+                     <details class="p-6 border rounded-lg bg-white">
+                        <summary class="font-semibold cursor-pointer">Who made the game?</summary>
+                        <p class="mt-4 text-gray-600">The game was created by the talented team of elyaradine, sarandipityx, and raithza for the Cozy Spring Jam 2024.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto max-w-5xl px-6 py-12">
+             <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                     <h3 class="text-xl font-bold">Dressmaker</h3>
+                     <p class="text-gray-400 mt-2">A cozy game by elyaradine, sarandipityx, and raithza.</p>
+                </div>
+                 <!-- Social Links can be added here in the future -->
+                 <!-- <div class="flex space-x-4 mt-6 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Discord</a>
+                 </div> -->
+             </div>
+             <div class="mt-8 border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 DressmakerGame.com - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
