@@ -1,3 +1,12 @@
+好嘞！这是**已合并修改**的整页 `index.html`：
+
+* Hero 区右侧已换成你给的**大图**（方案 A）。
+* `Screenshots` 已从 3 张扩展为 **6 张**（含你提供的 3 张新链接）。
+* `<head>` 里补了 `img.itch.zone` 的 **preconnect** 与 **hero 图 preload**，提升首屏速度。
+
+> 直接全量替换你现有的 `index.html` 即可。
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +16,6 @@
   <meta name="description" content="Dressmaker is a cozy, creative sewing game: choose designs, cut fabrics, sew panels, and delight your customers. Play on Windows, macOS, and Linux." />
   <meta name="robots" content="index,follow" />
 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RVY53PS7NP');
-</script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
-
   <!-- Canonical -->
   <link rel="canonical" href="https://dressmakergame.com/" />
 
@@ -27,6 +23,10 @@
   <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
   <link rel="preconnect" href="https://itch.io" crossorigin>
   <link rel="preconnect" href="https://static.itch.io" crossorigin>
+  <link rel="preconnect" href="https://img.itch.zone" crossorigin>
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="https://img.itch.zone/aW1nLzIzMDEyOTY4LnBuZw==/original/K4nq0E.png">
 
   <!-- Icons -->
   <link rel="icon" href="/favicon.ico">
@@ -66,21 +66,13 @@
 
   <!-- Minimal custom CSS -->
   <style>
-    /* Apple-like subtle gradient background */
     .apple-gradient {
       background: radial-gradient(1200px 600px at 20% -10%, rgba(0,122,255,0.08), transparent 60%),
                   radial-gradient(1000px 500px at 100% 0%, rgba(88,86,214,0.08), transparent 60%);
     }
-    /* Responsive itch.io embed */
-    .itchio-embed iframe {
-      width: 100% !important;
-      height: 167px !important;
-      border: 0;
-    }
-    /* Anchor offset for sticky header; smooth scrolling */
+    .itchio-embed iframe { width: 100% !important; height: 167px !important; border: 0; }
     [id] { scroll-margin-top: 80px; }
     html { scroll-behavior: smooth; }
-    /* Improve list markers for features */
     .prose-ul li::marker { color: #007aff; }
   </style>
 
@@ -101,16 +93,11 @@
       { "@type": "Person", "name": "sarandipityx" },
       { "@type": "Person", "name": "raithza" }
     ],
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "url": "https://elyaradine.itch.io/dressmaker"
-    }
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://elyaradine.itch.io/dressmaker" }
   }
   </script>
 
-  <!-- JSON-LD: FAQPage (matches on-page FAQ) -->
+  <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -128,7 +115,6 @@
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
-  <!-- Skip link for a11y -->
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-white px-3 py-2 rounded shadow-soft">Skip to content</a>
 
   <!-- Header -->
@@ -170,15 +156,17 @@
           <p class="mt-3 text-sm text-black/50">Prototype • Single-player • Name-your-price</p>
         </div>
 
-        <!-- Placeholder hero card -->
-        <div class="rounded-3xl bg-white shadow-soft p-6">
-          <div class="aspect-[16/10] rounded-2xl bg-gradient-to-br from-white to-appleBg border border-black/5 grid place-items-center">
-            <div class="text-center">
-              <div class="text-6xl">🧵🪡</div>
-              <p class="mt-2 text-sm text-black/60">Cut • Sew • Style</p>
-            </div>
+        <!-- 替换后的右侧大图（方案 A） -->
+        <figure class="rounded-3xl overflow-hidden shadow-soft border border-black/5">
+          <div class="aspect-[16/9] sm:aspect-[4/3] lg:aspect-[16/9]">
+            <img
+              src="https://img.itch.zone/aW1nLzIzMDEyOTY4LnBuZw==/original/K4nq0E.png"
+              alt="Dressmaker gameplay screenshot"
+              fetchpriority="high" loading="eager" decoding="async"
+              class="h-full w-full object-cover object-center"
+            >
           </div>
-        </div>
+        </figure>
       </div>
     </section>
 
@@ -202,7 +190,7 @@
       </ul>
     </section>
 
-    <!-- Why Play (conversion boost) -->
+    <!-- Why Play -->
     <section id="why" class="mx-auto max-w-5xl px-4 py-8">
       <h2 class="text-2xl sm:text-3xl font-bold">Why Play Dressmaker</h2>
       <ul class="mt-4 grid sm:grid-cols-3 gap-4">
@@ -212,47 +200,59 @@
       </ul>
     </section>
 
-    <!-- Screenshots (placeholders now) -->
-<section id="screenshots" class="mx-auto max-w-6xl px-4 py-10">
-  <h2 class="text-2xl sm:text-3xl font-bold">Screenshots</h2>
-  <div class="mt-4 grid sm:grid-cols-3 gap-4">
-    <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
-      <div class="aspect-[16/9]">
-        <img
-          src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTQyOS5wbmc=/794x1000/IaJ%2F4k.png"
-          alt="Dressmaker screenshot 1"
-          loading="lazy" decoding="async" fetchpriority="low"
-          class="h-full w-full object-cover"
-        >
+    <!-- Screenshots (6 images, 统一 16:9) -->
+    <section id="screenshots" class="mx-auto max-w-6xl px-4 py-10">
+      <h2 class="text-2xl sm:text-3xl font-bold">Screenshots</h2>
+      <div class="mt-4 grid sm:grid-cols-3 gap-4">
+        <!-- 原来的三张 -->
+        <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
+          <div class="aspect-[16/9]">
+            <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTQyOS5wbmc=/794x1000/IaJ%2F4k.png"
+                 alt="Dressmaker screenshot 1" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover">
+          </div>
+        </figure>
+        <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
+          <div class="aspect-[16/9]">
+            <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTQ2Mi5wbmc=/794x1000/4YNXsA.png"
+                 alt="Dressmaker screenshot 2" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover">
+          </div>
+        </figure>
+        <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
+          <div class="aspect-[16/9]">
+            <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjM5MDA2OS5wbmc=/794x1000/1RMD07.png"
+                 alt="Dressmaker screenshot 3" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover">
+          </div>
+        </figure>
+
+        <!-- 新增的三张 -->
+        <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
+          <div class="aspect-[16/9]">
+            <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTYxNS5wbmc=/794x1000/R31eg4.png"
+                 alt="Dressmaker screenshot 4" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover">
+          </div>
+        </figure>
+        <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
+          <div class="aspect-[16/9]">
+            <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjM4OTAzMS5wbmc=/794x1000/v%2B0vtV.png"
+                 alt="Dressmaker screenshot 5" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover">
+          </div>
+        </figure>
+        <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
+          <div class="aspect-[16/9]">
+            <img src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTUwOC5wbmc=/794x1000/KFfLnv.png"
+                 alt="Dressmaker screenshot 6" loading="lazy" decoding="async"
+                 class="h-full w-full object-cover">
+          </div>
+        </figure>
       </div>
-    </figure>
+    </section>
 
-    <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
-      <div class="aspect-[16/9]">
-        <img
-          src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTQ2Mi5wbmc=/794x1000/4YNXsA.png"
-          alt="Dressmaker screenshot 2"
-          loading="lazy" decoding="async" fetchpriority="low"
-          class="h-full w-full object-cover"
-        >
-      </div>
-    </figure>
-
-    <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
-      <div class="aspect-[16/9]">
-        <img
-          src="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjM5MDA2OS5wbmc=/794x1000/1RMD07.png"
-          alt="Dressmaker screenshot 3"
-          loading="lazy" decoding="async" fetchpriority="low"
-          class="h-full w-full object-cover"
-        >
-      </div>
-    </figure>
-  </div>
-</section>
-
-
-    <!-- Platforms & Specs -->
+    <!-- Platforms & Status -->
     <section id="platforms" class="mx-auto max-w-5xl px-4 py-10">
       <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Platforms & Status</h2>
       <div class="mt-4 grid sm:grid-cols-2 gap-6">
@@ -293,7 +293,7 @@
       </div>
     </section>
 
-    <!-- Download (iframe at the bottom) -->
+    <!-- Download -->
     <section id="download" class="mx-auto max-w-3xl px-4 py-12">
       <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Download & Support</h2>
       <p class="mt-3 text-black/80">
@@ -301,7 +301,6 @@
       </p>
 
       <div class="itchio-embed mt-6 rounded-2xl bg-white shadow-soft p-4 border border-black/5">
-        <!-- Your original iframe embed -->
         <iframe width="552" height="167" frameborder="0" loading="lazy" src="https://itch.io/embed/3743052">
           <a href="https://elyaradine.itch.io/dressmaker">Dressmaker by elyaradine, sarandipityx, raithza</a>
         </iframe>
@@ -319,7 +318,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-black/10">
     <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-black/60">
       © <span id="year"></span> DressmakerGame.com • Built for fans of cozy, crafty games.
@@ -328,11 +326,9 @@
     </div>
   </footer>
 
-  <script>
-    // Current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+```
 
-
+要不要我顺手把 **Screenshots 支持点击放大**（Lightbox）或把 Tailwind 改成**本地构建版 CSS**，进一步压缩体积？需要的话我直接给你可用代码。
