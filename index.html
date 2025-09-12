@@ -46,7 +46,7 @@
     gtag('config', 'G-RVY53PS7NP');
   </script>
 
-  <!-- Google AdSense -->
+  <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
 
   <!-- Tailwind CSS (CDN) -->
@@ -149,17 +149,26 @@
           <p class="mt-4 text-lg text-black/70">
             A relaxing, creative experience inspired by real dressmaking: choose designs, cut fabrics, sew panels, and deliver outfits your customers will love.
           </p>
+
+          <!-- 新增：首屏补充原创文案（确保首屏有可读内容，而不是只剩图或按钮） -->
+          <p class="mt-4 text-base text-black/70 leading-relaxed">
+            Built for players who enjoy mindful crafting, Dressmaker turns real studio habits into play:
+            sketching ideas, picking textiles, laying out patterns to minimize waste, and stitching precise
+            seams for a clean fit. This fan site adds practical tips for pattern placement, high-scoring outfit
+            ideas, patch-note roundups, and answers to common questions from new players. Our goal is to help
+            you get the most from the prototype while crediting the original creators and pointing you to the
+            official itch.io builds. If you like cozy sims with a purposeful loop, you’ll feel right at home here.
+          </p>
+
           <div class="mt-6 flex flex-wrap gap-3">
-            <!-- 保留下载按钮 -->
             <a href="#download" class="inline-flex items-center justify-center rounded-2xl bg-appleBlue px-5 py-3 text-white font-medium shadow-soft hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-appleBlue/40">
               Download (itch.io)
             </a>
-            <!-- 已移除：白色 View on itch.io 按钮 -->
           </div>
           <p class="mt-3 text-sm text-black/50">Prototype • Single-player • Name-your-price</p>
         </div>
 
-        <!-- 右侧大图（方案 A） -->
+        <!-- 右侧大图 -->
         <figure class="rounded-3xl overflow-hidden shadow-soft border border-black/5">
           <div class="aspect-[16/9] sm:aspect-[4/3] lg:aspect-[16/9]">
             <img
@@ -191,6 +200,20 @@
         <li><strong>Relaxing flow:</strong> A cozy pacing that rewards focus, creativity, and clean stitches.</li>
         <li><strong>Prototype builds:</strong> Frequent updates and community-driven improvements.</li>
       </ul>
+
+      <!-- 手动广告位：放在第一个 H2 内容块之后（避免首屏投放） -->
+      <div class="mt-8">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8830315294299920"
+             data-ad-slot="XXXXXXXXXX"  <!-- TODO: 替换为你的广告单元ID -->
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- /广告位结束 -->
     </section>
 
     <!-- Why Play -->
@@ -207,7 +230,6 @@
     <section id="screenshots" class="mx-auto max-w-6xl px-4 py-10">
       <h2 class="text-2xl sm:text-3xl font-bold">Screenshots</h2>
       <div class="mt-4 grid sm:grid-cols-3 gap-4">
-        <!-- 6 张截图（略）——与上一版一致，这里保留不变 -->
         <figure class="bg-white rounded-2xl shadow-soft border border-black/5 overflow-hidden">
           <a href="https://img.itch.zone/aW1hZ2UvMzc0MzA1Mi8yMjk5OTQyOS5wbmc=/794x1000/IaJ%2F4k.png" data-lightbox data-index="0" class="block">
             <div class="aspect-[16/9]">
@@ -313,7 +335,6 @@
         </iframe>
       </div>
 
-      <!-- 已移除：蓝色 Open on itch.io 按钮 -->
       <p class="mt-6 text-xs text-black/50">
         Dressmaker © respective creators. This fan site is not affiliated with itch.io. All trademarks are property of their respective owners.
       </p>
