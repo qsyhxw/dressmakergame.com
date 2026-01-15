@@ -1,14 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Dressmaker Game Free Download | Design, Cut & Sew on PC/Mac</title>
-  <meta name="description" content="Dressmaker is a cozy dressmaker game. Get the free download and start designing dresses: choose fabrics, cut panels, 和 sew outfits on Windows and macOS (Linux supported)" />
+  <meta name="description" content="Dressmaker is a cozy dressmaker game. Get the free download and start designing dresses: choose fabrics, cut panels, and sew outfits on Windows and macOS (Linux supported)" />
   <meta name="robots" content="index,follow" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://dressmakergame.com/" />
+
+   <!-- Google tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RVY53PS7NP');
+  </script>
+
+  <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
 
   <!-- Preconnect (perf) -->
   <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
@@ -37,17 +51,7 @@
   <meta name="twitter:description" content="A cozy sewing & pattern-cutting game. Cut | Sew | Style." />
   <meta name="twitter:image" content="https://dressmakergame.com/og.png" />
 
-  <!-- Google tag (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RVY53PS7NP');
-  </script>
-
-  <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+ 
 
   <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -101,6 +105,20 @@
   }
   </script>
 
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dressmakergame.com/"
+    }]
+  }
+  </script>
+
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
   {
@@ -108,11 +126,21 @@
     "@type":"FAQPage",
     "mainEntity":[
       {"@type":"Question","name":"Is Dressmaker free?",
-       "acceptedAnswer":{"@type":"Answer","text":"Yes. It’s a name-your-price prototype on itch.io—support the devs if you enjoy it!"}},
+       "acceptedAnswer":{"@type":"Answer","text":"Yes. It's a name-your-price prototype on itch.io—support the devs if you enjoy it!"}},
       {"@type":"Question","name":"Which platforms are supported?",
        "acceptedAnswer":{"@type":"Answer","text":"Windows, macOS, and Linux builds are available on the itch.io page."}},
       {"@type":"Question","name":"Will there be a full release?",
-       "acceptedAnswer":{"@type":"Answer","text":"The team has shared plans to grow the prototype into a fuller game with ongoing updates."}}
+       "acceptedAnswer":{"@type":"Answer","text":"The team has shared plans to grow the prototype into a fuller game with ongoing updates."}},
+      {"@type":"Question","name":"How do I fix the Mac malicious software warning?",
+       "acceptedAnswer":{"@type":"Answer","text":"Go to System Settings → Privacy & Security → scroll down → click Open Anyway. See our detailed Mac installation guide."}},
+      {"@type":"Question","name":"What's the difference between itch.io and Steam versions?",
+       "acceptedAnswer":{"@type":"Answer","text":"Currently only the itch.io prototype (0.5.5) is available. The Steam full version is in development with no release date yet."}},
+      {"@type":"Question","name":"How do I get 100% quality score when sewing?",
+       "acceptedAnswer":{"@type":"Answer","text":"Follow the dotted line precisely, slow down at corners, and align pattern pieces to the grain line."}},
+      {"@type":"Question","name":"Can I play offline?",
+       "acceptedAnswer":{"@type":"Answer","text":"Yes. Once downloaded, Dressmaker runs entirely offline with no internet connection required."}},
+      {"@type":"Question","name":"Is there a mobile version?",
+       "acceptedAnswer":{"@type":"Answer","text":"No. Dressmaker is currently only available for Windows, Mac, and Linux. There is no official mobile version."}}
     ]
   }
   </script>
@@ -127,10 +155,10 @@
       <a href="#top" class="font-semibold tracking-tight text-appleText">Dressmaker</a>
       <nav aria-label="Primary" class="hidden sm:flex gap-6 text-sm">
         <a href="#about" class="hover:text-appleBlue">About</a>
+        <a href="#guides" class="hover:text-appleBlue">Guides</a>
         <a href="#features" class="hover:text-appleBlue">Features</a>
-        <a href="#why" class="hover:text-appleBlue">Why Play</a>
         <a href="#screenshots" class="hover:text-appleBlue">Screenshots</a>
-        <a href="#platforms" class="hover:text-appleBlue">Platforms</a>
+        <a href="#platforms" class="hover:text-appleBlue">Info</a>
         <a href="#faq" class="hover:text-appleBlue">FAQ</a>
         <a href="#download" class="text-appleBlue font-medium">Download</a>
       </nav>
@@ -150,14 +178,13 @@
             A relaxing, creative experience inspired by real dressmaking: choose designs, cut fabrics, sew panels, and deliver outfits your customers will love.
           </p>
 
-          <!-- 新增：首屏补充原创文案（确保首屏有可读内容，而不是只剩图或按钮） -->
           <p class="mt-4 text-base text-black/70 leading-relaxed">
             Built for players who enjoy mindful crafting, Dressmaker turns real studio habits into play:
             sketching ideas, picking textiles, laying out patterns to minimize waste, and stitching precise
             seams for a clean fit. This fan site adds practical tips for pattern placement, high-scoring outfit
             ideas, patch-note roundups, and answers to common questions from new players. Our goal is to help
             you get the most from the prototype while crediting the original creators and pointing you to the
-            official itch.io builds. If you like cozy sims with a purposeful loop, you’ll feel right at home here.
+            official itch.io builds. If you like cozy sims with a purposeful loop, you'll feel right at home here.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
@@ -180,7 +207,37 @@
           </div>
         </figure>
       </div>
+
+      <!-- 新增：首屏价值主张卡片 -->
+      <div class="mt-10 grid sm:grid-cols-3 gap-4">
+        <div class="bg-white/50 backdrop-blur rounded-xl p-5 shadow-soft">
+          <div class="text-3xl mb-2">📚</div>
+          <div class="font-semibold text-appleBlue mb-1">Complete Guides</div>
+          <p class="text-sm text-black/70">Step-by-step tutorials for cutting, sewing, and scoring 100% quality</p>
+        </div>
+        <div class="bg-white/50 backdrop-blur rounded-xl p-5 shadow-soft">
+          <div class="text-3xl mb-2">🎨</div>
+          <div class="font-semibold text-appleBlue mb-1">Design Inspiration</div>
+          <p class="text-sm text-black/70">Customer preferences, fabric combos, and player showcase gallery</p>
+        </div>
+        <div class="bg-white/50 backdrop-blur rounded-xl p-5 shadow-soft">
+          <div class="text-3xl mb-2">🔧</div>
+          <div class="font-semibold text-appleBlue mb-1">Troubleshooting</div>
+          <p class="text-sm text-black/70">Fix Mac warnings, lace bugs, and sewing machine issues</p>
+        </div>
+      </div>
     </section>
+
+    <!-- What's New Banner -->
+    <div class="mx-auto max-w-6xl px-4 mb-8">
+      <div class="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-2xl p-4 flex items-start gap-4">
+        <span class="text-2xl flex-shrink-0">🎉</span>
+        <div class="flex-1 min-w-0">
+          <p class="font-semibold text-appleText">Latest Update: Prototype 0.5.5 (Oct 3, 2025)</p>
+          <p class="text-sm text-black/70 mt-1">New lace controls, Mac compatibility fix, tutorial improvements. <a href="/patch-notes/" class="text-appleBlue underline">See full changelog</a>.</p>
+        </div>
+      </div>
+    </div>
 
     <!-- About -->
     <section id="about" class="mx-auto max-w-5xl px-4 py-10">
@@ -188,6 +245,50 @@
       <p class="mt-4 text-black/80">
         Dressmaker blends mindful crafting with playful problem-solving. Sketch ideas in your notebook, pick fabrics in the shop, arrange pattern pieces to minimize waste, then sew neat seams and fit garments on the mannequin before sending customers off in style. As a <em>dressmaking sim</em> and <em>sewing game</em>, it rewards creativity and clean stitches.
       </p>
+    </section>
+
+    <!-- Guides & Resources (新增) -->
+    <section id="guides" class="mx-auto max-w-6xl px-4 py-10">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-6">Guides & Resources</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <a href="/download/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">⬇️</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Download Guide</h3>
+          <p class="mt-2 text-sm text-black/70">How to install on Windows, Mac, Linux + fix common errors</p>
+        </a>
+
+        <a href="/how-to-play/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">🎮</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">How to Play</h3>
+          <p class="mt-2 text-sm text-black/70">Complete beginner's guide from sketch to customer delivery</p>
+        </a>
+
+        <a href="/sewing-tips/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">🪡</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Sewing Mastery</h3>
+          <p class="mt-2 text-sm text-black/70">Get 100% quality score every time with these techniques</p>
+        </a>
+
+        <a href="/customer-guide/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">👗</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Customer Preferences</h3>
+          <p class="mt-2 text-sm text-black/70">Style, color, and budget cheat sheet for every NPC</p>
+        </a>
+
+        <a href="/troubleshooting/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">🔧</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Troubleshooting</h3>
+          <p class="mt-2 text-sm text-black/70">Fix installation errors, lace bugs, and performance issues</p>
+        </a>
+
+        <a href="/patch-notes/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">📝</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Patch Notes</h3>
+          <p class="mt-2 text-sm text-black/70">Version history from 0.1 to current (regularly updated)</p>
+        </a>
+
+      </div>
     </section>
 
     <!-- Features -->
@@ -200,8 +301,6 @@
         <li><strong>Relaxing flow:</strong> A cozy pacing that rewards focus, creativity, and clean stitches.</li>
         <li><strong>Prototype builds:</strong> Frequent updates and community-driven improvements.</li>
       </ul>
-
-    
     </section>
 
     <!-- Why Play -->
@@ -269,44 +368,114 @@
       </div>
     </section>
 
-    <!-- Platforms & Status -->
+    <!-- Platforms & Status (扩展系统要求) -->
     <section id="platforms" class="mx-auto max-w-5xl px-4 py-10">
-      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Platforms & Status</h2>
-      <div class="mt-4 grid sm:grid-cols-2 gap-6">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-6">Platforms & System Requirements</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        
+        <!-- Availability -->
         <div class="rounded-2xl bg-appleCard shadow-soft p-6">
-          <h3 class="font-semibold mb-2">Availability</h3>
-          <ul class="space-y-1 text-black/80">
-            <li>Windows • macOS • Linux</li>
-            <li>Single-player • Name-your-price on itch.io</li>
-            <li>Status: Prototype with regular patches</li>
+          <h3 class="font-semibold text-lg mb-3">📦 Availability</h3>
+          <ul class="space-y-2 text-sm text-black/80">
+            <li><strong>Platforms:</strong> Windows • macOS • Linux</li>
+            <li><strong>Distribution:</strong> Name-your-price on itch.io</li>
+            <li><strong>Current Version:</strong> Prototype 0.5.5 (Oct 3, 2025)</li>
+            <li><strong>Game Mode:</strong> Single-player</li>
           </ul>
         </div>
+
+        <!-- System Requirements -->
         <div class="rounded-2xl bg-appleCard shadow-soft p-6">
-          <h3 class="font-semibold mb-2">Credits</h3>
-          <ul class="space-y-1 text-black/80">
+          <h3 class="font-semibold text-lg mb-3">⚙️ System Requirements</h3>
+          <ul class="space-y-2 text-sm text-black/80">
+            <li><strong>Windows:</strong> 7+ (115 MB download)</li>
+            <li><strong>macOS:</strong> 10.14+ (128 MB download)</li>
+            <li><strong>Linux:</strong> Ubuntu 18.04+ (127 MB download)</li>
+            <li><strong>RAM:</strong> 2 GB+ recommended</li>
+            <li><strong>Storage:</strong> ~150 MB free space</li>
+          </ul>
+          <p class="text-xs text-black/50 mt-3">*Unofficial estimates. See <a href="/download/#system-requirements" class="text-appleBlue underline">full requirements</a>.</p>
+        </div>
+
+        <!-- Credits -->
+        <div class="rounded-2xl bg-appleCard shadow-soft p-6">
+          <h3 class="font-semibold text-lg mb-3">👥 Credits</h3>
+          <ul class="space-y-2 text-sm text-black/80">
             <li>Created by <span class="font-medium">elyaradine</span>, <span class="font-medium">sarandipityx</span>, and <span class="font-medium">raithza</span></li>
+            <li>Published by <span class="font-medium">Free Lives</span> studio</li>
             <li>Community feedback helps shape new updates</li>
           </ul>
         </div>
+
+        <!-- Development Status -->
+        <div class="rounded-2xl bg-appleCard shadow-soft p-6">
+          <h3 class="font-semibold text-lg mb-3">🚀 Development Status</h3>
+          <ul class="space-y-2 text-sm text-black/80">
+            <li><strong>itch.io Prototype:</strong> Feature-complete (0.5.5)</li>
+            <li><strong>Steam Version:</strong> In development</li>
+            <li><strong>Release Date:</strong> Not announced</li>
+            <li><a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" class="text-appleBlue underline">Wishlist on Steam</a> for updates</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ (扩展) -->
     <section id="faq" class="mx-auto max-w-5xl px-4 py-10">
-      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">FAQ</h2>
-      <div class="mt-4 space-y-3">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-6">FAQ</h2>
+      <div class="space-y-3">
+        
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Is Dressmaker free?</summary>
-          <p class="mt-2 text-black/75">Yes. It’s a name-your-price prototype on itch.io—support the devs if you enjoy it!</p>
+          <p class="mt-2 text-sm text-black/75">Yes. It's a name-your-price prototype on itch.io—support the devs if you enjoy it!</p>
         </details>
+
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Which platforms are supported?</summary>
-          <p class="mt-2 text-black/75">Windows, macOS, and Linux builds are available on the itch.io page.</p>
+          <p class="mt-2 text-sm text-black/75">Windows, macOS, and Linux builds are available on the itch.io page.</p>
         </details>
+
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Will there be a full release?</summary>
-          <p class="mt-2 text-black/75">The team has shared plans to grow the prototype into a fuller game with ongoing updates.</p>
+          <p class="mt-2 text-sm text-black/75">The team has shared plans to grow the prototype into a fuller game with ongoing updates. The full version will be released on Steam (no date announced yet).</p>
         </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">How do I fix the Mac "malicious software" warning?</summary>
+          <p class="mt-2 text-sm text-black/75">Go to System Settings → Privacy & Security → scroll down → click "Open Anyway". See our <a href="/download/#mac-fix" class="text-appleBlue underline">detailed Mac installation guide</a>.</p>
+        </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">What's the difference between itch.io and Steam versions?</summary>
+          <p class="mt-2 text-sm text-black/75">Currently only the itch.io prototype (0.5.5) is available for free. The Steam full version is in development with more content and features. <a href="/download/#steam-vs-itch" class="text-appleBlue underline">See full comparison</a>.</p>
+        </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">How do I get 100% quality score when sewing?</summary>
+          <p class="mt-2 text-sm text-black/75">Follow the dotted line precisely, slow down at corners, and align pattern pieces to the grain line (arrows pointing left/right). Full tutorial: <a href="/sewing-tips/" class="text-appleBlue underline">Sewing Mastery Guide</a>.</p>
+        </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">Can I play offline?</summary>
+          <p class="mt-2 text-sm text-black/75">Yes. Once downloaded, Dressmaker runs entirely offline with no internet connection required.</p>
+        </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">Is there a mobile version (Android/iOS)?</summary>
+          <p class="mt-2 text-sm text-black/75">No. Dressmaker is currently only available for Windows, Mac, and Linux. There is no official mobile version or APK.</p>
+        </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">How long is the prototype?</summary>
+          <p class="mt-2 text-sm text-black/75">The prototype offers approximately 2-3 hours of gameplay with limited customers and dress patterns. The full Steam version will have significantly more content.</p>
+        </details>
+
+        <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
+          <summary class="cursor-pointer font-medium">Where can I get help or report bugs?</summary>
+          <p class="mt-2 text-sm text-black/75">Join the official <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="text-appleBlue underline">Discord community</a> or check our <a href="/troubleshooting/" class="text-appleBlue underline">troubleshooting guide</a>.</p>
+        </details>
+
       </div>
     </section>
 
@@ -323,8 +492,13 @@
         </iframe>
       </div>
 
+      <div class="mt-6 bg-blue-50 border border-blue-200 rounded-2xl p-4">
+        <p class="font-semibold text-sm mb-2">💡 New to Dressmaker?</p>
+        <p class="text-sm text-black/70">Check our <a href="/download/" class="text-appleBlue underline">complete download guide</a> for installation help, system requirements, and Mac troubleshooting.</p>
+      </div>
+
       <p class="mt-6 text-xs text-black/50">
-        Dressmaker © respective creators. This fan site is not affiliated with itch.io. All trademarks are property of their respective owners.
+        Dressmaker © respective creators. This fan site is not affiliated with itch.io or Free Lives. All trademarks are property of their respective owners.
       </p>
     </section>
   </main>
@@ -390,7 +564,44 @@
       });
     })();
   </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"40904e482c7049dda582e00a0b49bb27","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
-
-
