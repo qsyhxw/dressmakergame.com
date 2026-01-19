@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dressmaker Troubleshooting Guide – Fix Common Bugs & Installation Issues (2026)</title>
+  <meta name="description" content="Complete troubleshooting guide for Dressmaker game: fix Mac Gatekeeper warnings, sewing bugs, lace placement issues, and installation errors on Windows, Mac, and Linux." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://dressmakergame.com/troubleshooting" />
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RVY53PS7NP');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Dressmaker Game" />
+  <meta property="og:title" content="Dressmaker Troubleshooting Guide – Fix Bugs & Errors" />
+  <meta property="og:description" content="Fix Mac installation warnings, sewing bugs, and performance issues in Dressmaker game." />
+  <meta property="og:url" content="https://dressmakergame.com/troubleshooting/" />
+  <meta property="og:image" content="https://dressmakergame.com/og.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dressmaker Troubleshooting Guide" />
+  <meta name="twitter:description" content="Fix common Dressmaker game issues: Mac warnings, bugs, crashes" />
+  <meta name="twitter:image" content="https://dressmakergame.com/og.png" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            appleBg: "#f5f5f7",
+            appleText: "#1d1d1f",
+            appleBlue: "#007aff",
+            appleCard: "#ffffff",
+          },
+          boxShadow: { soft: "0 2px 10px rgba(0,0,0,0.06)" }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <style>
+    .apple-gradient {
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(0,122,255,0.08), transparent 60%),
+                  radial-gradient(1000px 500px at 100% 0%, rgba(88,86,214,0.08), transparent 60%);
+    }
+    [id] { scroll-margin-top: 80px; }
+    html { scroll-behavior: smooth; }
+    .prose-ul li::marker { color: #007aff; }
+  </style>
+
+  <!-- JSON-LD: FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I fix the Mac 'malicious software' warning for Dressmaker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to System Settings → Privacy & Security → scroll down to Security section → click 'Open Anyway' next to the blocked Dressmaker app. You may need to enter your Mac password. This warning appears because the game is not notarized by Apple, but it is safe to run."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is lace placement so difficult in Dressmaker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lace placement is a known issue in the current prototype (v0.5.5). The developers made improvements in v0.5.1, but some difficulty remains. Try zooming in, rotating the mannequin, and using right-click to remove misplaced pins. Place lace pins carefully one at a time rather than dragging quickly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if the sewing guideline disappears?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Click away from the sewing interface and return to it. This usually makes the guideline reappear. If the problem persists, save your progress, exit to the main menu, and reload your save. This is a known intermittent bug."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I report Dressmaker bugs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Join the official Discord at discord.gg/nJY2TsCKm9 where developers actively respond to bug reports. You can also leave comments on the itch.io page at elyaradine.itch.io/dressmaker."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dressmakergame.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Troubleshooting",
+        "item": "https://dressmakergame.com/troubleshooting/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Dressmaker Troubleshooting Guide",
+    "url": "https://dressmakergame.com/troubleshooting/",
+    "inLanguage": "en",
+    "datePublished": "2026-01-19",
+    "dateModified": "2026-01-19"
+  }
+  </script>
+</head>
+
+<body class="bg-appleBg apple-gradient text-appleText antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-white px-3 py-2 rounded shadow-soft">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-20 backdrop-blur bg-white/70 border-b border-black/5">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-appleText">Dressmaker</a>
+      <nav aria-label="Primary" class="hidden sm:flex gap-6 text-sm">
+        <a href="/#about" class="hover:text-appleBlue">About</a>
+        <a href="/#guides" class="hover:text-appleBlue">Guides</a>
+        <a href="/#faq" class="hover:text-appleBlue">FAQ</a>
+        <a href="/download/" class="hover:text-appleBlue">Download</a>
+      </nav>
+      <a href="/download/" class="sm:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-appleBlue text-white text-sm shadow-soft">Get the Game</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Breadcrumb -->
+    <div class="mx-auto max-w-5xl px-4 pt-6">
+      <nav aria-label="Breadcrumb" class="text-sm text-black/60">
+        <a href="/" class="hover:text-appleBlue">Home</a>
+        <span class="mx-2">›</span>
+        <span>Troubleshooting</span>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="mx-auto max-w-5xl px-4 pt-8 pb-6">
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+        Dressmaker Troubleshooting Guide – Fix Common Bugs & Installation Issues
+      </h1>
+      <p class="mt-4 text-lg text-black/70">
+        Comprehensive troubleshooting guide for Dressmaker (Prototype v0.5.5). Find solutions for Mac installation warnings, gameplay bugs, performance issues, and known glitches.
+      </p>
+      
+      <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+        <p class="font-semibold text-yellow-800 mb-2">⚠️ Prototype Status Notice</p>
+        <p class="text-sm text-yellow-700">
+          Dressmaker is currently a <strong>prototype (v0.5.5)</strong>. Some bugs and limitations are expected as the developers work on the full Steam version. Most issues will be resolved in future updates.
+        </p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="mx-auto max-w-5xl px-4 py-6">
+      <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+        <h2 class="font-bold text-lg mb-3">📚 On This Page</h2>
+        <ul class="grid sm:grid-cols-2 gap-2 text-sm">
+          <li><a href="#mac-issues" class="text-appleBlue hover:underline">→ Mac Installation Issues</a></li>
+          <li><a href="#windows-issues" class="text-appleBlue hover:underline">→ Windows Issues</a></li>
+          <li><a href="#linux-issues" class="text-appleBlue hover:underline">→ Linux Issues</a></li>
+          <li><a href="#gameplay-bugs" class="text-appleBlue hover:underline">→ Gameplay Bugs</a></li>
+          <li><a href="#performance" class="text-appleBlue hover:underline">→ Performance Issues</a></li>
+          <li><a href="#reporting" class="text-appleBlue hover:underline">→ How to Report Bugs</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="mx-auto max-w-5xl px-4 py-8 space-y-12">
+
+      <!-- Mac Installation Issues -->
+      <section id="mac-issues">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">🍎 Mac Installation Issues</h2>
+        
+        <div class="space-y-6">
+          <!-- Issue 1: Gatekeeper Warning -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5" open>
+            <summary class="cursor-pointer font-semibold text-lg">❌ "Can't be opened because Apple cannot check it for malicious software"</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> When you try to open Dressmaker.app, macOS displays a security warning and blocks the app.</p>
+              
+              <p><strong>Why This Happens:</strong></p>
+              <p class="text-sm">Dressmaker is <strong>not notarized by Apple</strong> because the developers don't have an Apple Developer account (source: <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="text-appleBlue underline">official itch.io page</a>). macOS Gatekeeper blocks unsigned apps by default for security.</p>
+              
+              <p><strong>Is it Safe?</strong> Yes. The game is developed by elyaradine, sarandipityx, and raithza (Free Lives studio) and distributed through the official itch.io page.</p>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
+                <p class="font-semibold text-green-800 mb-2">✅ Solution (Official Method from Apple):</p>
+                <ol class="list-decimal pl-6 space-y-2 text-sm text-green-700">
+                  <li>Try to open Dressmaker.app (you'll see the error)</li>
+                  <li>Click <strong>"OK"</strong> to dismiss the warning</li>
+                  <li>Go to <strong>System Settings</strong> (or System Preferences on older macOS)</li>
+                  <li>Click <strong>Privacy & Security</strong></li>
+                  <li>Scroll down to the <strong>Security</strong> section</li>
+                  <li>You'll see: <em>"Dressmaker.app was blocked from use because it is not from an identified developer"</em></li>
+                  <li>Click <strong>"Open Anyway"</strong></li>
+                  <li>A confirmation dialog appears—click <strong>"Open"</strong> again</li>
+                  <li>Enter your Mac password if prompted</li>
+                  <li>The game will now launch successfully</li>
+                </ol>
+                <p class="text-xs text-green-600 mt-2">Source: <a href="https://support.apple.com/guide/mac-help/apple-cant-check-app-for-malicious-software-mchleab3a043/mac" target="_blank" rel="noopener" class="underline">Apple Support</a></p>
+              </div>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-2">💡 Alternative: Control + Click Method</p>
+                <ol class="list-decimal pl-6 space-y-1 text-sm text-blue-700">
+                  <li>Hold <strong>Control</strong> key and click on Dressmaker.app</li>
+                  <li>Select <strong>"Open"</strong> from the context menu</li>
+                  <li>Click <strong>"Open"</strong> again in the dialog</li>
+                </ol>
+              </div>
+            </div>
+          </details>
+
+          <!-- Issue 2: Mac Version Not Updating -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">❌ Mac Version Shows Older Version (0.5.0 instead of 0.5.1+)</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> The download page shows version 0.5.0 for Mac even though newer versions (0.5.1, 0.5.5) exist for Windows/Linux.</p>
+              
+              <p><strong>Status:</strong> This was reported by a player on September 24, 2025 (<a href="https://elyaradine.itch.io/dressmaker/devlog/1039264/051-bug-fixes-and-some-new-content" target="_blank" rel="noopener" class="text-appleBlue underline">source</a>). The developers may have fixed this by now.</p>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-2">✅ Solutions:</p>
+                <ul class="list-disc pl-6 space-y-1 text-sm text-blue-700">
+                  <li>Check the <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="underline">itch.io download page</a> for the latest Mac build</li>
+                  <li>If only older versions are listed, report the issue on the <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="underline">official Discord</a></li>
+                  <li>The version difference may not affect gameplay significantly (most features work on 0.5.0)</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Windows Issues -->
+      <section id="windows-issues">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">🪟 Windows Installation & Launch Issues</h2>
+        
+        <div class="space-y-6">
+          <!-- Issue 1: SmartScreen Warning -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">❌ "Windows protected your PC" (SmartScreen Warning)</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> Windows Defender SmartScreen blocks the game when you try to run it for the first time.</p>
+              
+              <p><strong>Why This Happens:</strong> Dressmaker is not digitally signed by Microsoft, so Windows treats it as an "unrecognized app."</p>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
+                <p class="font-semibold text-green-800 mb-2">✅ Solution:</p>
+                <ol class="list-decimal pl-6 space-y-1 text-sm text-green-700">
+                  <li>When the warning appears, click <strong>"More info"</strong></li>
+                  <li>Click <strong>"Run anyway"</strong></li>
+                  <li>The game will launch normally</li>
+                </ol>
+              </div>
+            </div>
+          </details>
+
+          <!-- Issue 2: Game Won't Launch -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">❌ Game Won't Launch (No Error Message)</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> Double-clicking Dressmaker.exe does nothing, or the process appears briefly in Task Manager then disappears.</p>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-3">✅ Solutions to Try:</p>
+                
+                <div class="space-y-3 text-sm text-blue-700">
+                  <p><strong>1. Update Graphics Drivers:</strong></p>
+                  <ul class="list-disc pl-6 space-y-1">
+                    <li>NVIDIA: Visit <a href="https://www.nvidia.com/download/index.aspx" target="_blank" rel="noopener" class="underline">nvidia.com/drivers</a></li>
+                    <li>AMD: Visit <a href="https://www.amd.com/support" target="_blank" rel="noopener" class="underline">amd.com/support</a></li>
+                    <li>Intel: Use Windows Update or visit Intel's site</li>
+                  </ul>
+
+                  <p class="mt-3"><strong>2. Install DirectX & Visual C++ Runtimes:</strong></p>
+                  <ul class="list-disc pl-6 space-y-1">
+                    <li>Download <a href="https://www.microsoft.com/download/details.aspx?id=35" target="_blank" rel="noopener" class="underline">DirectX End-User Runtime</a></li>
+                    <li>Install <a href="https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist" target="_blank" rel="noopener" class="underline">Visual C++ Redistributables</a> (all versions)</li>
+                  </ul>
+
+                  <p class="mt-3"><strong>3. Run as Administrator:</strong></p>
+                  <ul class="list-disc pl-6 space-y-1">
+                    <li>Right-click Dressmaker.exe → "Run as administrator"</li>
+                  </ul>
+
+                  <p class="mt-3"><strong>4. Check Antivirus:</strong></p>
+                  <ul class="list-disc pl-6 space-y-1">
+                    <li>Your antivirus may be blocking the game</li>
+                    <li>Add Dressmaker folder to your antivirus exclusions list</li>
+                  </ul>
+
+                  <p class="mt-3"><strong>5. Re-download Fresh Copy:</strong></p>
+                  <ul class="list-disc pl-6 space-y-1">
+                    <li>Delete current installation</li>
+                    <li>Download again from <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="underline">itch.io</a></li>
+                    <li>Extract to a new location</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- Issue 3: Extract Error -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">❌ Can't Extract ZIP File</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> Error when trying to extract the downloaded ZIP file.</p>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
+                <p class="font-semibold text-green-800 mb-2">✅ Solutions:</p>
+                <ul class="list-disc pl-6 space-y-1 text-sm text-green-700">
+                  <li><strong>Re-download</strong> the file (it may have been corrupted)</li>
+                  <li>Use Windows built-in "Extract All" (right-click ZIP → Extract All)</li>
+                  <li>Or download <a href="https://www.7-zip.org/" target="_blank" rel="noopener" class="underline">7-Zip</a> (free, reliable extractor)</li>
+                  <li>Make sure you have enough disk space (~150 MB free)</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Linux Issues -->
+      <section id="linux-issues">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">🐧 Linux Issues</h2>
+        
+        <div class="space-y-6">
+          <!-- Issue 1: No Execute Permission -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">❌ Nothing Happens When Double-Clicking Executable</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> Double-clicking Dressmaker.x86_64 does nothing.</p>
+              
+              <p><strong>Cause:</strong> The file doesn't have execute permissions.</p>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
+                <p class="font-semibold text-green-800 mb-2">✅ Solution:</p>
+                <div class="bg-black/5 rounded p-3 mt-2 font-mono text-xs overflow-x-auto">
+                  <p class="text-green-600"># Navigate to extracted folder</p>
+                  <p>cd ~/Downloads/Dressmaker</p>
+                  <br>
+                  <p class="text-green-600"># Make executable</p>
+                  <p>chmod +x Dressmaker.x86_64</p>
+                  <br>
+                  <p class="text-green-600"># Run the game</p>
+                  <p>./Dressmaker.x86_64</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- Issue 2: Missing Libraries -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">❌ Error: Missing Shared Libraries</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> Error message about missing .so files.</p>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-2">✅ Solution (Ubuntu/Debian):</p>
+                <div class="bg-black/5 rounded p-3 mt-2 font-mono text-xs overflow-x-auto">
+                  <p>sudo apt update</p>
+                  <p>sudo apt install libgl1-mesa-glx libxcursor1 libxinerama1</p>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Gameplay Bugs -->
+      <section id="gameplay-bugs">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">🐛 Gameplay Bugs & Known Issues</h2>
+        
+        <div class="space-y-6">
+          <!-- Bug 1: Lace Placement -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5" open>
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Lace/Trim Placement is Difficult and Glitchy</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Developers made improvements in v0.5.1 (Sept 23, 2025) but issues persist.</p>
+              
+              <p><strong>Symptoms:</strong></p>
+              <ul class="list-disc pl-6 space-y-1 text-sm">
+                <li>Lace pins attach to wrong part of dress (e.g., pins to bodice instead of sleeve)</li>
+                <li>Difficult to wrap lace around edges neatly</li>
+                <li>Lace "bugs out" when trying to place on curved areas</li>
+                <li>Hard to remove misplaced lace (must right-click pin, then left-click to remove)</li>
+              </ul>
+              <p class="text-xs text-black/60 mt-2">Source: <a href="https://itch.io/post/14183244" target="_blank" rel="noopener" class="text-appleBlue underline">Player report</a> + <a href="https://elyaradine.itch.io/dressmaker/devlog/1039264/051-bug-fixes-and-some-new-content" target="_blank" rel="noopener" class="text-appleBlue underline">Dev acknowledgement v0.5.1</a></p>
+
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mt-4">
+                <p class="font-semibold text-yellow-800 mb-2">⚠️ Workarounds:</p>
+                <ul class="list-disc pl-6 space-y-1 text-sm text-yellow-700">
+                  <li><strong>Go slowly:</strong> Place one pin at a time, don't drag quickly</li>
+                  <li><strong>Zoom in:</strong> Get closer to the dress for more precision</li>
+                  <li><strong>Rotate mannequin:</strong> Try different angles to access tricky spots</li>
+                  <li><strong>To remove lace:</strong> Right-click the pin, then left-click (or stop using lace tool)</li>
+                  <li><strong>If lace won't work at all:</strong> Skip it and use buttons/bows instead</li>
+                </ul>
+                <p class="text-xs text-yellow-600 mt-2">Note: Developers are aware and working on this for the full Steam version.</p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 2: Twitchy Hand -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Sewing Machine Hand Twitches/Shakes</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Possibly Fixed</strong> in v0.4.4 (Sept 9, 2025), but developers couldn't reproduce to confirm.</p>
+              
+              <p><strong>Symptoms:</strong> The hand icon shakes or glitches during sewing, especially when not actively moving the fabric.</p>
+              <p class="text-xs text-black/60 mt-1">Source: <a href="https://elyaradine.itch.io/dressmaker/devlog/1027697/hotfix-update" target="_blank" rel="noopener" class="text-appleBlue underline">Developer statement v0.4.4</a></p>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-2">✅ Workarounds if still occurring:</p>
+                <ul class="list-disc pl-6 space-y-1 text-sm text-blue-700">
+                  <li><strong>Use keyboard controls:</strong> Space + Arrow keys (added v0.4.4) instead of mouse</li>
+                  <li>Usually <strong>visual only</strong> – doesn't affect actual sewing quality</li>
+                  <li>If it interferes with gameplay, restart the sewing phase</li>
+                  <li>Report on <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="underline">Discord</a> with your system specs</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 3: Sewing Guideline Disappears -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Sewing Guideline (Dotted Line) Disappears</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Intermittent bug, no official fix yet.</p>
+              
+              <p><strong>Symptoms:</strong> The green dotted line showing where to sew disappears mid-seam, making it impossible to follow.</p>
+              <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14100848" target="_blank" rel="noopener" class="text-appleBlue underline">Player report</a></p>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
+                <p class="font-semibold text-green-800 mb-2">✅ Workaround:</p>
+                <ul class="list-disc pl-6 space-y-1 text-sm text-green-700">
+                  <li><strong>First try:</strong> Click away from sewing interface, then click back (this often fixes it)</li>
+                  <li><strong>If that doesn't work:</strong> Save progress, exit to main menu, reload save</li>
+                  <li><strong>As last resort:</strong> Sew "blind" following the edge of the fabric piece</li>
+                  <li>Watch the quality percentage meter – if it drops too low, stop and restart the seam</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 4: Fabric Cutting -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Scissors Keep Moving Without Cutting (Cutting Bug)</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Affects v0.5.5 and earlier.</p>
+              
+              <p><strong>How it happens:</strong></p>
+              <ol class="list-decimal pl-6 space-y-1 text-sm">
+                <li>You click scissors to start cutting a pattern piece</li>
+                <li>Before cutting finishes, you leave the cutting room (switch tabs/scenes)</li>
+                <li>When you return, scissors continue moving but fabric isn't being cut</li>
+                <li>The pattern piece stays in place, blocking that area (collision)</li>
+              </ol>
+              <p class="text-xs text-black/60 mt-2">Source: <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="text-appleBlue underline">Player report on itch.io</a></p>
+
+              <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded mt-4">
+                <p class="font-semibold text-red-800 mb-2">⚠️ Workaround:</p>
+                <p class="text-sm text-red-700"><strong>Exit the game entirely</strong> and restart. There's no in-game fix currently.</p>
+                <p class="text-xs text-red-600 mt-2"><strong>Prevention:</strong> Don't switch away from cutting room while scissors are actively cutting. Wait for each piece to finish cutting before moving to another tab.</p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 5: Ruffle Grain Quality -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Ruffle Skirt Panels Can't Reach 100% Grain Quality</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Reported Issue</strong> in v0.5.1+ (Sept 24, 2025) - No developer response yet.</p>
+              
+              <p><strong>Symptoms:</strong> Some ruffle skirt panels (specifically Tier 2 and/or Tier 3 patterns) show green outline when aligned, but still can't achieve 100% grain quality score.</p>
+              <p class="text-xs text-black/60 mt-1">Source: <a href="https://elyaradine.itch.io/dressmaker/devlog/1039264/051-bug-fixes-and-some-new-content" target="_blank" rel="noopener" class="text-appleBlue underline">Player comment on v0.5.1 devlog</a></p>
+
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mt-4">
+                <p class="font-semibold text-yellow-800 mb-2">⚠️ Current Status:</p>
+                <p class="text-sm text-yellow-700">This appears to be a <strong>pattern-specific bug</strong> introduced in v0.5.1 with the new dress patterns. No workaround exists yet. If this affects your dress quality:</p>
+                <ul class="list-disc pl-6 space-y-1 text-sm text-yellow-700 mt-2">
+                  <li>Choose a different skirt pattern if possible</li>
+                  <li>Report the specific pattern causing issues on <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="underline">Discord</a></li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 6: Tutorial Softlock -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Tutorial Softlock (No Money for Accessories)</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Design Issue</strong> - Tutorial doesn't prevent overspending.</p>
+              
+              <p><strong>How it happens:</strong> If you spend your entire budget on fabric during the tutorial, you won't have money left to buy the required accessory, causing a softlock (can't progress, can't undo).</p>
+              <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14051595" target="_blank" rel="noopener" class="text-appleBlue underline">Player report</a></p>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
+                <p class="font-semibold text-green-800 mb-2">✅ Solution:</p>
+                <p class="text-sm text-green-700"><strong>Restart the game</strong> and be more careful with budget allocation.</p>
+                <p class="text-xs text-green-600 mt-2"><strong>Prevention:</strong> During tutorial, save ~$5-10 for accessories before finalizing fabric purchases.</p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 7: Cut Pieces Reappearing -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Cut Fabric Pieces Reappear on Cutting Table</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Still occurring in v0.5.5.</p>
+              
+              <p><strong>Symptoms:</strong> After discarding/using fabric pieces, they sometimes ghost back onto the cutting table, creating visual clutter (though they don't interfere with actual cutting).</p>
+              <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14100848" target="_blank" rel="noopener" class="text-appleBlue underline">Player report</a></p>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-2">✅ Workaround:</p>
+                <p class="text-sm text-blue-700"><strong>This is mostly visual</strong> – the ghost pieces don't affect gameplay. You can cut through them. If it's too confusing, save and reload your game to clear the table.</p>
+              </div>
+            </div>
+          </details>
+
+          <!-- Bug 8: Inventory Scroll -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">🪲 Can't Scroll Accessories Inventory When All Purchased</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Affects accessory menu.</p>
+              
+              <p><strong>Symptoms:</strong> When you own at least one of every accessory type, the dressmaking menu doesn't allow scrolling, so bottom accessories are hidden.</p>
+              <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14100848" target="_blank" rel="noopener" class="text-appleBlue underline">Player report</a></p>
+
+              <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mt-4">
+                <p class="font-semibold text-yellow-800 mb-2">⚠️ Workaround:</p>
+                <p class="text-sm text-yellow-700">No perfect fix currently. <strong>Don't buy all accessory types</strong> if you need to use ones at the bottom of the list. Stick to a subset of accessories you frequently use.</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Performance Issues -->
+      <section id="performance">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">⚡ Performance Issues</h2>
+        
+        <div class="space-y-6">
+          <!-- Issue 1: Lag/Stuttering -->
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">⚠️ Game Runs Slowly / Stuttering</summary>
+            <div class="mt-4 space-y-3 text-black/75">
+              <p><strong class="text-red-600">Problem:</strong> Low frame rate, choppy movement, or delays when interacting.</p>
+
+              <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
+                <p class="font-semibold text-blue-800 mb-3">✅ Solutions:</p>
+                
+                <div class="space-y-2 text-sm text-blue-700">
+                  <p><strong>1. Close Background Programs:</strong> Close browsers, Discord, streaming apps while playing.</p>
+                  <p><strong>2. Update Graphics Drivers:</strong> See "Game Won't Launch" section above for driver update links.</p>
+                  <p><strong>3. Check System Requirements:</strong> Dressmaker needs ~2 GB RAM. If your system is marginal, close all unnecessary programs.</p>
+                  <p><strong>4. Lower Screen Resolution:</strong> If your monitor is 4K, try running at 1080p.</p>
+                  <p><strong>5. Disable Overlays:</strong> Turn off Discord overlay, Xbox Game Bar, GeForce Experience overlay.</p>
+                </div>
+              </div>
+
+              <p class="text-xs text-black/60 mt-3"><strong>Note:</strong> Dressmaker is a lightweight game built in Unity. If you experience persistent performance issues, your system may not meet minimum requirements, or there could be a driver/software conflict.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Reporting Bugs -->
+      <section id="reporting">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">📢 How to Report Bugs</h2>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <p class="text-black/80 mb-4">
+            The developers actively respond to bug reports and appreciate detailed information. Here's how to help:
+          </p>
+
+          <div class="space-y-4">
+            <div class="bg-green-50 rounded-xl p-4 border border-green-200">
+              <h3 class="font-semibold text-green-900 mb-2">✅ Official Bug Report Channels:</h3>
+              <ol class="list-decimal pl-6 space-y-2 text-sm text-green-800">
+                <li>
+                  <strong>Discord (Preferred):</strong> <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="text-appleBlue underline">discord.gg/nJY2TsCKm9</a>
+                  <p class="text-xs text-green-700 mt-1">Developers are most active here and can respond quickly.</p>
+                </li>
+                <li>
+                  <strong>itch.io Comments:</strong> <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="text-appleBlue underline">elyaradine.itch.io/dressmaker</a>
+                  <p class="text-xs text-green-700 mt-1">Leave a comment on the game page (developers check regularly).</p>
+                </li>
+              </ol>
+            </div>
+
+            <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+              <h3 class="font-semibold text-blue-900 mb-2">📝 What to Include in Your Report:</h3>
+              <ul class="list-disc pl-6 space-y-1 text-sm text-blue-800">
+                <li><strong>Game version:</strong> (e.g., "Prototype 0.5.5")</li>
+                <li><strong>Operating system:</strong> (e.g., "Windows 11", "macOS 14.2", "Ubuntu 22.04")</li>
+                <li><strong>What happened:</strong> Describe the bug clearly</li>
+                <li><strong>When it happened:</strong> (e.g., "During sewing phase", "While placing lace")</li>
+                <li><strong>Steps to reproduce:</strong> How can someone else trigger the same bug?</li>
+                <li><strong>Screenshots/video:</strong> If possible, attach visual evidence</li>
+              </ul>
+            </div>
+
+            <div class="bg-purple-50 rounded-xl p-4 border border-purple-200">
+              <h3 class="font-semibold text-purple-900 mb-2">💡 Helpful Behavior:</h3>
+              <ul class="list-disc pl-6 space-y-1 text-sm text-purple-800">
+                <li>Search Discord/comments first – your bug may already be reported</li>
+                <li>If you find a fix, share it! Other players will appreciate it</li>
+                <li>Be patient – the developers are a small team working on the full version</li>
+                <li>Remember it's a prototype – some bugs are expected</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Guides -->
+      <section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 mt-12">
+        <h2 class="text-2xl font-bold mb-4">📚 Related Guides</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <a href="/download/" class="group block p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition">
+            <div class="font-semibold text-appleBlue mb-1">← Download Guide</div>
+            <p class="text-sm text-black/70">Installation instructions for Windows, Mac, Linux</p>
+          </a>
+          <a href="/how-to-play/" class="group block p-4 rounded-xl bg-purple-50 hover:bg-purple-100 transition">
+            <div class="font-semibold text-purple-700 mb-1">How to Play →</div>
+            <p class="text-sm text-black/70">Complete beginner's guide from sketch to delivery</p>
+          </a>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- Bottom CTA -->
+    <section class="mx-auto max-w-5xl px-4 py-12">
+      <div class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-soft p-8 text-center text-white">
+        <h2 class="text-2xl font-bold mb-3">Still Having Issues?</h2>
+        <p class="mb-6 text-white/90">Join the official Discord community for help from developers and players!</p>
+        <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-appleBlue font-semibold shadow-soft hover:shadow-lg transition">
+          Join Discord
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-black/10 mt-12">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-black/60">
+      © <span id="year"></span> DressmakerGame.com • Built for fans of cozy, crafty games.
+      • <a class="underline hover:text-appleBlue" href="/privacy.html">Privacy</a>
+      • <a class="underline hover:text-appleBlue" href="/terms.html">Terms</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
