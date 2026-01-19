@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dressmaker Patch Notes & Version History (0.3 - 0.5.5) | DressmakerGame.com</title>
+  <meta name="description" content="Complete version history for Dressmaker game prototype. Track updates from 0.3 to current 0.5.5, including keyboard controls, lace trim, bug fixes, and Steam development milestones." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://dressmakergame.com/patch-notes" />
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RVY53PS7NP');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Dressmaker Game" />
+  <meta property="og:title" content="Dressmaker Patch Notes & Version History" />
+  <meta property="og:description" content="Complete update history for Dressmaker prototype from version 0.3 to 0.5.5" />
+  <meta property="og:url" content="https://dressmakergame.com/patch-notes/" />
+  <meta property="og:image" content="https://dressmakergame.com/og.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dressmaker Patch Notes" />
+  <meta name="twitter:description" content="Complete version history for Dressmaker game prototype" />
+  <meta name="twitter:image" content="https://dressmakergame.com/og.png" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            appleBg: "#f5f5f7",
+            appleText: "#1d1d1f",
+            appleBlue: "#007aff",
+            appleCard: "#ffffff",
+          },
+          boxShadow: { soft: "0 2px 10px rgba(0,0,0,0.06)" }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <style>
+    .apple-gradient {
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(0,122,255,0.08), transparent 60%),
+                  radial-gradient(1000px 500px at 100% 0%, rgba(88,86,214,0.08), transparent 60%);
+    }
+    [id] { scroll-margin-top: 80px; }
+    html { scroll-behavior: smooth; }
+    .prose-ul li::marker { color: #007aff; }
+    
+    /* Timeline styles */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      bottom: -20px;
+      width: 2px;
+      background: linear-gradient(to bottom, #007aff, #e5e7eb);
+    }
+    .timeline-item:last-child::before {
+      display: none;
+    }
+    .version-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    .badge-major { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+    .badge-minor { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; }
+    .badge-hotfix { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; }
+    .badge-milestone { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; }
+  </style>
+
+  <!-- JSON-LD: Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Dressmaker Game Patch Notes & Version History",
+    "description": "Complete update history for Dressmaker prototype from August 2025 to October 2025, tracking all features, fixes, and milestones",
+    "image": "https://dressmakergame.com/og.png",
+    "datePublished": "2026-01-19",
+    "dateModified": "2026-01-19",
+    "author": {
+      "@type": "Organization",
+      "name": "DressmakerGame.com"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dressmakergame.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Patch Notes",
+        "item": "https://dressmakergame.com/patch-notes/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Dressmaker Patch Notes",
+    "url": "https://dressmakergame.com/patch-notes/",
+    "inLanguage": "en",
+    "datePublished": "2026-01-19",
+    "dateModified": "2026-01-19"
+  }
+  </script>
+</head>
+
+<body class="bg-appleBg apple-gradient text-appleText antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-white px-3 py-2 rounded shadow-soft">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-20 backdrop-blur bg-white/70 border-b border-black/5">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-appleText">Dressmaker</a>
+      <nav aria-label="Primary" class="hidden sm:flex gap-6 text-sm">
+        <a href="/#about" class="hover:text-appleBlue">About</a>
+        <a href="/#guides" class="hover:text-appleBlue">Guides</a>
+        <a href="/#faq" class="hover:text-appleBlue">FAQ</a>
+        <a href="/download/" class="hover:text-appleBlue">Download</a>
+      </nav>
+      <a href="/download/" class="sm:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-appleBlue text-white text-sm shadow-soft">Get the Game</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Breadcrumb -->
+    <div class="mx-auto max-w-5xl px-4 pt-6">
+      <nav aria-label="Breadcrumb" class="text-sm text-black/60">
+        <a href="/" class="hover:text-appleBlue">Home</a>
+        <span class="mx-2">›</span>
+        <span>Patch Notes</span>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="mx-auto max-w-5xl px-4 pt-8 pb-6">
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+        Dressmaker Patch Notes & Version History
+      </h1>
+      <p class="mt-4 text-lg text-black/70">
+        Complete update history for Dressmaker prototype from August 2025 to present. Track new features, bug fixes, and development milestones as the game evolves from early prototype to Steam-ready release.
+      </p>
+      
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="version-badge badge-major">Current: v0.5.5</span>
+        <span class="version-badge badge-milestone">Steam In Development</span>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="mx-auto max-w-5xl px-4 py-6">
+      <div class="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-2xl p-6">
+        <h2 class="font-bold text-lg mb-4">📊 Development Summary</h2>
+        <div class="grid sm:grid-cols-3 gap-4 text-sm">
+          <div>
+            <div class="font-semibold text-blue-900">Total Versions</div>
+            <div class="text-2xl font-bold text-blue-700">12+</div>
+            <div class="text-xs text-blue-600">From 0.3 to 0.5.5</div>
+          </div>
+          <div>
+            <div class="font-semibold text-purple-900">Development Period</div>
+            <div class="text-2xl font-bold text-purple-700">3 months</div>
+            <div class="text-xs text-purple-600">Aug - Oct 2025</div>
+          </div>
+          <div>
+            <div class="font-semibold text-green-900">Major Milestones</div>
+            <div class="text-2xl font-bold text-green-700">3</div>
+            <div class="text-xs text-green-600">Greenlight, Steam, Quiet</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Status Notice -->
+    <section class="mx-auto max-w-5xl px-4 py-4">
+      <div class="bg-purple-50 border-l-4 border-purple-500 rounded-r-2xl p-5">
+        <div class="flex items-start gap-3">
+          <span class="text-2xl flex-shrink-0">🚀</span>
+          <div class="flex-1">
+            <p class="font-semibold text-purple-900 mb-2">Development Update (November 11, 2025)</p>
+            <p class="text-sm text-purple-800">
+              The team has <strong>"gone quiet"</strong> to focus on the full Steam version. The itch.io prototype (v0.5.5) is feature-complete and will not receive further updates until the Steam release. <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" class="underline font-semibold">Wishlist on Steam</a> to get notified of the full release.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Version Timeline -->
+    <article class="mx-auto max-w-5xl px-4 py-8">
+      
+      <h2 class="text-3xl font-bold tracking-tight mb-8">Complete Version History</h2>
+
+      <!-- Version 0.5.5 -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold shadow-soft">
+          0.5
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.5.5</h3>
+              <p class="text-sm text-black/60">October 3, 2025 · Hotfix</p>
+            </div>
+            <span class="version-badge badge-hotfix">Latest Version</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Final hotfix before the team shifted focus to full Steam development. Addressed sprite display issues and pattern naming problems.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Fixed</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Fixed incorrect sprite for flounce sleeves (was showing three-quarter sleeve sprite in sketchbook)</li>
+                <li>Fixed incorrect grainline and naming for ruffle skirt</li>
+              </ul>
+            </div>
+
+            <div class="bg-red-50 border-l-4 border-red-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-red-800 mb-1">⚠️ Known Issue</p>
+              <p class="text-xs text-red-700">This update broke ruffle skirt panel ordering for existing saves. Developers acknowledge this limitation.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1064949/hotfix-055" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.5.3 -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white font-bold shadow-soft">
+          0.5
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.5.3</h3>
+              <p class="text-sm text-black/60">September 29, 2025 · Hotfix</p>
+            </div>
+            <span class="version-badge badge-hotfix">Bug Fixes</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Last update before shifting full focus to Steam version. Improved trim placement controls and fixed fabric unlocking issues.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-blue-700 mb-2">✨ Improved</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Less finicky trim placement (easier to attach lace and decorative borders)</li>
+                <li>More camera controls in mannequin scene (middle click to zoom in/out)</li>
+                <li>New needle and pin 3D models</li>
+                <li>Better pattern fitting adjustments</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Fixed</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Fixed green trim rendering issue</li>
+                <li>Fixed save file corruption bug from previous update</li>
+                <li>Fixed fabric unlocking bug (some fabrics weren't available)</li>
+                <li>Fixed sketchbook paging issue</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🆕 Content Added</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Argyle wool fabrics</li>
+                <li>Red silk fabric</li>
+                <li>Gothic Collar pattern</li>
+              </ul>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-yellow-800 mb-1">⚠️ Breaking Change</p>
+              <p class="text-xs text-yellow-700">Changed ruffle skirt structure (equal side panels). Existing dresses with this pattern may be broken. Developers tried to limit damage but acknowledge it may affect saves.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1061725/hotfix-053" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.5.1 -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center text-white font-bold shadow-soft">
+          0.5
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.5.1</h3>
+              <p class="text-sm text-black/60">September 23, 2025 · Content Update</p>
+            </div>
+            <span class="version-badge badge-minor">New Features</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Significant content update adding new dress patterns, improved accuracy systems, and better UI for fabric management.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🆕 New Content</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>New bodice option (additional style choice)</li>
+                <li>New ruffle skirt (⚠️ requires ~40 meters of fabric to cut)</li>
+                <li>New trims and decorative options</li>
+                <li>Better background in mannequin scene</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-blue-700 mb-2">✨ Improved</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Pattern panels now use fairly accurate seam allowances (visible in cutting room and during sewing)</li>
+                <li>Inventory menu replaces cycling through fabrics in cutting room (better UX)</li>
+                <li>Multiple changes to make trims easier to use</li>
+                <li>Improved sewing button visibility for overlapping fabrics</li>
+                <li>Better detection of forward/back movements when moving mouse sideways during sewing</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Fixed</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Patterns that defaulted to being upside down now orient correctly</li>
+              </ul>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-blue-800 mb-1">🐛 Player-Reported Issue</p>
+              <p class="text-xs text-blue-700">Community feedback: Some ruffle parts (Tier 2/Tier 3) cannot achieve 100% Grain Quality. Developers are aware of this limitation.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1039264/051-bug-fixes-and-some-new-content" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.5 - MAJOR MILESTONE -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold shadow-soft">
+          0.5
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-purple-200 border-2">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.5 + Steam Page Launch</h3>
+              <p class="text-sm text-black/60">September 18, 2025 · Major Update</p>
+            </div>
+            <span class="version-badge badge-milestone">🎉 Steam Milestone</span>
+          </div>
+
+          <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-lg mb-4">
+            <p class="font-semibold text-purple-900 mb-2">🚀 Major Milestone: Steam Page Live!</p>
+            <p class="text-sm text-purple-800">
+              Dressmaker's official <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" class="underline font-semibold">Steam store page</a> launched. The team announced they're "putting our heads down" to work on the full version. Wishlisting and joining Discord are the best ways to follow development.
+            </p>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Massive update with "too many changes to list." Highlights include the long-awaited lace trim feature, improved sewing mechanics, and expanded customization options.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🆕 Major Features</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li><strong>Lace trim system</strong> – Add decorative borders to sleeves, hems, and necklines</li>
+                <li>One new skirt pattern</li>
+                <li>More accessories (expanded button, bow, and trim options)</li>
+                <li>Additional fabric types and patterns</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-blue-700 mb-2">✨ Improved</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Improved and easier sewing mechanics (more forgiving controls)</li>
+                <li>Better overall game feel and polish</li>
+              </ul>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-yellow-800 mb-1">💬 Community Feedback</p>
+              <p class="text-xs text-yellow-700">Players report lace placement can be "glitchy and hard to navigate." The team continues to iterate on this feature in subsequent patches.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1034568/update-and-steam-wishlist" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.4.4 -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold shadow-soft">
+          0.4
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.4.4</h3>
+              <p class="text-sm text-black/60">September 9, 2025 · Hotfix</p>
+            </div>
+            <span class="version-badge badge-hotfix">Controls Update</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Major usability update introducing keyboard controls for sewing, significantly improving player experience and precision.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🆕 New Features</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li><strong>Keyboard controls for sewing</strong> – Use SPACE bar and Arrow Keys (major accessibility improvement)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-blue-700 mb-2">✨ Improved</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Increased mouse sensitivity for sewing (more responsive)</li>
+                <li>Better visibility of sewing line on light fabrics</li>
+                <li>Improved scissors handling in cutting room</li>
+                <li>Reworked and improved scoring system (mostly under the hood)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Fixed</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>(Hopefully) Fixed twitchy hand in sewing scene</li>
+                <li>Fixed newspaper reappearing bug</li>
+                <li>Fixed various pattern panel bugs</li>
+                <li>Mac build corruption fix (0.4.4.1 hotfix)</li>
+              </ul>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-yellow-800 mb-1">🐛 Developer Note</p>
+              <p class="text-xs text-yellow-700">Twitchy hand bug: "We've been unable to reproduce this so we can't tell for sure" if it's fully fixed. Community testing ongoing.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1027697/hotfix-update" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.4.3 - FREE LIVES GREENLIGHT -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white font-bold shadow-soft">
+          0.4
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-green-200 border-2">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.4.3 + Free Lives Greenlight</h3>
+              <p class="text-sm text-black/60">September 5, 2025 · Update</p>
+            </div>
+            <span class="version-badge badge-milestone">🎉 Greenlit!</span>
+          </div>
+
+          <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg mb-4">
+            <p class="font-semibold text-green-900 mb-2">🎊 Major Announcement: Internal Greenlight!</p>
+            <p class="text-sm text-green-800 mb-2">
+              Free Lives studio officially greenlighted Dressmaker for full development! Quote from developers: <em>"Your passionate comments with such vocal support for the game mean that we should definitely try to make the full game!"</em>
+            </p>
+            <p class="text-xs text-green-700">
+              Context: Just 4 days earlier (Sept 1), the team expressed concerns about download numbers and visibility, worried they wouldn't be able to continue. The community rallied with massive support, YouTuber coverage (Cute Games Club), and enthusiastic feedback, leading to this greenlight decision.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🆕 New Features</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Sketchbook preview in cutting room (can now reference your design while choosing fabrics)</li>
+                <li>New buttons available in shop</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1024947/small-update-and-great-news" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.4.2 -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-red-500 flex items-center justify-center text-white font-bold shadow-soft">
+          0.4
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.4.2</h3>
+              <p class="text-sm text-black/60">September 3, 2025 · Critical Hotfix</p>
+            </div>
+            <span class="version-badge badge-hotfix">Critical</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Emergency hotfix for game-breaking bug discovered on 4th dress.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Fixed</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li><strong>Fixed game-breaking bug:</strong> Dragging fabric onto mannequin breaking on 4th dress (the one that needs bows)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-blue-700 mb-2">✨ Other Changes</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Added app icon (created by Sara)</li>
+              </ul>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-blue-800 mb-1">📺 Community Spotlight</p>
+              <p class="text-xs text-blue-700">Cute Games Club YouTube channel featured Dressmaker, helping boost visibility and community growth.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1023706/small-patch-version-042" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.4.1 -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-white font-bold shadow-soft">
+          0.4
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.4.1</h3>
+              <p class="text-sm text-black/60">September 2, 2025 · Hotfix</p>
+            </div>
+            <span class="version-badge badge-hotfix">Bug Fixes</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Quick patch addressing scoring bugs and shop crashes reported by early players.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Fixed</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Fixed some incorrect scoring calculations</li>
+                <li>Fixed shop breaking when reaching end of prototype</li>
+                <li>Fixes to butterfly and Juliette sleeves</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1023033/small-patch-version-041" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.4 - COMMUNITY RALLY -->
+      <div class="timeline-item relative pl-16 pb-12">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold shadow-soft">
+          0.4
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-orange-200 border-2">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.4 + Community Rally</h3>
+              <p class="text-sm text-black/60">September 1, 2025 · Major Update</p>
+            </div>
+            <span class="version-badge badge-major">Community Moment</span>
+          </div>
+
+          <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded-r-lg mb-4">
+            <p class="font-semibold text-orange-900 mb-2">⚠️ Critical Moment: Developer Concerns</p>
+            <p class="text-sm text-orange-800 mb-2">
+              Developers posted <em>"mixed news"</em> expressing concerns about download numbers and future development. Quote: <em>"Unless we see a significant uptick in downloads (like at least triple), we won't be able to continue development. The studio's fear is that there isn't enough appeal."</em>
+            </p>
+            <p class="text-xs text-orange-700">
+              <strong>Community Response:</strong> Players rallied with massive support, sharing the game widely, contacting YouTubers/streamers, and flooding comments with encouragement. This grassroots effort led to the greenlight 4 days later.
+            </p>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            Major update implementing community suggestions and preparing for expanded development (if greenlit). Developers note their other prototypes outperformed Dressmaker due to horror aesthetic getting more YouTuber coverage.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🆕 Features Added (Based on Feedback)</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Multiple community-requested features (specific details combined with earlier 0.3 changes)</li>
+                <li>Expanded dress customization options</li>
+                <li>Improved overall game flow</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1022132/big-update-and-some-mixed-news" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version 0.3 -->
+      <div class="timeline-item relative pl-16 pb-4">
+        <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold shadow-soft">
+          0.3
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+            <div>
+              <h3 class="text-2xl font-bold">Version 0.3</h3>
+              <p class="text-sm text-black/60">~August 4, 2025 · Initial Prototype</p>
+            </div>
+            <span class="version-badge badge-major">Initial Release</span>
+          </div>
+
+          <p class="text-black/80 mb-4">
+            First public prototype release. Developers note it was made by Free Lives team in "about 3 weeks" as a rapid prototype with intentionally rough edges to get player feedback quickly.
+          </p>
+
+          <div class="space-y-3">
+            <div>
+              <h4 class="font-semibold text-sm text-purple-700 mb-2">🎮 Core Features</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Basic dress design system (bodice, sleeves, skirt selection)</li>
+                <li>Fabric cutting mechanics with pattern placement</li>
+                <li>Sewing mini-game with quality scoring</li>
+                <li>Customer request system</li>
+                <li>Limited fabric and accessory options</li>
+                <li>5 commissions to complete in prototype</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-sm text-green-700 mb-2">✅ Early Bug Fixes</h4>
+              <ul class="text-sm text-black/70 space-y-1 pl-6 list-disc">
+                <li>Fixed confetti audio (was "violent/jarring")</li>
+                <li>Fixed pattern naming confusion (skirt pieces had identical names)</li>
+                <li>Multiple scissor and cutting bugs fixed</li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 border-l-4 border-gray-400 p-3 rounded-r-lg">
+              <p class="font-semibold text-sm text-gray-800 mb-1">🎯 Development Philosophy</p>
+              <p class="text-xs text-gray-700">Developers: <em>"As happens with prototypes, we work in a very quick, dirty manner just to have something working that we can put in front of people asap... and a lot of things tend to be buggy."</em> This rapid iteration approach continued through all versions.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-black/10">
+            <a href="https://elyaradine.itch.io/dressmaker/devlog/1001926/a-small-update" target="_blank" rel="noopener" class="text-sm text-appleBlue hover:underline">View Official Devlog →</a>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- Feature Evolution Timeline -->
+    <section class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-3xl font-bold tracking-tight mb-6">Feature Evolution Timeline</h2>
+      
+      <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+        <div class="space-y-6">
+          
+          <div>
+            <h3 class="font-semibold text-lg mb-3">🎮 Major Features by Version</h3>
+            <table class="w-full text-sm">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-4 py-3 text-left font-semibold">Feature</th>
+                  <th class="px-4 py-3 text-left font-semibold">Introduced In</th>
+                  <th class="px-4 py-3 text-left font-semibold">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">Keyboard Controls (SPACE + Arrows)</td>
+                  <td class="px-4 py-3">v0.4.4</td>
+                  <td class="px-4 py-3"><span class="text-green-600">✓ Stable</span></td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">Lace Trim System</td>
+                  <td class="px-4 py-3">v0.5</td>
+                  <td class="px-4 py-3"><span class="text-yellow-600">⚠ Can be finicky</span></td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">Accurate Seam Allowances</td>
+                  <td class="px-4 py-3">v0.5.1</td>
+                  <td class="px-4 py-3"><span class="text-green-600">✓ Stable</span></td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">Inventory Menu (Fabric Selection)</td>
+                  <td class="px-4 py-3">v0.5.1</td>
+                  <td class="px-4 py-3"><span class="text-green-600">✓ Stable</span></td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">Sketchbook Preview in Cutting Room</td>
+                  <td class="px-4 py-3">v0.4.3</td>
+                  <td class="px-4 py-3"><span class="text-green-600">✓ Stable</span></td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3">Camera Controls (Mannequin Scene)</td>
+                  <td class="px-4 py-3">v0.5.3</td>
+                  <td class="px-4 py-3"><span class="text-green-600">✓ Stable</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg mb-3">🐛 Notable Bugs Fixed</h3>
+            <ul class="space-y-2 text-sm text-black/70">
+              <li><strong>v0.4.2 (Critical):</strong> 4th dress fabric dragging bug (game-breaking)</li>
+              <li><strong>v0.4.4 (Attempted):</strong> Twitchy hand in sewing (devs couldn't reproduce, unclear if fixed)</li>
+              <li><strong>v0.5.3:</strong> Save file corruption bug</li>
+              <li><strong>v0.5.3:</strong> Green trim rendering issue</li>
+              <li><strong>v0.5.5:</strong> Flounce sleeve sprite showing wrong image</li>
+              <li><strong>v0.5.5:</strong> Ruffle skirt grainline and naming</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Known Issues -->
+    <section class="mx-auto max-w-5xl px-4 py-8">
+      <h2 class="text-3xl font-bold tracking-tight mb-6">Known Issues & Limitations (v0.5.5)</h2>
+      
+      <div class="space-y-4">
+        <div class="bg-yellow-50 border-l-4 border-yellow-500 rounded-r-2xl p-5">
+          <div class="flex items-start gap-3">
+            <span class="text-xl flex-shrink-0">⚠️</span>
+            <div>
+              <p class="font-semibold text-yellow-900 mb-1">Ruffle Skirt Panel Ordering</p>
+              <p class="text-sm text-yellow-800">v0.5.5 update broke panel ordering for existing saves with ruffle skirt. This is a known issue acknowledged by developers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-orange-50 border-l-4 border-orange-500 rounded-r-2xl p-5">
+          <div class="flex items-start gap-3">
+            <span class="text-xl flex-shrink-0">⚠️</span>
+            <div>
+              <p class="font-semibold text-orange-900 mb-1">Ruffle Parts Grain Quality</p>
+              <p class="text-sm text-orange-800">Some ruffle parts (Tier 2/Tier 3) cannot achieve 100% Grain Quality. This is a confirmed limitation in v0.5.1+.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-500 rounded-r-2xl p-5">
+          <div class="flex items-start gap-3">
+            <span class="text-xl flex-shrink-0">🐛</span>
+            <div>
+              <p class="font-semibold text-red-900 mb-1">Lace Placement Difficulty</p>
+              <p class="text-sm text-red-800">Multiple players report lace trim is "glitchy and hard to navigate." Improvements made in v0.5.3, but issue persists for some users.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-2xl p-5">
+          <div class="flex items-start gap-3">
+            <span class="text-xl flex-shrink-0">💡</span>
+            <div>
+              <p class="font-semibold text-blue-900 mb-1">Requested Features (Not Yet Implemented)</p>
+              <ul class="text-sm text-blue-800 space-y-1 mt-2 list-disc pl-5">
+                <li>Undo button (highly requested by community)</li>
+                <li>Fabric cost estimator before cutting (added in later unreleased version)</li>
+                <li>Adjustable control sensitivity settings</li>
+                <li>Save file corruption prevention</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Context -->
+    <section class="mx-auto max-w-5xl px-4 py-12">
+      <h2 class="text-3xl font-bold tracking-tight mb-6">Development Context & Timeline</h2>
+      
+      <div class="bg-white rounded-2xl shadow-soft p-8 border border-black/5">
+        <div class="space-y-6">
+          
+          <div>
+            <h3 class="font-semibold text-xl mb-3">📅 Key Dates</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex gap-4">
+                <div class="font-semibold text-gray-500 w-32">~Aug 4, 2025</div>
+                <div class="flex-1">Initial prototype (v0.3) released on itch.io after 3 weeks of development</div>
+              </div>
+              <div class="flex gap-4">
+                <div class="font-semibold text-gray-500 w-32">Sep 1, 2025</div>
+                <div class="flex-1"><strong>Crisis point:</strong> Developers express concerns about download numbers and future</div>
+              </div>
+              <div class="flex gap-4">
+                <div class="font-semibold text-green-600 w-32">Sep 5, 2025</div>
+                <div class="flex-1"><strong class="text-green-600">Victory:</strong> Free Lives internal greenlight! Game approved for full development</div>
+              </div>
+              <div class="flex gap-4">
+                <div class="font-semibold text-purple-600 w-32">Sep 18, 2025</div>
+                <div class="flex-1"><strong class="text-purple-600">Milestone:</strong> Steam store page launches</div>
+              </div>
+              <div class="flex gap-4">
+                <div class="font-semibold text-gray-500 w-32">Oct 3, 2025</div>
+                <div class="flex-1">Final prototype update (v0.5.5)</div>
+              </div>
+              <div class="flex gap-4">
+                <div class="font-semibold text-blue-600 w-32">Nov 11, 2025</div>
+                <div class="flex-1"><strong class="text-blue-600">"Gone quiet":</strong> Team shifts full focus to Steam version</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-black/10">
+            <h3 class="font-semibold text-xl mb-3">👥 Development Team</h3>
+            <ul class="text-sm text-black/70 space-y-1">
+              <li><strong>elyaradine</strong> – Developer</li>
+              <li><strong>sarandipityx</strong> – Developer</li>
+              <li><strong>raithza</strong> – Developer</li>
+              <li><strong>Sara Laubscher</strong> – Icon/Asset Creation</li>
+              <li><strong>Published by:</strong> Free Lives studio</li>
+            </ul>
+          </div>
+
+          <div class="pt-6 border-t border-black/10">
+            <h3 class="font-semibold text-xl mb-3">🎯 Development Philosophy</h3>
+            <p class="text-sm text-black/70 mb-3">
+              The team emphasized rapid iteration and community feedback throughout the prototype phase. Quote from developers: <em>"As happens with prototypes, we work in a very quick, dirty manner just to have something working that we can put in front of people asap."</em>
+            </p>
+            <p class="text-sm text-black/70">
+              Updates came in response to direct player feedback, bug reports, and community suggestions. The grassroots community support in early September was critical to securing internal approval for full development.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Next -->
+    <section class="mx-auto max-w-5xl px-4 py-12">
+      <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl shadow-soft p-8 text-white">
+        <h2 class="text-3xl font-bold mb-4">🚀 What's Next: Full Steam Version</h2>
+        
+        <p class="text-lg text-white/90 mb-6">
+          As of November 11, 2025, the team has shifted full focus to developing the complete Steam version. The itch.io prototype (v0.5.5) represents the final state of the free prototype.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+          <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+            <div class="font-semibold mb-2">✓ Prototype Complete</div>
+            <p class="text-sm text-white/80">No more itch.io updates planned</p>
+          </div>
+          <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+            <div class="font-semibold mb-2">🔨 Steam In Development</div>
+            <p class="text-sm text-white/80">Full game with expanded content</p>
+          </div>
+          <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+            <div class="font-semibold mb-2">📅 Release Date</div>
+            <p class="text-sm text-white/80">To be announced</p>
+          </div>
+          <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+            <div class="font-semibold mb-2">💬 Community</div>
+            <p class="text-sm text-white/80">Active on Discord & Instagram</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-purple-700 font-semibold shadow-soft hover:shadow-lg transition">
+            Wishlist on Steam
+          </a>
+          <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 backdrop-blur text-white font-semibold hover:bg-white/30 transition">
+            Join Discord
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <section class="mx-auto max-w-5xl px-4 py-8">
+      <h2 class="text-2xl font-bold tracking-tight mb-4">📚 Official Sources</h2>
+      <div class="bg-gray-50 rounded-2xl p-6 text-sm">
+        <p class="text-black/70 mb-3">All information on this page is sourced from official Free Lives/elyaradine devlogs on itch.io:</p>
+        <ul class="text-black/60 space-y-1 list-disc pl-6">
+          <li><a href="https://elyaradine.itch.io/dressmaker/devlog" target="_blank" rel="noopener" class="text-appleBlue hover:underline">Official Devlog Index</a></li>
+          <li><a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" class="text-appleBlue hover:underline">Steam Store Page</a></li>
+          <li><a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="text-appleBlue hover:underline">itch.io Game Page</a></li>
+        </ul>
+        <p class="text-xs text-black/50 mt-4">Last updated: January 19, 2026 · Current game version: 0.5.5</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-black/10 mt-12">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-black/60">
+      © <span id="year"></span> DressmakerGame.com • Built for fans of cozy, crafty games.
+      • <a class="underline hover:text-appleBlue" href="/privacy.html">Privacy</a>
+      • <a class="underline hover:text-appleBlue" href="/terms.html">Terms</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
