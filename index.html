@@ -154,6 +154,7 @@
       <nav aria-label="Primary" class="hidden sm:flex gap-6 text-sm">
         <a href="#about" class="hover:text-appleBlue">About</a>
         <a href="#guides" class="hover:text-appleBlue">Guides</a>
+        <a href="#popular-faqs" class="hover:text-appleBlue">Popular</a>
         <a href="#features" class="hover:text-appleBlue">Features</a>
         <a href="#screenshots" class="hover:text-appleBlue">Screenshots</a>
         <a href="#platforms" class="hover:text-appleBlue">Info</a>
@@ -286,6 +287,43 @@
           <p class="mt-2 text-sm text-black/70">Version history from 0.1 to current (regularly updated)</p>
         </a>
 
+      </div>
+    </section>
+
+    <!-- Popular FAQs & Features (新增 5 个增量页面入口) -->
+    <section id="popular-faqs" class="mx-auto max-w-6xl px-4 py-10 bg-black/5 rounded-3xl mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-6">Trending Guides & Hot Topics</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <a href="/steam-release-date" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">📅</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Steam Release Date</h3>
+          <p class="mt-2 text-sm text-black/70">When's the full game? Status & Wishlist insights</p>
+        </a>
+
+        <a href="/games-like-dressmaker" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">🏅</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Games Like Dressmaker</h3>
+          <p class="mt-2 text-sm text-black/70">Top 10 tailoring and fashion simulation game alternatives</p>
+        </a>
+
+        <a href="/play-online" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">🌐</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Play Online (Browser)</h3>
+          <p class="mt-2 text-sm text-black/70">Can you play without downloading? Browser alternatives</p>
+        </a>
+
+        <a href="/download/mobile" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">📱</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Mobile APK & Android Guide</h3>
+          <p class="mt-2 text-sm text-black/70">Official mobile status, avoiding scams, and Steam Link tips</p>
+        </a>
+
+        <a href="/official-links" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
+          <div class="text-3xl mb-3">🔗</div>
+          <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Official Links & Platforms</h3>
+          <p class="mt-2 text-sm text-black/70">Verified itch.io, Steam, Discord, and safe social channels</p>
+        </a>
       </div>
     </section>
 
@@ -511,10 +549,19 @@
   </div>
 
   <footer class="border-t border-black/10">
-    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-black/60">
-      © <span id="year"></span> DressmakerGame.com • Built for fans of cozy, crafty games.
-      • <a class="underline hover:text-appleBlue" href="/privacy.html">Privacy</a>
-      • <a class="underline hover:text-appleBlue" href="/terms.html">Terms</a>
+    <div class="mx-auto max-w-6xl px-4 py-8">
+      <div class="flex flex-col sm:flex-row justify-between text-sm text-black/60 items-center gap-4">
+        <div>
+          © <span id="year"></span> DressmakerGame.com • Built for fans of cozy, crafty games.
+          <span class="mx-2">•</span><a class="hover:text-appleBlue" href="/privacy">Privacy</a>
+          <span class="mx-2">•</span><a class="hover:text-appleBlue" href="/terms">Terms</a>
+        </div>
+        <div class="flex items-center gap-4 bg-black/5 px-4 py-2 rounded-full">
+          <span class="font-medium text-black/80">🌍 Region Guides:</span>
+          <a href="/ru/download/" class="hover:text-appleBlue font-medium">Русский</a>
+          <a href="/tr/download/" class="hover:text-appleBlue font-medium">Türkçe</a>
+        </div>
+      </div>
     </div>
   </footer>
 
