@@ -32,6 +32,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dressmakergame.com/es/download/</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dressmakergame.com/pt-br/download/</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://dressmakergame.com/download/mobile</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
