@@ -62,6 +62,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://dressmakergame.com/system-requirements/</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 
   <url>
     <loc>https://dressmakergame.com/steam-release-date</loc>
