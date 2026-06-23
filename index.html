@@ -148,14 +148,14 @@
   <!-- Header -->
   <header class="sticky top-0 z-20 backdrop-blur bg-white/70 border-b border-black/5">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="font-semibold tracking-tight text-appleText">Dressmaker</a>
+      <a href="/" class="font-semibold tracking-tight text-appleText">Dressmaker</a>
       <nav aria-label="Primary" class="hidden sm:flex gap-6 text-sm">
         <a href="/how-to-play" class="hover:text-appleBlue">About</a>
-        <a href="#guides" class="hover:text-appleBlue">Guides</a>
-        <a href="#popular-faqs" class="hover:text-appleBlue">Popular</a>
+        <a href="/" data-scroll-target="guides" class="hover:text-appleBlue">Guides</a>
+        <a href="/" data-scroll-target="popular-faqs" class="hover:text-appleBlue">Popular</a>
         <a href="/how-to-play" class="hover:text-appleBlue">Features</a>
-        <a href="#screenshots" class="hover:text-appleBlue">Screenshots</a>
-        <a href="#platforms" class="hover:text-appleBlue">Info</a>
+        <a href="/" data-scroll-target="screenshots" class="hover:text-appleBlue">Screenshots</a>
+        <a href="/" data-scroll-target="platforms" class="hover:text-appleBlue">Info</a>
         <a href="/troubleshooting" class="hover:text-appleBlue">FAQ</a>
         <a href="/download/" class="text-appleBlue font-medium">Download</a>
       </nav>
@@ -649,6 +649,39 @@
         const dx = e.changedTouches[0].clientX - startX;
         if (Math.abs(dx) > 50) (dx > 0 ? prev() : next());
       });
+    })();
+  </script>
+  <script>
+    (function () {
+      var homeHashes = {
+        "#guides": true,
+        "#popular-faqs": true,
+        "#screenshots": true,
+        "#platforms": true,
+        "#about": true,
+        "#features": true,
+        "#download": true,
+        "#faq": true
+      };
+
+      function cleanHomeHash() {
+        if (!homeHashes[window.location.hash] || !window.history || !window.history.replaceState) return;
+        var target = document.getElementById(window.location.hash.slice(1));
+        if (target) target.scrollIntoView({ block: "start" });
+        window.history.replaceState(null, "", "/");
+      }
+
+      document.querySelectorAll("[data-scroll-target]").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          var target = document.getElementById(link.getAttribute("data-scroll-target"));
+          if (!target) return;
+          event.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (window.history && window.history.replaceState) window.history.replaceState(null, "", "/");
+        });
+      });
+
+      cleanHomeHash();
     })();
   </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"40904e482c7049dda582e00a0b49bb27","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
