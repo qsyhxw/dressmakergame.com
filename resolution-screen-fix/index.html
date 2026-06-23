@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dressmaker Screen Size & Resolution Fix</title>
+  <meta name="description" content="Fix Dressmaker screen size and resolution problems, including laptop display cutoffs, missing scissors in the cutting room, cramped UI, and display scaling issues." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://dressmakergame.com/resolution-screen-fix/" />
+
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Dressmaker Game" />
+  <meta property="og:title" content="Dressmaker Screen Size & Resolution Fix" />
+  <meta property="og:description" content="Troubleshoot Dressmaker screen cutoffs, missing scissors, laptop display scaling, and resolution problems." />
+  <meta property="og:url" content="https://dressmakergame.com/resolution-screen-fix/" />
+  <meta property="og:image" content="https://dressmakergame.com/og.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dressmaker Screen Size & Resolution Fix" />
+  <meta name="twitter:description" content="Fix screen size, resolution, and missing UI issues in Dressmaker." />
+  <meta name="twitter:image" content="https://dressmakergame.com/og.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            appleBg: "#f5f5f7",
+            appleText: "#1d1d1f",
+            appleBlue: "#007aff",
+            appleCard: "#ffffff",
+          },
+          boxShadow: { soft: "0 2px 10px rgba(0,0,0,0.06)" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .apple-gradient {
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(0,122,255,0.08), transparent 60%),
+                  radial-gradient(1000px 500px at 100% 0%, rgba(90,200,250,0.08), transparent 60%);
+    }
+    [id] { scroll-margin-top: 80px; }
+    html { scroll-behavior: smooth; }
+    kbd { border: 1px solid rgba(0,0,0,.16); border-bottom-width: 2px; border-radius: .375rem; padding: .05rem .35rem; background: white; font-size: .875em; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://dressmakergame.com/resolution-screen-fix/#webpage",
+        "url": "https://dressmakergame.com/resolution-screen-fix/",
+        "name": "Dressmaker Screen Size & Resolution Fix",
+        "description": "Fix Dressmaker screen size and resolution problems, including laptop display cutoffs, missing scissors in the cutting room, cramped UI, and display scaling issues.",
+        "datePublished": "2026-06-23",
+        "dateModified": "2026-06-23",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://dressmakergame.com/#website"
+        },
+        "about": [
+          {
+            "@type": "VideoGame",
+            "name": "Dressmaker"
+          },
+          {
+            "@type": "Thing",
+            "name": "screen resolution troubleshooting"
+          }
+        ],
+        "relatedLink": [
+          "https://dressmakergame.com/troubleshooting",
+          "https://dressmakergame.com/system-requirements/",
+          "https://dressmakergame.com/controls/",
+          "https://dressmakergame.com/cutting-guide"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://dressmakergame.com/resolution-screen-fix/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dressmakergame.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Troubleshooting",
+            "item": "https://dressmakergame.com/troubleshooting"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Screen Size & Resolution Fix",
+            "item": "https://dressmakergame.com/resolution-screen-fix/"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://dressmakergame.com/resolution-screen-fix/#howto",
+        "name": "How to fix Dressmaker screen size and resolution problems",
+        "description": "A safe checklist for display cutoffs, missing scissors, and laptop screen fit issues in the Dressmaker prototype.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Restart after display changes",
+            "text": "Close Dressmaker before changing operating system display scale or resolution, then launch it again after the change."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Use the display's recommended resolution",
+            "text": "Set Windows, macOS, or Linux to the display's native or recommended resolution before testing the game."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Reduce display scaling if the UI is cut off",
+            "text": "If the interface does not fit, try a lower operating system scale setting, such as moving from a high scale to a more standard scale."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Try window or fullscreen toggles only if supported",
+            "text": "If your build responds to a window or fullscreen shortcut, test it once. If nothing changes, use system display settings instead of forcing third-party tools."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Report the issue with display details",
+            "text": "If the scissors or UI are still missing, report your OS, screen resolution, display scale, game version, and a screenshot through official channels."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://dressmakergame.com/resolution-screen-fix/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why can't I see the scissors in Dressmaker?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recent player comments mention the scissors being off-screen when the game resolution does not fit the display. Try the display's recommended resolution, reduce operating system display scaling, restart the game after changes, and avoid cutting while the scissors are hidden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if Dressmaker does not fit my laptop screen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lower the operating system display scale, use the recommended screen resolution, try a larger external monitor if available, and restart the game after each change."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there an official resolution patch for Dressmaker?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use official itch.io or Steam channels only. Do not download third-party resolution patches or modified builds for Dressmaker."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I keep playing if part of the UI is cut off?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If important tools such as scissors are hidden, pause before cutting or buying more materials. Fix the screen fit first so you do not lose progress to a preventable mistake."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RVY53PS7NP');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-appleBg apple-gradient text-appleText antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-white px-3 py-2 rounded shadow-soft">Skip to content</a>
+
+  <header class="sticky top-0 z-20 backdrop-blur bg-white/70 border-b border-black/5">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-appleText">Dressmaker</a>
+      <nav aria-label="Primary" class="hidden sm:flex gap-6 text-sm">
+        <a href="/how-to-play" class="hover:text-appleBlue">About</a>
+        <a href="/how-to-play" class="hover:text-appleBlue">Guides</a>
+        <a href="/troubleshooting" class="hover:text-appleBlue">FAQ</a>
+        <a href="/download/" class="hover:text-appleBlue">Download</a>
+      </nav>
+      <a href="/download/" class="sm:hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-appleBlue text-white text-sm shadow-soft">Download</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="mx-auto max-w-5xl px-4 pt-6">
+      <nav aria-label="Breadcrumb" class="text-sm text-black/60">
+        <a href="/" class="hover:text-appleBlue">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/troubleshooting" class="hover:text-appleBlue">Troubleshooting</a>
+        <span class="mx-2">/</span>
+        <span>Screen Size & Resolution Fix</span>
+      </nav>
+    </div>
+
+    <section class="mx-auto max-w-5xl px-4 pt-8 pb-6">
+      <p class="text-sm font-semibold text-appleBlue uppercase tracking-wide">Dressmaker display troubleshooting</p>
+      <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold tracking-tight">
+        Dressmaker Screen Size & Resolution Fix
+      </h1>
+      <p class="mt-4 text-lg text-black/70 max-w-3xl">
+        If Dressmaker does not fit your laptop screen, the scissors are off-screen, or the UI feels cropped, fix the display before you cut fabric. This page gives safe Windows, macOS, Linux, and laptop-screen checks for the current public prototype.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/troubleshooting" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-black/10 text-sm font-medium hover:border-appleBlue shadow-soft">
+          Troubleshooting
+        </a>
+        <a href="/system-requirements/" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white border border-black/10 text-sm font-medium hover:border-appleBlue shadow-soft">
+          System Requirements
+        </a>
+        <a href="/download/" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-appleBlue text-white text-sm font-medium shadow-soft hover:opacity-90">
+          Download Prototype
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-5xl px-4 py-6">
+      <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+        <h2 class="text-xl font-bold mb-3">Quick Answer</h2>
+        <p class="text-black/75 leading-relaxed">
+          Close the game, set your display to its recommended resolution, reduce high display scaling if the UI is cut off, then reopen Dressmaker. If the scissors still do not appear in the cutting room, try a larger external monitor or report the issue with your screen resolution and display scale. Do not download unofficial resolution patches or modified builds.
+        </p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-5xl px-4 py-6">
+      <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+        <h2 class="font-bold text-lg mb-3">On This Page</h2>
+        <ul class="grid sm:grid-cols-2 gap-2 text-sm">
+          <li><a href="#symptoms" class="text-appleBlue hover:underline">Common screen symptoms</a></li>
+          <li><a href="#first-checks" class="text-appleBlue hover:underline">First checks before changing settings</a></li>
+          <li><a href="#windows" class="text-appleBlue hover:underline">Windows display fixes</a></li>
+          <li><a href="#mac" class="text-appleBlue hover:underline">macOS display fixes</a></li>
+          <li><a href="#linux" class="text-appleBlue hover:underline">Linux display fixes</a></li>
+          <li><a href="#laptop" class="text-appleBlue hover:underline">Laptop and external monitor tips</a></li>
+          <li><a href="#report" class="text-appleBlue hover:underline">What to report</a></li>
+          <li><a href="#faq" class="text-appleBlue hover:underline">FAQ</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <article class="mx-auto max-w-5xl px-4 py-8 space-y-12">
+      <section id="symptoms">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">Common Screen Symptoms</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">Scissors are not visible</h3>
+            <p class="text-sm text-black/70">A recent itch.io comment specifically mentions not seeing the scissors during cutting when the resolution does not fit.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">Game does not fit laptop screen</h3>
+            <p class="text-sm text-black/70">Another player describes the display not fitting a laptop screen. This usually calls for display scale and resolution checks.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">Buttons or panels are cropped</h3>
+            <p class="text-sm text-black/70">If bottom or side UI is missing, do not continue the commission until the layout is visible.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">UI is too large or too small</h3>
+            <p class="text-sm text-black/70">High display scaling, custom resolution, or a small laptop panel can make the prototype feel cramped.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="first-checks">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">First Checks Before Changing Settings</h2>
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <ol class="space-y-3 text-black/75 list-decimal pl-6">
+            <li>Close Dressmaker completely before changing OS display settings.</li>
+            <li>Confirm you are using the official itch.io prototype or the official Steam page, not a third-party build.</li>
+            <li>Set the display to the recommended or native resolution first.</li>
+            <li>Reduce unusually high display scale settings if the UI is cropped.</li>
+            <li>Reopen the game after each change and check the cutting room before buying more fabric.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="windows">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">Windows Display Fixes</h2>
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <ul class="space-y-3 text-black/75 list-disc pl-6">
+            <li>Open Windows display settings and use the recommended display resolution for your monitor.</li>
+            <li>If the UI is cut off, try a lower display scale, then close and reopen Dressmaker.</li>
+            <li>If you use multiple monitors, move the game to the primary monitor or the monitor with the larger resolution.</li>
+            <li>If the taskbar overlaps the game area, test auto-hide taskbar or a different window position.</li>
+            <li>If your build responds to <kbd>Alt</kbd> + <kbd>Enter</kbd>, test fullscreen/windowed once. If nothing changes, use display settings instead.</li>
+          </ul>
+          <p class="mt-4 text-sm text-black/60">Avoid forcing unsupported resolutions with third-party tools. A bad resolution can make the UI harder to recover.</p>
+        </div>
+      </section>
+
+      <section id="mac">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">macOS Display Fixes</h2>
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <ul class="space-y-3 text-black/75 list-disc pl-6">
+            <li>Open System Settings, then Displays, and test a setting that gives the game more usable space.</li>
+            <li>If you are on a small MacBook screen, try the display option that shows more content, then reopen the game.</li>
+            <li>If you use an external monitor, launch Dressmaker on the larger display after connecting it.</li>
+            <li>If the game is blocked by macOS security, use the official Mac launch steps from the itch.io page before troubleshooting resolution.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="linux">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">Linux Display Fixes</h2>
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <ul class="space-y-3 text-black/75 list-disc pl-6">
+            <li>Use your desktop environment's display settings to select the recommended monitor resolution.</li>
+            <li>If fractional scaling is enabled and the UI is cropped, test a simpler scale setting, then reopen the game.</li>
+            <li>On multi-monitor setups, test the game on the primary monitor first.</li>
+            <li>If you are using SteamOS/Linux planning for the full release, compare your device with the Steam requirements and re-check store notes near launch.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="laptop">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">Laptop and External Monitor Tips</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">Use a larger display if available</h3>
+            <p class="text-sm text-black/70">If a laptop panel cannot show the full cutting room, an external monitor is often the cleanest test.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">Avoid high scaling while cutting</h3>
+            <p class="text-sm text-black/70">High scaling can make buttons easier to read but reduce usable game space. Test lower scaling before starting a commission.</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
+            <h3 class="font-semibold mb-2">Check scissors before committing</h3>
+            <p class="text-sm text-black/70">Enter the cutting room and confirm the scissors and tool panels are visible before spending the whole budget.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="report">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">What to Include When Reporting</h2>
+        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+          <p class="text-black/75 leading-relaxed mb-4">If the display still does not fit after safe setting changes, report it through official channels with enough detail for the developers or other players to compare setups.</p>
+          <ul class="space-y-2 text-black/75 list-disc pl-6">
+            <li>Game version, such as Prototype 0.5.5.</li>
+            <li>Operating system and device model.</li>
+            <li>Screen resolution and display scaling percentage or setting.</li>
+            <li>Whether the game was fullscreen, windowed, or on an external monitor.</li>
+            <li>Screenshot showing what is cropped or which tool is missing.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2 class="text-3xl font-bold tracking-tight mb-4">FAQ</h2>
+        <div class="space-y-4">
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5" open>
+            <summary class="cursor-pointer font-semibold text-lg">Why can't I see the scissors?</summary>
+            <p class="mt-3 text-black/75 leading-relaxed">The cutting-room tool may be outside the visible area if the game window does not fit your display. Fix resolution and scaling first, then reopen the game and check the cutting room again.</p>
+          </details>
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">Does Dressmaker have an in-game resolution menu?</summary>
+            <p class="mt-3 text-black/75 leading-relaxed">The official itch.io and Steam pages do not document a dedicated resolution menu for the current public prototype. If you do not see one in-game, use operating system display settings and restart the game after changes.</p>
+          </details>
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">Should I use a third-party patch?</summary>
+            <p class="mt-3 text-black/75 leading-relaxed">No. Use the official itch.io download or official Steam page only. Third-party patches and modified builds are not a safe route for solving display issues.</p>
+          </details>
+          <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
+            <summary class="cursor-pointer font-semibold text-lg">Is this the same as system requirements?</summary>
+            <p class="mt-3 text-black/75 leading-relaxed">Not exactly. System requirements tell you whether the hardware is likely strong enough. Screen-size fixes are about whether the UI fits your current display and scaling setup.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="sources" class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+        <h2 class="text-2xl font-bold mb-4">Sources Used</h2>
+        <ul class="space-y-2 text-sm text-black/70 list-disc pl-6">
+          <li><a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="text-appleBlue underline">Official Dressmaker itch.io page</a> for prototype status, Mac launch notes, and recent public comments mentioning resolution, scissors, and laptop screen fit.</li>
+          <li><a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" class="text-appleBlue underline">Official Dressmaker Steam page</a> for platform and system requirement context.</li>
+        </ul>
+      </section>
+
+      <section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+        <h2 class="text-2xl font-bold mb-4">Related Guides</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="/troubleshooting" class="group block p-4 rounded-xl bg-red-50 hover:bg-red-100 transition">
+            <div class="font-semibold text-red-700 mb-1">Troubleshooting</div>
+            <p class="text-sm text-black/70">Bugs, launch issues, and recovery steps.</p>
+          </a>
+          <a href="/system-requirements/" class="group block p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition">
+            <div class="font-semibold text-appleBlue mb-1">System Requirements</div>
+            <p class="text-sm text-black/70">Check PC, Mac, Linux, and Steam Deck notes.</p>
+          </a>
+          <a href="/controls/" class="group block p-4 rounded-xl bg-purple-50 hover:bg-purple-100 transition">
+            <div class="font-semibold text-purple-700 mb-1">Controls Guide</div>
+            <p class="text-sm text-black/70">Keyboard, mouse, and trackpad setup tips.</p>
+          </a>
+          <a href="/cutting-guide" class="group block p-4 rounded-xl bg-green-50 hover:bg-green-100 transition">
+            <div class="font-semibold text-green-700 mb-1">Cutting Guide</div>
+            <p class="text-sm text-black/70">Scissors timing, cutting-room flow, and grain lines.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="border-t border-black/10 mt-12">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-black/60">
+      &copy; <span id="year"></span> DressmakerGame.com &bull; Built for fans of cozy, crafty games.
+      &bull; <a class="underline hover:text-appleBlue" href="/privacy">Privacy</a>
+      &bull; <a class="underline hover:text-appleBlue" href="/terms">Terms</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
