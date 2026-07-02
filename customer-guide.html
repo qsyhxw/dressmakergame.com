@@ -132,6 +132,8 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -263,8 +265,15 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+
+
       <!-- Style Tags System -->
       <section id="style-tags">
+
+
         <h2 class="text-3xl font-bold tracking-tight mb-4">🏷️ Style Tags System</h2>
         
         <div class="prose prose-lg max-w-none">
@@ -341,7 +350,8 @@
         </div>
       </section>
 
-      <!-- Known Customers -->
+      
+<!-- Known Customers -->
       <section id="customers">
         <h2 class="text-3xl font-bold tracking-tight mb-4">👤 Known Customers (Prototype 0.5.5)</h2>
         
@@ -432,6 +442,10 @@
             <p class="text-sm text-gray-700 mb-3">
               The prototype includes additional customers for the remaining ~3 commissions, but specific details (names, preferences) are not yet documented in available sources. Players mention:
             </p>
+
+
+
+
             <ul class="text-sm text-gray-700 space-y-1 list-disc pl-6">
               <li>A request for a "gaudy / cute dress"</li>
               <li>Various work, casual, and formal occasion requests</li>
@@ -443,6 +457,9 @@
           </div>
         </div>
       </section>
+
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
 
       <!-- Fabric Selection Strategy -->
       <section id="fabric-selection">
@@ -515,7 +532,8 @@
         </div>
       </section>
 
-      <!-- Common Frustrations -->
+      
+<!-- Common Frustrations -->
       <section id="frustrations">
         <h2 class="text-3xl font-bold tracking-tight mb-4">😤 Common Frustrations & Workarounds</h2>
         
@@ -567,12 +585,20 @@
               <p><strong>Why:</strong> Prototype has minimal customer dialogue/personality.</p>
               <p><strong>Workaround:</strong> Focus on the style tags listed in requirements. "Cute" = find "Cute +" fabrics. "Simple" = visual interpretation (solid colors, clean lines).</p>
               <p class="text-sm text-blue-700">✅ <strong>Expected in Full Version:</strong> Customer profiles, more detailed requests, relationship building</p>
+
+
+
+
             </div>
           </details>
         </div>
       </section>
 
-      <!-- Future Updates -->
+    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Future Updates -->
       <section id="future">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🚀 Future Updates Preview</h2>
         
@@ -709,5 +735,65 @@
 	}
 	// ]]>
 </script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

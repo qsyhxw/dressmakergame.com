@@ -32,6 +32,8 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 <body class="antialiased">
 
@@ -60,6 +62,7 @@
   </header>
 
   <main class="mx-auto max-w-6xl px-4 py-12">
+
     
     <!-- Breadcrumb -->
     <nav class="text-sm text-black/60 mb-6">
@@ -169,11 +172,18 @@
         </p>
 
         <!-- Section 2 -->
+
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
         <h2 id="step1" class="text-3xl font-bold mt-12 mb-6">2. Step 1: Meeting Customers & Understanding Requests</h2>
 
         <p class="leading-relaxed mb-4">
           Each day, customers enter your shop with specific requirements:
         </p>
+
+
+
+
 
         <ul class="list-disc pl-6 space-y-2 mb-4">
           <li><strong>Occasion</strong>: What they need the dress for (work, garden party, ball, opera, etc.)</li>
@@ -310,6 +320,9 @@
         </ul>
 
         <!-- Section 6 -->
+
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
         <h2 id="step5" class="text-3xl font-bold mt-12 mb-6">6. Step 5: Sewing the Dress Together</h2>
 
         <p class="leading-relaxed mb-4">
@@ -349,6 +362,10 @@
             </div>
           </div>
         </div>
+
+
+
+
 
         <h3 class="text-2xl font-bold mt-8 mb-4">Quality Score System</h3>
 
@@ -476,6 +493,9 @@
         </ul>
 
         <!-- Section 9 -->
+
+    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
         <h2 id="tips" class="text-3xl font-bold mt-12 mb-6">9. Beginner Tips</h2>
 
         <div class="grid md:grid-cols-2 gap-6 my-8">
@@ -492,6 +512,10 @@
           </div>
           
           <div class="bg-white border border-black/10 rounded-2xl p-6">
+
+
+
+
             <h3 class="font-bold text-lg mb-3">❌ Avoid This</h3>
             <ul class="space-y-2 text-sm text-black/80">
               <li>✗ Don't ignore grain line arrows</li>
@@ -702,6 +726,66 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
   </script>
 </body>
 </html>

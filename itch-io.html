@@ -136,6 +136,8 @@
   </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-white px-3 py-2 rounded shadow-soft">Skip to content</a>
@@ -212,7 +214,15 @@
           </div>
         </section>
 
-        <section>
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+
+
+
+
+        
+<section>
           <h2 class="text-2xl font-bold text-appleText mb-4">Current itch.io Files</h2>
           <div class="overflow-x-auto bg-white rounded-2xl shadow-soft border border-black/5">
             <table class="min-w-full text-sm border-collapse">
@@ -281,6 +291,13 @@
           </div>
         </section>
 
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+
+
+
+
         <section>
           <h2 class="text-2xl font-bold text-appleText mb-4">Mac Download Note</h2>
           <div class="bg-yellow-50 border border-yellow-300 rounded-2xl p-6">
@@ -293,7 +310,8 @@
           </div>
         </section>
 
-        <section>
+        
+<section>
           <h2 class="text-2xl font-bold text-appleText mb-4">FAQ</h2>
           <div class="space-y-4">
             <details class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
@@ -342,5 +360,65 @@
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

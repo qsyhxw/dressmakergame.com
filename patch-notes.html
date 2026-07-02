@@ -148,6 +148,8 @@
     ]
   }
   </script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -214,6 +216,9 @@
       </div>
     </section>
 
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
     <article class="mx-auto max-w-5xl px-4 py-8">
       <h2 class="text-3xl font-bold tracking-tight mb-8">Public Devlog Timeline</h2>
 
@@ -239,6 +244,10 @@
             <div>
               <h3 class="text-2xl font-bold">April Tea</h3>
               <p class="text-sm text-black/60">April 17, 2026 · Development progress post</p>
+
+
+
+
             </div>
             <span class="version-badge">Devlog</span>
           </div>
@@ -333,6 +342,10 @@
             <span class="version-badge">Prototype updates</span>
           </div>
           <p class="text-black/75">The public index lists several September posts covering the big update, smaller patches, fixes, keyboard sewing controls, and the internal greenlight news. These are grouped here to keep this page focused and avoid restating every changelog line.</p>
+
+
+
+
           <div class="mt-4 flex flex-wrap gap-3 text-sm">
             <a href="https://elyaradine.itch.io/dressmaker/devlog/1022132/big-update-and-some-mixed-news" target="_blank" rel="noopener" class="text-appleBlue hover:underline">Big update</a>
             <a href="https://elyaradine.itch.io/dressmaker/devlog/1023033/small-patch-version-041" target="_blank" rel="noopener" class="text-appleBlue hover:underline">0.4.1</a>
@@ -371,7 +384,11 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-5xl px-4 py-8">
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+    
+<section class="mx-auto max-w-5xl px-4 py-8">
       <div class="grid sm:grid-cols-4 gap-4">
         <a href="/download/" class="block bg-white border border-black/5 rounded-2xl p-4 shadow-soft hover:shadow-md transition">
           <div class="font-medium text-appleBlue">Download Guide</div>
@@ -392,7 +409,8 @@
       </div>
     </section>
 
-    <section class="mx-auto max-w-5xl px-4 py-8">
+    
+<section class="mx-auto max-w-5xl px-4 py-8">
       <h2 class="text-2xl font-bold tracking-tight mb-4">Official Sources</h2>
       <div class="bg-gray-50 rounded-2xl p-6 text-sm">
         <p class="text-black/70 mb-3">This page summarizes public posts and links out to the primary sources for details:</p>
@@ -416,6 +434,66 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
   </script>
 </body>
 </html>

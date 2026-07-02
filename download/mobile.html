@@ -131,6 +131,8 @@
     ]
   }
   </script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -190,8 +192,15 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <div class="space-y-10 text-black/80">
         <section>
+
+
+
+
           <h2 class="text-2xl font-bold text-appleText mb-4">Official Platform Status</h2>
           <div class="overflow-x-auto bg-white rounded-2xl shadow-soft border border-black/5">
             <table class="min-w-full text-sm border-collapse">
@@ -233,7 +242,8 @@
           </div>
         </section>
 
-        <section>
+        
+<section>
           <h2 class="text-2xl font-bold text-appleText mb-4">Why You Should Avoid APK Mirrors</h2>
           <div class="bg-red-50 border border-red-200 rounded-2xl p-6">
             <p class="text-red-900">Files labeled <strong>Dressmaker APK</strong>, <strong>Dressmaker Mod APK</strong>, <strong>Dressmaker Android download</strong>, or <strong>Dressmaker mobile full version</strong> are not part of the official download path unless they are announced by the developers. They may be unrelated files, adware bundles, outdated reuploads, or unsafe installers.</p>
@@ -269,7 +279,14 @@
           <p>If you already use remote-play or screen-streaming tools, you may experiment with streaming the desktop prototype from your own computer to another device. Treat that as a personal streaming setup, not a mobile version of Dressmaker. It does not replace the official desktop download, and touch controls may not feel comfortable for cutting and sewing.</p>
         </section>
 
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
         <section>
+
+
+
+
           <h2 class="text-2xl font-bold text-appleText mb-4">Safe Download Route</h2>
           <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
             <ol class="list-decimal pl-5 space-y-3">
@@ -281,7 +298,8 @@
           </div>
         </section>
 
-        <section>
+        
+<section>
           <h2 class="text-2xl font-bold text-appleText mb-4">FAQ</h2>
           <div class="space-y-4">
             <details class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
@@ -334,5 +352,65 @@
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

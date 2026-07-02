@@ -131,6 +131,8 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -171,13 +173,16 @@
       
       <div class="mt-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
         <p class="font-semibold text-blue-800 mb-2">📌 About This Guide</p>
+
+
         <p class="text-sm text-blue-700">
           This guide is based on <strong>Prototype v0.5.5</strong> (October 2025). Fabric types are confirmed from official Steam and itch.io pages. The style tag system is documented from developer devlogs. Specific tags, prices, and unlock conditions are not publicly documented and may change in the full Steam release.
         </p>
       </div>
     </section>
 
-    <!-- Quick Summary -->
+    
+<!-- Quick Summary -->
     <section class="mx-auto max-w-5xl px-4 py-6">
       <div class="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6">
         <h2 class="font-bold text-lg mb-3">🎯 Quick Summary: How Fabric Choice Works</h2>
@@ -190,7 +195,8 @@
       </div>
     </section>
 
-    <!-- Main Content -->
+    
+<!-- Main Content -->
     <article class="mx-auto max-w-5xl px-4 py-8 space-y-12">
 
       <!-- Fabric Types Overview -->
@@ -220,7 +226,11 @@
         </div>
       </section>
 
-      <!-- Style Tags System -->
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Style Tags System -->
       <section id="style-tags">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🏷️ Understanding the Style Tags System</h2>
         
@@ -229,14 +239,20 @@
             One of Dressmaker's key mechanics is the <strong>style tag system</strong>, which determines whether your dress matches customer preferences. This system was introduced in update 0.4 (September 2025).
           </p>
 
+
+
           <h3 class="text-2xl font-semibold mt-8 mb-4">How Style Tags Work</h3>
           <p class="text-black/80">
             According to the <a href="https://elyaradine.itch.io/dressmaker/devlog/1022132/big-update-and-some-mixed-news" target="_blank" rel="noopener" class="text-appleBlue underline">September 1, 2025 developer devlog</a>, the tag system works as follows:
           </p>
 
+
+
           <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 my-6">
             <h4 class="font-semibold text-lg mb-4">Key Mechanic (Developer Confirmed)</h4>
             <blockquote class="border-l-4 border-appleBlue pl-4 italic text-black/70 mb-4">
+
+
               "See the effect that your choice of dress patterns have on the tags right in the sketchbook. You'll need to drag in fabric samples for the tags to show up, since <strong>the tags are a combination of your fabric and choice of dress patterns</strong>."
               <footer class="text-xs mt-2 not-italic">— elyaradine, Sept 1, 2025 devlog</footer>
             </blockquote>
@@ -379,6 +395,8 @@
                 <strong>Typical Uses (Real World):</strong> Formal dresses, evening wear, special occasion garments<br>
                 <strong>Common Styles:</strong> Elegant, luxurious, refined, romantic
               </p>
+
+
             </div>
 
             <!-- Velvet -->
@@ -397,6 +415,9 @@
           </div>
         </div>
       </section>
+
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
 
       <!-- Selection Strategy -->
       <section id="strategy">
@@ -497,10 +518,15 @@
                 <li>Some customers may have specific unstated preferences</li>
               </ul>
               <p class="text-sm">See our <a href="/sewing-tips" class="text-appleBlue underline">Sewing Mastery Guide</a> for quality tips.</p>
+
+
             </div>
           </details>
         </div>
       </section>
+
+    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
 
       <!-- Version Notes -->
       <section id="version">
@@ -588,6 +614,66 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
   </script>
 </body>
 </html>

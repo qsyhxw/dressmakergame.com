@@ -117,6 +117,8 @@
     ]
   }
   </script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -177,6 +179,10 @@
 
     <article class="space-y-10">
       <section class="bg-white border border-black/5 p-6 rounded-2xl shadow-soft">
+
+
+
+
         <h2 class="text-2xl font-bold text-appleText mb-4">Main Entry Points</h2>
         <div class="overflow-x-auto">
           <table class="w-full text-sm border-collapse">
@@ -213,7 +219,11 @@
         </div>
       </section>
 
-      <section class="grid md:grid-cols-2 gap-4">
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<section class="grid md:grid-cols-2 gap-4">
         <div class="bg-white border border-black/5 p-6 rounded-2xl shadow-soft">
           <h2 class="text-2xl font-bold text-appleText mb-4">itch.io Prototype</h2>
           <p class="text-black/75">The itch.io page is the right place to download the current public prototype. It lists Dressmaker as a downloadable game for Windows, macOS, and Linux, with Prototype 0.5.5 files currently shown for those platforms.</p>
@@ -275,7 +285,15 @@
         <a href="/download/mobile" class="inline-flex mt-5 rounded-2xl bg-white px-4 py-2 text-red-800 text-sm font-medium border border-red-200 hover:bg-red-100">Check mobile / APK status</a>
       </section>
 
-      <section class="bg-white border border-black/5 p-6 rounded-2xl shadow-soft">
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+
+
+
+
+      
+<section class="bg-white border border-black/5 p-6 rounded-2xl shadow-soft">
         <h2 class="text-2xl font-bold text-appleText mb-4">How to Check a Link Before Downloading</h2>
         <ol class="space-y-3 text-black/75 list-decimal pl-5">
           <li>Start from the official itch.io page for the prototype or the Steam page for the full release.</li>
@@ -341,5 +359,65 @@
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

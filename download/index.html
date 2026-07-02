@@ -135,6 +135,8 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 antialiased">
@@ -269,13 +271,21 @@
 
         <div class="bg-yellow-50 border border-yellow-300 rounded-lg p-4 my-6">
           <p class="font-semibold text-yellow-900 mb-2">⚠️ Mac Users: Important Note</p>
+
+
+
+
           <p class="text-yellow-900">
             When you try to open Dressmaker.app, macOS will display a security warning saying <em>"can't be opened because Apple cannot check it for malicious software."</em> This warning is expected for the current Mac prototype because it hasn't been <a href="https://support.apple.com/en-us/102445" class="underline" target="_blank" rel="noopener">notarized by Apple</a>. Only proceed if you downloaded it from the official itch.io page. See <a href="#mac-fix" class="text-blue-600 underline">Section 2</a> for the macOS steps.
           </p>
         </div>
       </section>
 
-      <!-- Section 2 -->
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Section 2 -->
       <section id="mac-fix" class="mb-12">
         <h2 class="text-3xl font-bold mb-4">2. Mac Installation Fix (Gatekeeper Warning)</h2>
 
@@ -445,8 +455,15 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <!-- Section 4 -->
       <section id="troubleshooting" class="mb-12">
+
+
+
+
         <h2 class="text-3xl font-bold mb-4">4. Common Installation Issues</h2>
 
         <div class="space-y-6">
@@ -535,7 +552,8 @@
         </div>
       </section>
 
-      <!-- Section 5 -->
+      
+<!-- Section 5 -->
       <section id="steam-vs-itch" class="mb-12">
         <h2 class="text-3xl font-bold mb-4">5. Steam Version vs Prototype: What's the Difference?</h2>
 
@@ -593,6 +611,10 @@
           <p class="text-sm mb-2">
             <strong>Play the itch.io prototype now if:</strong>
           </p>
+
+
+
+
           <ul class="list-disc pl-6 text-sm space-y-1 mb-3">
             <li>You want to try the core gameplay for free</li>
             <li>You are comfortable with a smaller prototype build rather than the full Steam release</li>
@@ -618,7 +640,11 @@
         </div>
       </section>
 
-      <!-- Section 6 -->
+    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Section 6 -->
       <section id="faq" class="mb-12">
         <h2 class="text-3xl font-bold mb-4">6. Download FAQ</h2>
 
@@ -706,5 +732,65 @@
     </div>
   </footer>
 
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

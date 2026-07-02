@@ -158,6 +158,8 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -273,11 +275,18 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <!-- Step by Step -->
       <section id="step-by-step">
         <h2 class="text-3xl font-bold tracking-tight mb-4">📐 Step-by-Step Cutting Process</h2>
 
         <div class="prose prose-lg max-w-none">
+
+
+
+
           <h3 id="step1" class="text-xl font-semibold mt-6 mb-3">Step 1: Access the Cutting Room</h3>
           <p class="text-black/80">
             After designing your dress in the sketchbook and purchasing fabric from the shop, you'll enter the cutting room. Your pattern pieces appear in an inventory panel, and fabric bolts are laid out on the cutting table.
@@ -344,7 +353,8 @@
         </div>
       </section>
 
-      <!-- Efficiency -->
+      
+<!-- Efficiency -->
       <section id="efficiency">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🎯 Efficient Pattern Placement Strategies</h2>
 
@@ -419,6 +429,9 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <!-- Common Mistakes -->
       <section id="mistakes">
         <h2 class="text-3xl font-bold tracking-tight mb-4">❌ Common Mistakes to Avoid</h2>
@@ -428,6 +441,10 @@
             <summary class="cursor-pointer font-semibold text-lg">1. Not Checking for Green Outline on Every Piece</summary>
             <div class="mt-3 text-black/75 space-y-2">
               <p><strong>Problem:</strong> You carefully align the first few pieces but rush through later pieces and miss the green outline check.</p>
+
+
+
+
               <p><strong>Impact:</strong> Even one misaligned piece (e.g., a single sleeve) caps your overall quality score.</p>
               <p><strong>Solution:</strong> Develop a habit: <em>Rotate → Check for green → Cut</em>. Every single piece, every single time.</p>
             </div>
@@ -479,7 +496,8 @@
         </div>
       </section>
 
-      <!-- Bugs & Workarounds -->
+      
+<!-- Bugs & Workarounds -->
       <section id="bugs">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🐛 Known Bugs & Workarounds (v0.5.5)</h2>
 
@@ -544,11 +562,18 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <!-- Version Notes -->
       <section id="version-notes">
+
+
         <h2 class="text-3xl font-bold tracking-tight mb-4">📝 Version Notes & Future Changes</h2>
 
         <div class="prose prose-lg max-w-none">
+
+
           <h3 class="text-xl font-semibold mb-3">This Guide is Based On:</h3>
           <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5 mb-6">
             <ul class="space-y-2 text-black/80">
@@ -586,7 +611,8 @@
         </div>
       </section>
 
-      <!-- Related Guides -->
+      
+<!-- Related Guides -->
       <section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
         <h2 class="text-2xl font-bold mb-4">📚 Related Guides</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -639,6 +665,66 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
   </script>
 </body>
 </html>

@@ -87,6 +87,8 @@
 
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 antialiased">
@@ -163,6 +165,10 @@
         </p>
         <div class="bg-gray-100 rounded-lg p-4 my-4">
           <p class="mb-2"><strong>Orijinal İndirme Bağlantısı:</strong></p>
+
+
+
+
           <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener" class="text-blue-600 underline break-all">
             https://elyaradine.itch.io/dressmaker
           </a>
@@ -201,7 +207,11 @@
         </div>
       </section>
 
-      <!-- Section 2 -->
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Section 2 -->
       <section id="mac-fix" class="mb-12">
         <h2 class="text-3xl font-bold mb-4">2. Mac Kurulum Hatası Çözümü (Gatekeeper)</h2>
         <p>Bir macOS (MacBook) kullanıyorsanız, oyunu ilk kez açmayı denediğinizde <em>"Apple bu uygulamanın kötü amaçlı yazılım içerip içermediğini kontrol edemediği için açılamıyor"</em> güvenlik uyarısıyla karşılaşırsınız. Bu, oyunun Apple Geliştirici sertifikasına sahip olmamasından kaynaklanır.</p>
@@ -240,6 +250,10 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+
+
+
+
             <h3 class="text-xl font-semibold mb-4">🍎 Mac</h3>
             <table class="w-full text-sm">
               <tr class="border-b">
@@ -259,7 +273,11 @@
         </div>
       </section>
 
-      <!-- Section 5 -->
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Section 5 -->
       <section id="steam-vs-itch" class="mb-12">
         <h2 class="text-3xl font-bold mb-4">5. itch.io Sürümü vs Steam Sürümü</h2>
         <p>Dressmaker itch.io üzerinde bulunan sürüm (v0.5.5) artık güncelleme almamaktadır. Topluluk genişlediği için geliştirici şirket oyunun <a href="https://store.steampowered.com/app/4019220/Dressmaker/" class="text-blue-600 underline" target="_blank">Full Versiyonunu Steam için hazırlamaktadır</a>. Eğer eksiksiz kasaba haritası, detaylı dekorasyonlar ve yeni görevleri görmek istiyorsanız Steam'den istek listenize (#Wishlist) eklemeyi unutmayın.</p>
@@ -317,5 +335,65 @@
     </div>
   </footer>
 
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

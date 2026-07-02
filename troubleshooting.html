@@ -156,6 +156,8 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -286,8 +288,15 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <!-- Windows Issues -->
       <section id="windows-issues">
+
+
+
+
         <h2 class="text-3xl font-bold tracking-tight mb-4">🪟 Windows Installation & Launch Issues</h2>
         
         <div class="space-y-6">
@@ -375,7 +384,8 @@
         </div>
       </section>
 
-      <!-- Linux Issues -->
+      
+<!-- Linux Issues -->
       <section id="linux-issues">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🐧 Linux Issues</h2>
         
@@ -422,6 +432,9 @@
         </div>
       </section>
 
+    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
       <!-- Gameplay Bugs -->
       <section id="gameplay-bugs">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🐛 Gameplay Bugs & Known Issues</h2>
@@ -463,6 +476,10 @@
 
               <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
                 <p class="font-semibold text-blue-800 mb-2">✅ Workarounds if still occurring:</p>
+
+
+
+
                 <ul class="list-disc pl-6 space-y-1 text-sm text-blue-700">
                   <li><strong>Use keyboard controls:</strong> Space + Arrow keys (added v0.4.4) instead of mouse</li>
                   <li>Usually <strong>visual only</strong> – doesn't affect actual sewing quality</li>
@@ -588,7 +605,11 @@
         </div>
       </section>
 
-      <!-- Performance Issues -->
+    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
+
+
+      
+<!-- Performance Issues -->
       <section id="performance">
         <h2 class="text-3xl font-bold tracking-tight mb-4">⚡ Performance Issues</h2>
         
@@ -601,9 +622,13 @@
 
               <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
                 <p class="font-semibold text-blue-800 mb-3">✅ Solutions:</p>
+
+
                 
                 <div class="space-y-2 text-sm text-blue-700">
                   <p><strong>1. Close Background Programs:</strong> Close browsers, Discord, streaming apps while playing.</p>
+
+
                   <p><strong>2. Update Graphics Drivers:</strong> See "Game Won't Launch" section above for driver update links.</p>
                   <p><strong>3. Check System Requirements:</strong> Dressmaker needs ~2 GB RAM. If your system is marginal, close all unnecessary programs.</p>
                   <p><strong>4. Lower Screen Resolution:</strong> If your monitor is 4K, try running at 1080p.</p>
@@ -617,7 +642,8 @@
         </div>
       </section>
 
-      <!-- Reporting Bugs -->
+      
+<!-- Reporting Bugs -->
       <section id="reporting">
         <h2 class="text-3xl font-bold tracking-tight mb-4">📢 How to Report Bugs</h2>
         
@@ -707,6 +733,66 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- NitroPay Ad Units -->
+  <script>
+    (function () {
+      if (!window['nitroAds']) return;
+
+      var reportTopRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "top-right"
+      };
+      var reportBottomRight = {
+        "enabled": true,
+        "icon": true,
+        "wording": "Report Ad",
+        "position": "bottom-right"
+      };
+
+      window['nitroAds'].createAd('dressmaker_anchor', {
+        "format": "anchor-v2",
+        "anchor": "bottom",
+        "anchorBgColor": "rgb(0 0 0 / 80%)",
+        "anchorClose": true,
+        "anchorPersistClose": false,
+        "anchorStickyOffset": 0,
+        "mediaQuery": "(min-width: 0px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_side_rail', {
+        "format": "rail",
+        "rail": "right",
+        "railOffsetTop": 69,
+        "railOffsetBottom": 0,
+        "railCollisionWhitelist": [],
+        "railCloseColor": "#666666",
+        "railSpacing": 10,
+        "railStack": false,
+        "railStickyTop": 0,
+        "railVerticalAlign": "top",
+        "mediaQuery": "(min-width: 1025px)",
+        "report": reportTopRight
+      });
+
+      window['nitroAds'].createAd('dressmaker_floating_video', {
+        "format": "floating",
+        "report": reportTopRight
+      });
+
+      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
+        if (!document.getElementById(placementId)) return;
+        window['nitroAds'].createAd(placementId, {
+          "height": 250,
+          "delayLoading": true,
+          "report": reportBottomRight
+        });
+      });
+    })();
   </script>
 </body>
 </html>
