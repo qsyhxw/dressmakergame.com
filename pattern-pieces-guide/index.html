@@ -565,14 +565,19 @@
       window['nitroAds'].createAd('dressmaker_floating_video', {
         "format": "floating",
         "floating": { "position": "left" },
+        "mediaQuery": "(min-width: 1025px)",
         "report": reportTopRight
       });
 
       ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
         if (!document.getElementById(placementId)) return;
         window['nitroAds'].createAd(placementId, {
+          "format": "display",
+          "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
           "height": 250,
           "delayLoading": true,
+          "renderVisibleOnly": true,
+          "visibleMargin": 800,
           "report": reportBottomRight
         });
       });

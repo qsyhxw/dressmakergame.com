@@ -736,46 +736,7 @@
     })();
   </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"40904e482c7049dda582e00a0b49bb27","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-  <!-- NitroPay Ad Units -->
+<!-- NitroPay Ad Units -->
   <script>
     (function () {
       if (!window['nitroAds']) return;
@@ -822,14 +783,19 @@
       window['nitroAds'].createAd('dressmaker_floating_video', {
         "format": "floating",
         "floating": { "position": "left" },
+        "mediaQuery": "(min-width: 1025px)",
         "report": reportTopRight
       });
 
       ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
         if (!document.getElementById(placementId)) return;
         window['nitroAds'].createAd(placementId, {
+          "format": "display",
+          "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
           "height": 250,
           "delayLoading": true,
+          "renderVisibleOnly": true,
+          "visibleMargin": 800,
           "report": reportBottomRight
         });
       });
