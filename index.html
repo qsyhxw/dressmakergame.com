@@ -140,8 +140,6 @@
 
   <!-- Google AdSense (keep for manual ads; disable Auto ads in dashboard or add exclusions) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
-  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
-  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -249,7 +247,6 @@
       </div>
     </section>
 
-    <div id="dressmaker_in_content" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
 
 
     <!-- Guides & Resources (新增) -->
@@ -389,7 +386,6 @@
       </ul>
     </section>
 
-    <div id="dressmaker_in_content_2" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
 
 
     <!-- Screenshots（带 Lightbox） -->
@@ -510,7 +506,6 @@
       </div>
     </section>
 
-    <div id="dressmaker_in_content_3" class="dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center" style="height:250px"></div>
 
 
     <!-- FAQ (扩展) -->
@@ -632,32 +627,6 @@
       </div>
     </div>
   </footer>
-  <div style="text-align: center; padding: 10px; font-size: 12px; color: #666;">
-    <span data-ccpa-link="1"></span>
-
-    <span id="gdpr-consent-box" style="display:none;">
-        &nbsp;|&nbsp;
-        <a href="#" onclick="if(window.__cmp) window.__cmp('showModal'); return false;" style="color: #666; text-decoration: underline;">
-            Update Privacy Preferences
-        </a>
-    </span>
-  </div>
-
-  <script>
-    function showNitroConsentBoxIfNeeded() {
-      var box = document.getElementById("gdpr-consent-box");
-      if (!box) return;
-
-      box.style.display = window["__tcfapi"] ? "inline" : "none";
-    }
-
-    if (window["nitroAds"] && window["nitroAds"].loaded) {
-      showNitroConsentBoxIfNeeded();
-    } else {
-      document.addEventListener("nitroAds.loaded", showNitroConsentBoxIfNeeded);
-    }
-  </script>
-
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -736,71 +705,6 @@
     })();
   </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"40904e482c7049dda582e00a0b49bb27","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<!-- NitroPay Ad Units -->
-  <script>
-    (function () {
-      if (!window['nitroAds']) return;
-
-      var reportTopRight = {
-        "enabled": true,
-        "icon": true,
-        "wording": "Report Ad",
-        "position": "top-right"
-      };
-      var reportBottomRight = {
-        "enabled": true,
-        "icon": true,
-        "wording": "Report Ad",
-        "position": "bottom-right"
-      };
-
-      window['nitroAds'].createAd('dressmaker_anchor', {
-        "format": "anchor-v2",
-        "anchor": "bottom",
-        "anchorBgColor": "rgb(0 0 0 / 80%)",
-        "anchorClose": true,
-        "anchorPersistClose": false,
-        "anchorStickyOffset": 0,
-        "mediaQuery": "(max-width: 1024px)",
-        "report": reportTopRight
-      });
-
-      window['nitroAds'].createAd('dressmaker_side_rail', {
-        "format": "rail",
-        "rail": "right",
-        "railOffsetTop": 0,
-        "railOffsetBottom": 0,
-        "railCollisionWhitelist": [],
-        "railCloseColor": "#666666",
-        "railSpacing": 10,
-        "railStack": false,
-        "railStickyTop": 69,
-        "railVerticalAlign": "top",
-        "mediaQuery": "(min-width: 1025px)",
-        "report": reportTopRight
-      });
-
-      window['nitroAds'].createAd('dressmaker_floating_video', {
-        "format": "floating",
-        "floating": { "position": "left" },
-        "mediaQuery": "(min-width: 1025px)",
-        "report": reportTopRight
-      });
-
-      ["dressmaker_in_content", "dressmaker_in_content_2", "dressmaker_in_content_3"].forEach(function (placementId) {
-        if (!document.getElementById(placementId)) return;
-        window['nitroAds'].createAd(placementId, {
-          "format": "display",
-          "sizes": [[970, 90], [970, 250], [728, 90], [300, 250], [320, 100], [320, 50]],
-          "height": 250,
-          "delayLoading": true,
-          "renderVisibleOnly": true,
-          "visibleMargin": 800,
-          "report": reportBottomRight
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
 
