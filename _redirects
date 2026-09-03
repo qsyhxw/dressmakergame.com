@@ -1,6 +1,14 @@
+# Host and protocol consolidation. URL fragments stay client-side and are
+# preserved by the browser when the path redirects; they are not sent here.
+https://www.dressmakergame.com/*  https://dressmakergame.com/:splat  301!
+http://www.dressmakergame.com/*   https://dressmakergame.com/:splat  301!
+http://dressmakergame.com/*       https://dressmakergame.com/:splat  301!
+
 /index.html  /  301
 /how-to-play.html  /how-to-play  301
+/how-to-play/  /how-to-play  301
 /troubleshooting.html  /troubleshooting  301
+/troubleshooting/  /troubleshooting  301
 /download/index.html  /download/  301
 /download/mobile.html  /download/mobile  301
 /ru/download/index.html  /ru/download/  301
@@ -28,8 +36,10 @@
 /patch-notes.html  /patch-notes  301
 /official-links.html  /official-links  301
 /steam-release-date.html  /steam-release-date  301
+/steam-release-date/  /steam-release-date  301
 /itch-io.html  /itch-io  301
 /demo.html  /demo  301
+/demo/  /demo  301
 /games-like-dressmaker.html  /games-like-dressmaker  301
 /play-online.html  /play-online  301
 /review.html  /review  301
