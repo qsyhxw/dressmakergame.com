@@ -8,7 +8,7 @@
 - Homepage: D:\Codex\dressmakergame.com\index.html
 - Last Updated: 2026-09-03
 - Roadmap Status: ACTIVE
-- Current Recommended Queue Order: https://dressmakergame.com/demo
+- Current Recommended Queue Order: https://dressmakergame.com/_redirects
 
 ## Status Values
 
@@ -24,7 +24,7 @@
 | 4 | P2 | CREATED_NEEDS_REVIEW | How to Play | https://dressmakergame.com/how-to-play | how to play Dressmaker | 完成第一件裙子的端到端流程 | SUPPORT | 玩法流程和技巧入口 | clean URL、教程 Query、旧 .html 301 | Title/Meta/H1、首段和上下文入口已按 P2-1 施工；近窗 1,943 imp/51 clicks/2.62% CTR | PREFERRED | YES | 7 天技术检查和 56 日 GSC 复查通过 | CONTEXTUAL_ONLY | 首页 Guides | https://dressmakergame.com/sewing-tips | /sewing-tips、/cutting-guide、/controls/ | 2026-09-03 |
 | 5 | P2 | CREATED_NEEDS_REVIEW | Troubleshooting | https://dressmakergame.com/troubleshooting | dressmaker troubleshooting | 按平台解决安装、显示、缝纫和启动问题 | SUPPORT | 故障恢复与问题上报 | 平台分区、当前 Prototype 0.5.5、clean canonical、FAQ JSON-LD | Title/Meta/H1、首段、Mac 安全表述和 JSON-LD 已按 P2-2 施工；近窗 761 imp/6 clicks/0.79% CTR | PREFERRED | YES | 7 天 HTTP/canonical/JSON-LD 检查和 28 日 GSC 复查通过 | CONTEXTUAL_ONLY | 首页 FAQ/Support | https://dressmakergame.com/demo | /download/、/how-to-play、/resolution-screen-fix/ | 2026-09-03 |
 | 6 | P2 | CREATED_NEEDS_REVIEW | Demo | https://dressmakergame.com/demo | dressmaker demo | 判断现在试玩 prototype 还是等待 Steam | SUPPORT | Prototype 内容、限制和行动选择 | Demo 0.5.5、Steam 状态、页面份额 | Title/Meta/H1、首段、Steam 日期、Prototype 时长表述和 schema 已按 P2-3 施工；近窗 747 imp/25 clicks/3.35% CTR | NO | YES | 7 天 HTTP/canonical/JSON-LD 检查和 28 日 GSC 复查通过 | CONTEXTUAL_ONLY | 首页 Guides/next-step 卡 | https://dressmakergame.com/ru/download/ | /、/download/、/how-to-play、/itch-io | 2026-09-03 |
-| 7 | P2 | PLANNED_NOT_CREATED | Russian Download | https://dressmakergame.com/ru/download/ | dressmaker скачать | 以俄语找到官方 Prototype 下载和安装入口 | SUPPORT | 俄语下载承接和语言分流 | 0.5.5、语言切换、clean canonical、俄语 CTA | 按 P2-4 KEEP AS IS 复核；近窗 1,031 imp/196 clicks/19.01% CTR | PREFERRED | YES | 7 天 canonical/语言链接检查和 28 日 GSC 复查通过 | CONTEXTUAL_ONLY | 语言切换和下载页 | https://dressmakergame.com/how-to-play | /download/、/、/ru/ | 2026-09-03 |
+| 7 | P2 | CREATED_NEEDS_REVIEW | Russian Download | https://dressmakergame.com/ru/download/ | dressmaker скачать | 以俄语找到官方 Prototype 下载和安装入口 | SUPPORT | 俄语下载承接和语言分流 | 0.5.5、语言切换、clean canonical、俄语 CTA | Title/Meta/H1 保持；更新 itch.io 31 Aug 2026、Steam 21 Sep 2026 事实，并补英文/俄语入口；近窗 1,031 imp/196 clicks/19.01% CTR | PREFERRED | YES | 7 天 canonical/语言链接检查和 28 日 GSC 复查通过 | CONTEXTUAL_ONLY | 语言切换和下载页 | https://dressmakergame.com/_redirects | /download/、/、/ru/download/android | 2026-09-03 |
 | 8 | P2 | PLANNED_NOT_CREATED | 历史 URL 变体 | https://dressmakergame.com/_redirects | legacy Dressmaker URLs | 旧链接安全到达唯一 clean URL | TECHNICAL | URL 规范化和抓取信号集中 | 旧 .html、HTTP/HTTPS、www、fragment 与 clean canonical | 逐项检查 redirects 和站内旧链接；保留页面内容，合并技术入口 | NO | YES | 页面群发布后 | TECHNICAL | 不占首页位置 | NONE | 全站导航、sitemap、_redirects | 2026-09-03 |
 
 ## Next Action
