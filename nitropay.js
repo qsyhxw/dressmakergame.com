@@ -36,13 +36,11 @@
   var main = document.querySelector("main");
   if (!main) return;
 
-  var anchors = Array.from(main.children).filter(function (element) {
-    return element.tagName === "SECTION";
-  });
+  var anchors = Array.from(main.querySelectorAll("section"));
   var insertBefore = false;
 
   if (anchors.length < 3) {
-    anchors = Array.from(main.querySelectorAll("article > h2"));
+    anchors = Array.from(main.querySelectorAll("article h2"));
     insertBefore = true;
   }
   if (anchors.length < 3) return;
