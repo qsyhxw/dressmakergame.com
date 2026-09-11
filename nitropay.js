@@ -61,7 +61,6 @@
     var slot = document.createElement("div");
     slot.id = placementId;
     slot.className = "dressmaker-ad-slot mx-auto max-w-5xl px-4 my-8 text-center";
-    slot.style.minHeight = "250px";
     slot.setAttribute("role", "complementary");
     slot.setAttribute("aria-label", "Advertisement");
     referenceElement.insertAdjacentElement(insertBefore ? "beforebegin" : "afterend", slot);
