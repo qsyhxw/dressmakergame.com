@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://static.itch.io" crossorigin>
 
   <!-- Preload hero image -->
-  <link rel="preload" as="image" href="/images/Dressmaker gameplay screenshot.webp">
+  <link rel="preload" as="image" href="/images/official/dressmaker-pattern-cutting-grain.webp">
 
   <!-- Icons -->
   <link rel="icon" href="/favicon.ico">
@@ -27,13 +27,13 @@
   <meta property="og:title" content="Dressmaker Game: Free Prototype & Steam Release Date" />
   <meta property="og:description" content="Play the free Dressmaker prototype on itch.io, check the September 21, 2026 Steam date, and browse beginner sewing guides for the game." />
   <meta property="og:url" content="https://dressmakergame.com/" />
-  <meta property="og:image" content="https://dressmakergame.com/og.png" />
+  <meta property="og:image" content="https://dressmakergame.com/images/official/dressmaker-pattern-cutting-grain.webp" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dressmaker Game: Free Prototype & Steam Release Date" />
   <meta name="twitter:description" content="Play the free Dressmaker prototype on itch.io, check the September 21, 2026 Steam date, and browse beginner sewing guides for the game." />
-  <meta name="twitter:image" content="https://dressmakergame.com/og.png" />
+  <meta name="twitter:image" content="https://dressmakergame.com/images/official/dressmaker-pattern-cutting-grain.webp" />
 
 
 
@@ -68,24 +68,35 @@
     .lightbox-open { overflow: hidden; }
   </style>
 
-  <!-- JSON-LD: VideoGame -->
+  <!-- JSON-LD: full game and separate public prototype -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "Dressmaker",
-    "url": "https://dressmakergame.com/",
-    "sameAs": ["https://elyaradine.itch.io/dressmaker", "https://store.steampowered.com/app/4019220/Dressmaker/"],
-    "genre": "Simulation",
-    "applicationCategory": "GameApplication",
-    "operatingSystem": "Windows, macOS, Linux",
-    "inLanguage": "en",
-    "author": [
-      { "@type": "Person", "name": "elyaradine" },
-      { "@type": "Person", "name": "sarandipityx" },
-      { "@type": "Person", "name": "raithza" }
-    ],
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://elyaradine.itch.io/dressmaker" }
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "@id": "https://dressmakergame.com/#full-game",
+        "name": "Dressmaker",
+        "url": "https://store.steampowered.com/app/4019220/Dressmaker/",
+        "sameAs": ["https://store.steampowered.com/app/4019220/Dressmaker/", "https://freelives.net/dressmaker-presskit/"],
+        "genre": ["Simulation", "Cozy game"],
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows, macOS",
+        "gamePlatform": ["PC", "Mac"],
+        "inLanguage": ["en", "zh-Hans", "ja"],
+        "author": { "@type": "Organization", "name": "Cozy Lives" },
+        "publisher": { "@type": "Organization", "name": "Free Lives" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://dressmakergame.com/#prototype",
+        "name": "Dressmaker Prototype 0.5.5",
+        "url": "https://elyaradine.itch.io/dressmaker",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://elyaradine.itch.io/dressmaker" }
+      }
+    ]
   }
   </script>
 
@@ -112,19 +123,19 @@
       {"@type":"Question","name":"Is Dressmaker free?",
        "acceptedAnswer":{"@type":"Answer","text":"Yes. It's a name-your-price prototype on itch.io—support the devs if you enjoy it!"}},
       {"@type":"Question","name":"Which platforms are supported?",
-       "acceptedAnswer":{"@type":"Answer","text":"Windows, macOS, and Linux builds are available on the itch.io page."}},
+       "acceptedAnswer":{"@type":"Answer","text":"The full release is confirmed for Windows and macOS. The separate itch.io Prototype 0.5.5 has Windows, macOS, and Linux builds."}},
       {"@type":"Question","name":"Will there be a full release?",
-       "acceptedAnswer":{"@type":"Answer","text":"The full Steam version is planned for September 21, 2026."}},
+       "acceptedAnswer":{"@type":"Answer","text":"Yes. The full Steam release is scheduled for September 21, 2026 globally and may display September 22 in some time zones. Check Steam for live availability."}},
       {"@type":"Question","name":"How do I fix the Mac malicious software warning?",
        "acceptedAnswer":{"@type":"Answer","text":"Go to System Settings → Privacy & Security → scroll down → click Open Anyway. See our detailed Mac installation guide."}},
       {"@type":"Question","name":"What's the difference between itch.io and Steam versions?",
-       "acceptedAnswer":{"@type":"Answer","text":"Currently only the itch.io Prototype 0.5.5 is available. The Steam full version is planned for September 21, 2026 with more content and features."}},
+       "acceptedAnswer":{"@type":"Answer","text":"The itch.io download is the smaller, name-your-price Prototype 0.5.5. Steam is the separate complete commercial release with a larger town, campaign, and design library."}},
       {"@type":"Question","name":"How do I get 100% quality score when sewing?",
        "acceptedAnswer":{"@type":"Answer","text":"Follow the dotted line precisely, slow down at corners, and align pattern pieces to the grain line."}},
       {"@type":"Question","name":"Can I play offline?",
        "acceptedAnswer":{"@type":"Answer","text":"Yes. Once downloaded, Dressmaker runs entirely offline with no internet connection required."}},
       {"@type":"Question","name":"Is there a mobile version?",
-       "acceptedAnswer":{"@type":"Answer","text":"No. Dressmaker is currently only available for Windows, Mac, and Linux. There is no official mobile version."}}
+       "acceptedAnswer":{"@type":"Answer","text":"No official Android or iOS release has been announced. The full release is confirmed for Windows and macOS; the prototype also has a Linux build."}}
     ]
   }
   </script>
@@ -171,30 +182,31 @@
             Dressmaker Game: Free Prototype & Steam Release Date
           </h1>
           <p class="mt-4 text-lg text-black/70">
-            Dressmaker is a cozy dressmaking game about choosing fabric, cutting patterns, and sewing garments for customers. You can play Prototype 0.5.5 free on itch.io now, or wishlist the full Steam release planned for September 21, 2026. Use the download guide for installation, the beginner guide for gameplay, and the troubleshooting page for fixes.
+            Dressmaker is a cozy dressmaking game about choosing fabric, cutting patterns, and sewing garments for customers. The complete Steam release is scheduled for September 21, 2026 globally, although Steam may show September 22 in later time zones such as China. The separate Prototype 0.5.5 remains name-your-price on itch.io.
           </p>
 
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="/download/" class="inline-flex items-center justify-center rounded-2xl bg-appleBlue px-5 py-3 text-white font-medium shadow-soft hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-appleBlue/40">
               Official Prototype Download
             </a>
-            <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl bg-white border border-black/10 px-5 py-3 font-medium text-appleBlue hover:bg-black/5 transition shadow-soft">
-              Wishlist on Steam
+            <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" aria-label="Open the official Dressmaker Steam store page in a new tab" class="inline-flex items-center justify-center rounded-2xl bg-white border border-black/10 px-5 py-3 font-medium text-appleBlue hover:bg-black/5 transition shadow-soft">
+              Open Steam Store ↗
             </a>
           </div>
-          <p class="mt-3 text-sm text-black/50">Prototype 0.5.5 • Windows/macOS/Linux • Steam planned for September 21, 2026</p>
+          <p class="mt-3 text-sm text-black/50">Full release: Windows/macOS • Prototype 0.5.5: Windows/macOS/Linux • Store status checked September 21</p>
         </div>
 
         <!-- 右侧大图 -->
         <figure class="rounded-3xl overflow-hidden shadow-soft border border-black/5">
           <div class="aspect-[16/9] sm:aspect-[4/3] lg:aspect-[16/9]">
             <img
-              src="/images/Dressmaker gameplay screenshot.webp"
-              alt="Dressmaker gameplay screenshot"
+              src="/images/official/dressmaker-pattern-cutting-grain.webp"
+              alt="Arranging dress pattern pieces along the fabric grain in Dressmaker"
               fetchpriority="high" loading="eager" decoding="async"
               class="h-full w-full object-cover object-center"
             >
           </div>
+          <figcaption class="px-4 py-3 text-sm text-black/60">Official full-version screenshot from the Free Lives Dressmaker press kit.</figcaption>
         </figure>
       </div>
 
@@ -223,8 +235,8 @@
       <div class="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-2xl p-4 flex items-start gap-4">
         <span class="text-2xl flex-shrink-0">🎉</span>
         <div class="flex-1 min-w-0">
-          <p class="font-semibold text-appleText">Current Prototype: 0.5.5</p>
-          <p class="text-sm text-black/70 mt-1">The public itch.io build includes lace controls, Mac compatibility fixes, and tutorial improvements. <a href="/patch-notes" class="text-appleBlue underline">See the full changelog</a>.</p>
+          <p class="font-semibold text-appleText">Launch status: September 21 globally</p>
+          <p class="text-sm text-black/70 mt-1">Steam may display September 22 in your time zone. Check the live store status and announced US$14.99 price, regional pricing, and 10% launch discount on our <a href="/steam-release-date" class="text-appleBlue underline">release status page</a>.</p>
         </div>
       </div>
     </div>
@@ -309,13 +321,13 @@
         <a href="/steam-release-date" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
           <div class="text-3xl mb-3">📅</div>
           <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">Steam Release Date</h3>
-          <p class="mt-2 text-sm text-black/70">September 21, 2026 date, current status, and wishlist steps</p>
+          <p class="mt-2 text-sm text-black/70">Global September 21 date, local-time difference, price, and live Steam status</p>
         </a>
 
         <a href="/system-requirements/" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
           <div class="text-3xl mb-3">💻</div>
           <h3 class="font-semibold text-lg group-hover:text-appleBlue transition">System Requirements</h3>
-          <p class="mt-2 text-sm text-black/70">PC, Mac, Linux, and Steam Deck planning notes</p>
+          <p class="mt-2 text-sm text-black/70">Confirmed full-release PC/Mac requirements and separate prototype notes</p>
         </a>
 
         <a href="/itch-io" class="group block bg-white rounded-2xl p-6 shadow-soft hover:shadow-lg transition">
@@ -370,7 +382,7 @@
         <li><strong>Smart cutting:</strong> Place patterns efficiently to save material—just like in a real studio.</li>
         <li><strong>Satisfy (or sabotage!) customers:</strong> Meet requests… or have a little mischievous fun.</li>
         <li><strong>Relaxing flow:</strong> A cozy pacing that rewards focus, creativity, and clean stitches.</li>
-        <li><strong>Prototype builds:</strong> Frequent updates and community-driven improvements.</li>
+        <li><strong>Two clearly separated editions:</strong> try Prototype 0.5.5 on itch.io or check the complete commercial release on Steam.</li>
       </ul>
       <div class="mt-6 flex justify-start">
         <a href="/how-to-play" class="inline-flex items-center justify-center rounded-2xl bg-white border border-black/10 px-5 py-3 font-medium text-appleBlue hover:bg-black/5 transition shadow-soft">
@@ -460,9 +472,9 @@
         <div class="rounded-2xl bg-appleCard shadow-soft p-6">
           <h3 class="font-semibold text-lg mb-3">📦 Availability</h3>
           <ul class="space-y-2 text-sm text-black/80">
-            <li><strong>Platforms:</strong> Windows • macOS • Linux</li>
-            <li><strong>Distribution:</strong> Name-your-price on itch.io</li>
-            <li><strong>Current Version:</strong> Prototype 0.5.5</li>
+            <li><strong>Full release:</strong> Windows • macOS on Steam</li>
+            <li><strong>Prototype:</strong> Windows • macOS • Linux on itch.io</li>
+            <li><strong>Prototype version:</strong> 0.5.5, name-your-price</li>
             <li><strong>Game Mode:</strong> Single-player</li>
           </ul>
         </div>
@@ -484,9 +496,9 @@
         <div class="rounded-2xl bg-appleCard shadow-soft p-6">
           <h3 class="font-semibold text-lg mb-3">👥 Credits</h3>
           <ul class="space-y-2 text-sm text-black/80">
-            <li>Created by <span class="font-medium">elyaradine</span>, <span class="font-medium">sarandipityx</span>, and <span class="font-medium">raithza</span></li>
-            <li>Published by <span class="font-medium">Free Lives</span> studio</li>
-            <li>Community feedback helps shape new updates</li>
+            <li><strong>Full game developer:</strong> <span class="font-medium">Cozy Lives</span></li>
+            <li><strong>Publisher:</strong> <span class="font-medium">Free Lives</span></li>
+            <li><strong>Prototype credits:</strong> elyaradine, sarandipityx, and raithza</li>
           </ul>
         </div>
 
@@ -494,10 +506,11 @@
         <div class="rounded-2xl bg-appleCard shadow-soft p-6">
           <h3 class="font-semibold text-lg mb-3">🚀 Release Information</h3>
           <ul class="space-y-2 text-sm text-black/80">
-            <li><strong>itch.io Prototype:</strong> Feature-complete (0.5.5)</li>
-            <li><strong>Steam Version:</strong> Planned for September 21, 2026</li>
-            <li><strong>Release Date:</strong> September 21, 2026</li>
-            <li><a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Wishlist on Steam</a> for updates</li>
+            <li><strong>itch.io Prototype:</strong> Current public build 0.5.5</li>
+            <li><strong>Steam Version:</strong> Complete commercial release</li>
+            <li><strong>Global Date:</strong> September 21, 2026; local clients may show September 22</li>
+            <li><strong>Announced Price:</strong> US$14.99 with regional pricing and a 10% launch discount</li>
+            <li><a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" aria-label="Open the official Dressmaker Steam store page in a new tab" class="text-appleBlue underline">Check the live Steam store ↗</a></li>
           </ul>
         </div>
 
@@ -506,6 +519,12 @@
         <a href="/download/" class="inline-flex items-center justify-center rounded-2xl bg-white border border-black/10 px-6 py-3 font-medium text-appleBlue hover:bg-black/5 transition shadow-soft">
           View Detailed Platform Requirements
         </a>
+      </div>
+      <div class="mt-8 border-t border-black/10 pt-6 text-sm text-black/65">
+        <strong class="text-appleText">Official sources:</strong>
+        <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener" aria-label="Dressmaker official Steam store page, opens in a new tab" class="text-appleBlue underline">Steam store ↗</a>,
+        <a href="https://steamcommunity.com/app/4019220/allnews/" target="_blank" rel="noopener" aria-label="Dressmaker official Steam announcements, opens in a new tab" class="text-appleBlue underline">Steam announcements ↗</a>, and
+        <a href="https://freelives.net/dressmaker-presskit/" target="_blank" rel="noopener" aria-label="Free Lives Dressmaker press kit, opens in a new tab" class="text-appleBlue underline">Free Lives press kit ↗</a>.
       </div>
     </section>
 
@@ -523,14 +542,14 @@
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Which platforms are supported?</summary>
-          <p class="mt-2 text-sm text-black/75">Windows, macOS, and Linux builds are available on the itch.io page.</p>
+          <p class="mt-2 text-sm text-black/75">The full release is confirmed for Windows and macOS. The separate itch.io Prototype 0.5.5 has Windows, macOS, and Linux builds.</p>
 
 
         </details>
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Will there be a full release?</summary>
-          <p class="mt-2 text-sm text-black/75">The full Steam version is planned for September 21, 2026, with a broader town, more customers, and expanded dressmaking systems.</p>
+          <p class="mt-2 text-sm text-black/75">Yes. The complete Steam release is scheduled for September 21, 2026 globally and may display September 22 in some time zones. Check Steam for live availability.</p>
 
 
         </details>
@@ -542,7 +561,7 @@
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">What's the difference between itch.io and Steam versions?</summary>
-          <p class="mt-2 text-sm text-black/75">Currently only the itch.io Prototype 0.5.5 is available for free. The Steam full version is planned for September 21, 2026 with more content and features. <a href="/steam-release-date" class="text-appleBlue underline">See full comparison</a>.</p>
+          <p class="mt-2 text-sm text-black/75">The itch.io download is the smaller, name-your-price Prototype 0.5.5. Steam is the separate complete commercial release with a larger town, campaign, and design library. <a href="/steam-release-date" class="text-appleBlue underline">See the sourced comparison</a>.</p>
         </details>
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
@@ -557,17 +576,17 @@
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Is there a mobile version (Android/iOS)?</summary>
-          <p class="mt-2 text-sm text-black/75">No. Dressmaker is currently only available for Windows, Mac, and Linux. There is no official mobile version or APK.</p>
+          <p class="mt-2 text-sm text-black/75">No official Android or iOS release has been announced. The full release is confirmed for Windows and macOS; the prototype also has a Linux build.</p>
         </details>
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">How long is the prototype?</summary>
-          <p class="mt-2 text-sm text-black/75">The prototype offers approximately 2-3 hours of gameplay with limited customers and dress patterns. The full Steam version will have significantly more content.</p>
+          <p class="mt-2 text-sm text-black/75">The prototype is a smaller slice with limited customers and dress patterns. For the full release, the official price announcement describes approximately 35 hours of story commissions, excluding off-the-rack dresses.</p>
         </details>
 
         <details class="rounded-2xl bg-white shadow-soft px-5 py-4">
           <summary class="cursor-pointer font-medium">Where can I get help or report bugs?</summary>
-          <p class="mt-2 text-sm text-black/75">Join the official <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Discord community</a> or check our <a href="/troubleshooting" class="text-appleBlue underline">troubleshooting guide</a>.</p>
+          <p class="mt-2 text-sm text-black/75">Join the official <a href="https://discord.gg/tBa93Rzgj5" target="_blank" rel="noopener" aria-label="Open the official Dressmaker Discord invite in a new tab" class="text-appleBlue underline">Discord community ↗</a> or check our <a href="/troubleshooting" class="text-appleBlue underline">troubleshooting guide</a>.</p>
         </details>
 
       </div>
@@ -620,7 +639,7 @@
           <span class="mx-2">•</span><a class="hover:text-appleBlue" href="/privacy">Privacy</a>
           <span class="mx-2">•</span><a class="hover:text-appleBlue" href="/terms">Terms</a>
         </div>
-        <div class="flex items-center gap-4 bg-black/5 px-4 py-2 rounded-full">
+        <div class="flex flex-wrap items-center justify-center gap-4 bg-black/5 px-4 py-2 rounded-2xl max-w-full">
           <span class="font-medium text-black/80">🌍 Region Guides:</span>
           <a href="/ru/download/" class="hover:text-appleBlue font-medium">Русская инструкция по скачиванию</a>
           <a href="/tr/download/" class="hover:text-appleBlue font-medium">Türkçe</a>
