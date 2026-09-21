@@ -51,3 +51,6 @@ http://dressmakergame.com/*       https://dressmakergame.com/:splat  301!
 /how-to-get-100-quality-scor/  /how-to-get-100-quality-score  301
 /privacy.html  /privacy  301
 /terms.html  /terms  301
+
+# Unknown routes must return the custom page with a real 404 status.
+/*  /404.html  404
