@@ -31,13 +31,13 @@
   <meta property="og:title" content="Dressmaker Cutting Guide – Master Grain Line Alignment" />
   <meta property="og:description" content="Learn proper fabric cutting techniques in Dressmaker to avoid quality score caps and maximize material efficiency." />
   <meta property="og:url" content="https://dressmakergame.com/cutting-guide/" />
-  <meta property="og:image" content="https://dressmakergame.com/og.png" />
+  <meta property="og:image" content="https://dressmakergame.com/images/official/dressmaker-pattern-cutting-grain.webp" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dressmaker Cutting Guide – Grain Line Mastery" />
   <meta name="twitter:description" content="Master grain line alignment and efficient cutting in Dressmaker" />
-  <meta name="twitter:image" content="https://dressmakergame.com/og.png" />
+  <meta name="twitter:image" content="https://dressmakergame.com/images/official/dressmaker-pattern-cutting-grain.webp" />
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -143,7 +143,7 @@
     "url": "https://dressmakergame.com/cutting-guide/",
     "inLanguage": "en",
     "datePublished": "2026-01-19",
-    "dateModified": "2026-01-19"
+    "dateModified": "2026-09-22"
   }
   </script>
 
@@ -192,7 +192,7 @@
         Dressmaker Fabric Cutting Guide – Master Grain Line Alignment for Perfect Quality
       </h1>
       <p class="mt-4 text-lg text-black/70">
-        Learn the critical fabric cutting mechanics in Dressmaker (Prototype 0.5.5). This guide covers grain line alignment, efficient pattern placement, and how to avoid the #1 cause of quality score failures.
+        Learn the released game's fabric-direction workflow and the documented Prototype 0.5.5 grain-line rules. This guide separates current official behavior from legacy score caps, controls, bugs, and workarounds.
       </p>
       
       <div class="mt-6 flex flex-wrap gap-3">
@@ -200,7 +200,7 @@
           ← Back to How to Play
         </a>
         <a href="/download/" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-appleBlue text-white text-sm font-medium shadow-soft hover:opacity-90">
-          Download Game
+          Compare Game Versions
         </a>
       </div>
     </section>
@@ -208,15 +208,20 @@
     <!-- Critical Alert -->
     <section class="mx-auto max-w-5xl px-4 py-6">
       <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-2xl p-6">
-        <h2 class="font-bold text-lg mb-3 text-red-900">⚠️ Critical: Grain Line Alignment Determines Quality Score</h2>
+        <h2 class="font-bold text-lg mb-3 text-red-900">⚠️ Prototype 0.5.5: Grain Alignment Caps Quality</h2>
         <p class="text-black/80 mb-3">
           According to the game developers: <strong>"If [the arrows] don't point that way, your quality score per piece gets capped."</strong>
         </p>
         <p class="text-sm text-black/70">
-          This means even perfect sewing (100% accuracy) cannot rescue a dress if pattern pieces are cut off-grain. Many players achieve flawless stitching but still fail quality requirements because they missed this critical step during cutting.
+          This score-cap wording documents Prototype 0.5.5. In the complete Steam game, the official store page confirms that grain or bias direction changes how a fabric pattern appears on the finished dress; use the current cutting-table outline and Grain Quality feedback instead of assuming every prototype threshold is unchanged.
         </p>
       </div>
     </section>
+
+    <figure class="mx-auto max-w-5xl px-4 pb-6">
+      <img src="/images/official/dressmaker-pattern-cutting-grain.webp" width="1600" height="900" loading="eager" decoding="async" alt="Dressmaker cutting table with pattern pieces, direction arrows, placement outlines, fabric controls, and Grain Quality at 100 percent" class="w-full rounded-2xl shadow-soft border border-black/10" />
+      <figcaption class="mt-3 text-sm text-black/60">In the released game's cutting UI, identify the piece, choose its fabric, rotate for the intended direction, and confirm the placement and Grain Quality feedback before cutting. Official Dressmaker press-kit screenshot.</figcaption>
+    </figure>
 
     <!-- Table of Contents -->
     <section class="mx-auto max-w-5xl px-4 py-6">
@@ -508,7 +513,7 @@
 
         <div class="prose prose-lg max-w-none">
           <p class="text-black/80">
-            As of Prototype 0.5.5, several bugs affect the cutting process. The developers are aware of these and working on fixes for the full Steam release.
+            The reports below are archived for Prototype 0.5.5. They are not evidence that the same bugs remain in the released Steam build; try the current UI first, then use the game's official support route if the behavior reproduces.
           </p>
 
           <div class="space-y-4 mt-6">
@@ -573,7 +578,7 @@
       <section id="version-notes">
 
 
-        <h2 class="text-3xl font-bold tracking-tight mb-4">📝 Version Notes & Future Changes</h2>
+        <h2 class="text-3xl font-bold tracking-tight mb-4">📝 Version Notes & Release Status</h2>
 
         <div class="prose prose-lg max-w-none">
 
@@ -583,7 +588,7 @@
             <ul class="space-y-2 text-black/80">
               <li><strong>Version:</strong> Prototype 0.5.5 (released October 3, 2025)</li>
               <li><strong>Platform:</strong> itch.io free prototype</li>
-              <li><strong>Status:</strong> Feature-complete prototype; full Steam version in development</li>
+              <li><strong>Status:</strong> Archived free prototype; the complete game released on Steam on September 21, 2026</li>
             </ul>
           </div>
 
@@ -593,23 +598,21 @@
             <li><strong>Earlier versions:</strong> Grain line mechanic introduced as core quality determinant</li>
           </ul>
 
-          <h3 class="text-xl font-semibold mt-6 mb-3">What May Change in Full Release</h3>
+          <h3 class="text-xl font-semibold mt-6 mb-3">What the Full Game Officially Confirms</h3>
           <p class="text-black/80">
-            The developers are working on the full Steam version. Based on community feedback, potential improvements include:
+            The official store page confirms the full-game cutting sequence and its visible result:
           </p>
           <ul class="space-y-2 text-black/80 list-disc pl-6">
-            <li>Clearer grain line tutorials and in-game explanations</li>
-            <li>Better visual indicators for grain alignment beyond green outline</li>
-            <li>Fixed grain line detection bugs (especially for bias-cut pieces)</li>
-            <li>【Possible】Optional "easy mode" that relaxes grain line requirements</li>
-            <li>【Possible】Ability to see fabric requirements per piece before purchasing</li>
-            <li>【Possible】Pattern piece labels/tooltips to clarify which piece is which</li>
+            <li>Arrange and cut pattern pieces on the selected fabric.</li>
+            <li>Fabric design direction can be aligned on the grain or on the bias.</li>
+            <li>The chosen direction affects how the pattern appears on the finished dress.</li>
+            <li>Preview cut pieces on the mannequin before sewing.</li>
           </ul>
 
           <div class="bg-purple-50 border-l-4 border-purple-400 p-4 my-6 rounded">
-            <p class="font-semibold text-purple-800">🚀 Full Game Development</p>
+            <p class="font-semibold text-purple-800">🚀 Full Game Available</p>
             <p class="text-sm text-purple-700">
-              The team is actively developing the Steam version. Join the <a href="https://discord.gg/nJY2TsCKm9" target="_blank" rel="noopener noreferrer" class="underline">official Discord</a> to share feedback on cutting mechanics, or <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener noreferrer" class="underline">wishlist on Steam</a> to get notified when it releases!
+              View the complete game on the <a href="https://store.steampowered.com/app/4019220/Dressmaker/" target="_blank" rel="noopener noreferrer" class="underline">official Steam store page</a>. Keep the Prototype 0.5.5 bugs and exact score-cap rules separate from current release behavior unless you reproduce them in the released build.
             </p>
           </div>
         </div>
@@ -649,9 +652,9 @@
     <section class="mx-auto max-w-5xl px-4 py-12">
       <div class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl shadow-soft p-8 text-center text-white">
         <h2 class="text-2xl font-bold mb-3">Ready to Cut Like a Pro?</h2>
-        <p class="mb-6 text-white/90">Download the free prototype and practice grain line alignment!</p>
+        <p class="mb-6 text-white/90">Compare the complete Steam game with the free Prototype v0.5.5 before choosing your version.</p>
         <a href="/download/" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-appleBlue font-semibold shadow-soft hover:shadow-lg transition">
-          Download Game (Free)
+          Compare Game Versions
         </a>
       </div>
     </section>
