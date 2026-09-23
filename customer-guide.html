@@ -78,7 +78,7 @@
     "description": "Complete guide to understanding customer requests and style tags in Dressmaker game",
     "image": "https://dressmakergame.com/images/official/dressmaker-customer-prudence.webp",
     "datePublished": "2026-01-16",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-23",
     "author": {
       "@type": "Organization",
       "name": "DressmakerGame.com"
@@ -117,7 +117,7 @@
     "url": "https://dressmakergame.com/customer-guide",
     "inLanguage": "en",
     "datePublished": "2026-01-16",
-    "dateModified": "2026-09-22"
+    "dateModified": "2026-09-23"
   }
   </script>
 
@@ -174,7 +174,7 @@
         <h2 class="font-bold text-lg mb-3">🎯 Quick Reference: Satisfying Customers</h2>
         <ol class="space-y-2 text-sm text-black/80">
           <li><strong>1. Full game:</strong> Read each townsperson's tastes and event context, design the dress, choose fabric, cut, sew, decorate, and turn it in. For the first three documented examples, use the launch-day combinations below as a starting point.</li>
-          <li><strong>2. Prototype tag rule:</strong> In v0.5.5, fabric tags drive the style score; patterns and accessories were not counted the same way.</li>
+          <li><strong>2. Prototype tag rule:</strong> The developer says fabric samples and dress-pattern choices combine to show tags in the sketchbook; preview the combination before buying.</li>
           <li><strong>3. Prototype quality rule:</strong> Budget, sewing accuracy, and grain alignment affect the legacy commission result.</li>
           <li><strong>4. Do not invent a universal formula:</strong> Verify the released build's visible requirements instead of assuming prototype weights.</li>
         </ol>
@@ -241,7 +241,7 @@
             <p class="text-sm text-black/75 mb-4">This brief reverses the colour condition: use <strong>black only</strong> and build toward <strong>Gothic</strong> plus <strong>Professional</strong>.</p>
             <ul class="space-y-2 text-sm text-black/75 list-disc pl-5">
               <li>The documented draft starts with an elevated sweetheart bodice, pointed collar, flounce sleeve, and professional skirt.</li>
-              <li>Black-and-white polka linen, black corduroy, and black wool pinstripes can supply the required attributes; black trim can finish the look.</li>
+              <li>The published walkthrough names black-and-white polka linen, black corduroy, and black wool pinstripes for attributes. Its polka example conflicts with a literal black-only requirement. Check the current order's colour indicator before buying; choose a black option that satisfies both colour and attributes, and use black trim if needed.</li>
             </ul>
           </div>
         </div>
@@ -301,22 +301,22 @@
 
           <h3 class="text-xl font-semibold mt-8 mb-3">What Currently Matters (v0.5.5)</h3>
           <ul class="space-y-2 text-black/80 list-disc pl-6">
-            <li><strong>Fabric choice:</strong> The ONLY thing that affects style tags</li>
+            <li><strong>Fabric and pattern choice:</strong> Preview their combined tags in the sketchbook after adding fabric samples.</li>
             <li><strong>Sewing quality:</strong> Follow dotted lines, align grain properly</li>
             <li><strong>Budget management:</strong> Don't overspend on materials</li>
           </ul>
 
-          <h3 class="text-xl font-semibold mt-8 mb-3">What Currently Doesn't Matter</h3>
+          <h3 class="text-xl font-semibold mt-8 mb-3">Other Prototype Limits</h3>
           <ul class="space-y-2 text-black/80 list-disc pl-6">
-            <li><strong>Pattern selection:</strong> Dress shape doesn't affect style score (only fabric does)</li>
-            <li><strong>Accessories:</strong> Bows, buttons, lace don't contribute to style points</li>
+            <li><strong>Pattern selection:</strong> The developer says pattern choices contribute to the tags shown with fabric samples; the exact score weights are not published.</li>
+            <li><strong>Accessories:</strong> Their exact prototype score contribution is not established by the developer's tag explanation; check the visible preview.</li>
             <li><strong>Color preferences:</strong> No specific color requirements exist (choose freely)</li>
           </ul>
 
           <div class="bg-red-50 border-l-4 border-red-400 p-4 my-6 rounded">
             <p class="font-semibold text-red-800">⚠️ Common Frustration</p>
             <p class="text-sm text-red-700">
-              In Prototype 0.5.5, this guide treats fabric tags as the scoring signal and accessories as visual decoration. Do not assume the same scoring behavior in the complete release without testing it there.
+              In Prototype 0.5.5, check the combined fabric-and-pattern tags in the sketchbook. Do not assume the same scoring weights in the complete release without testing them there.
             </p>
           </div>
         </div>
@@ -532,7 +532,7 @@
 
         <div class="prose prose-lg max-w-none">
           <p class="text-black/80">
-            In <strong>Prototype 0.5.5, only fabric tags matter</strong> for style scores, so fabric choice is the key scoring lever in the archived build. In the released game, use the current commission UI and Emporium filters described in the launch-day examples above instead of assuming the prototype formula still applies.
+            In <strong>Prototype 0.5.5, fabric samples and pattern choices combine to show tags</strong> in the sketchbook, according to the developer's <a href="https://elyaradine.itch.io/dressmaker/devlog/1022132/big-update-and-some-mixed-news" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">September 2025 update ↗</a>. Preview that combination before buying. In the released game, use the current commission UI and Emporium filters described in the launch-day examples above instead of assuming prototype score weights still apply.
           </p>
 
           <h3 class="text-xl font-semibold mt-6 mb-3">Quick Reference: Fabrics by Common Requests</h3>
@@ -604,22 +604,22 @@
 
         <div class="space-y-4">
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5" open>
-            <summary class="cursor-pointer font-semibold text-lg">Accessories Don't Affect Style Score</summary>
+            <summary class="cursor-pointer font-semibold text-lg">Accessory Score Is Unclear</summary>
             <div class="mt-3 text-black/75 space-y-2">
               <p><strong>Problem:</strong> You add cute bows to hit "cute" requirement, but they don't contribute to style points.</p>
-              <p><strong>Why:</strong> Current prototype only counts fabric tags. Accessories are purely decorative.</p>
-              <p><strong>Workaround:</strong> Ignore accessories for scoring purposes. Use them only for visual appeal.</p>
+              <p><strong>Why:</strong> The developer describes fabric-and-pattern tags in the prototype sketchbook; this page has no verified prototype accessory score formula.</p>
+              <p><strong>Workaround:</strong> Meet the visible required tags first. Add accessories when the commission asks for them or when their in-game preview improves the result.</p>
               <p class="text-sm text-blue-700"><strong>Version boundary:</strong> The official full-release materials do not publish an accessory scoring formula.</p>
             </div>
           </details>
 
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
-            <summary class="cursor-pointer font-semibold text-lg">Pattern Choice Doesn't Matter</summary>
+            <summary class="cursor-pointer font-semibold text-lg">Pattern Tags Seem Missing</summary>
             <div class="mt-3 text-black/75 space-y-2">
-              <p><strong>Problem:</strong> You pick a clearly "elegant" neckline or "cute" collar, but it doesn't affect elegant/cute scores.</p>
-              <p><strong>Why:</strong> Pattern pieces lack style tags in v0.5.5.</p>
-              <p><strong>Workaround:</strong> Choose patterns for visual appeal and personal preference. Focus fabric selection for style requirements.</p>
-              <p class="text-sm text-blue-700"><strong>Version boundary:</strong> Recheck pattern scoring in the full release; no official formula is published.</p>
+              <p><strong>Problem:</strong> You change a pattern piece, but the sketchbook does not yet show a new tag result.</p>
+              <p><strong>Why:</strong> The developer says fabric samples must be added before the combined pattern-and-fabric tags appear in the prototype sketchbook.</p>
+              <p><strong>Workaround:</strong> Drag in a fabric sample, then compare the tag preview when changing pattern pieces.</p>
+              <p class="text-sm text-blue-700"><strong>Version boundary:</strong> Check the released game's own preview; no official numeric scoring formula is published.</p>
             </div>
           </details>
 
@@ -706,7 +706,7 @@
           </a>
           <a href="/sewing-tips" class="group block p-4 rounded-xl bg-purple-50 hover:bg-purple-100 transition">
             <div class="font-semibold text-purple-700 mb-1">Sewing Mastery Guide →</div>
-            <p class="text-sm text-black/70">Get 100% quality with grain alignment & controls</p>
+            <p class="text-sm text-black/70">Check sewing controls, seam accuracy, and grain alignment</p>
           </a>
         </div>
       </section>
