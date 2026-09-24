@@ -218,13 +218,14 @@
         <h2 id="step3" class="text-3xl font-bold mt-12 mb-6">4. Step 3: Shopping for Fabric</h2>
 
         <p class="leading-relaxed mb-4">
-          Head to the fabric shop to purchase materials for your dress. The game features five main fabric types:
+          Head to the fabric shop to purchase materials for your dress. These are five familiar examples, not a complete catalogue of fabrics in the released game:
         </p>
 
-        <table class="w-full border border-black/10 rounded-2xl overflow-hidden my-6">
+        <div class="my-6" style="max-width:100%;overflow-x:auto" tabindex="0" aria-label="Fabric examples table; scroll horizontally on small screens">
+        <table class="w-full border border-black/10 rounded-2xl overflow-hidden" style="min-width:620px">
           <thead class="bg-black/5">
             <tr>
-              <th class="p-4 text-left font-bold">Fabric Type</th>
+              <th class="p-4 text-left font-bold">Example Fabric</th>
               <th class="p-4 text-left font-bold">Best For</th>
               <th class="p-4 text-left font-bold">Visual Characteristics</th>
             </tr>
@@ -257,6 +258,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <div class="bg-sage-50 border border-black/10 rounded-2xl p-6 my-6">
           <p class="font-semibold mb-2">🔍 Budget Management</p>
@@ -334,6 +336,16 @@
           The sewing mechanic is Dressmaker's most interactive (and challenging) feature. You'll guide fabric through a virtual sewing machine.
         </p>
 
+        <figure class="overflow-hidden rounded-2xl border border-black/10 bg-white my-6">
+          <img src="/images/official/dressmaker-sewing-machine.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Official Dressmaker sewing screen showing Space to sew, A and D to rotate, and W and S to change speed" class="w-full h-auto" style="display:block;max-width:100%;height:auto" />
+          <figcaption class="px-4 py-3 text-sm text-black/60">Released-game sewing screen from the official Free Lives press kit. Its on-screen prompts show Space to sew, A/D to rotate, and W/S to change speed; check the prompts in your own build.</figcaption>
+        </figure>
+
+        <div class="bg-sage-50 border border-black/10 rounded-2xl p-6 my-6">
+          <p class="font-bold mb-2">Playing the released Steam game?</p>
+          <p class="text-sm text-black/75">Follow the controls shown in your current sewing screen. The official screenshot above shows <strong>Space to sew, A/D to rotate, and W/S to change speed</strong>. The Prototype 0.5.5 mouse/Arrow-key notes below are an older version's examples and may not match the full game. For seam technique and version-specific checks, use the <a href="/sewing-tips#controls" class="text-appleBlue underline">sewing controls guide</a>.</p>
+        </div>
+
         <h3 class="text-2xl font-bold mt-8 mb-4">How Sewing Works</h3>
 
         <p class="leading-relaxed mb-4">
@@ -347,7 +359,7 @@
         </ul>
 
         <div class="bg-blue-50 border border-black/10 rounded-2xl p-6 my-6">
-          <p class="font-bold mb-3">🎮 Control Options (v0.5+)</p>
+          <p class="font-bold mb-3">🎮 Prototype 0.5.5 control notes</p>
           <div class="grid md:grid-cols-2 gap-4">
             <div>
               <p class="font-semibold text-sm mb-2">Mouse Control:</p>
@@ -358,7 +370,7 @@
               </ul>
             </div>
             <div>
-              <p class="font-semibold text-sm mb-2">Keyboard Control (NEW):</p>
+              <p class="font-semibold text-sm mb-2">Prototype keyboard control:</p>
               <ul class="list-disc pl-6 text-sm text-black/70 space-y-1">
                 <li>SPACE bar: Start/stop sewing</li>
                 <li>Arrow keys: Guide fabric direction</li>
@@ -397,7 +409,8 @@
 
         <h3 class="text-2xl font-bold mt-8 mb-4">Common Sewing Issues</h3>
 
-        <table class="w-full border border-black/10 rounded-2xl overflow-hidden my-6">
+        <div class="my-6" style="max-width:100%;overflow-x:auto" tabindex="0" aria-label="Common sewing issues table; scroll horizontally on small screens">
+        <table class="w-full border border-black/10 rounded-2xl overflow-hidden" style="min-width:620px">
           <thead class="bg-black/5">
             <tr>
               <th class="p-4 text-left font-bold">Problem</th>
@@ -428,6 +441,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
 
         <!-- Section 7 -->
         <h2 id="step6" class="text-3xl font-bold mt-12 mb-6">7. Step 6: Adding Accessories</h2>
@@ -708,7 +722,7 @@
             "@type": "HowToStep",
             "position": 5,
             "name": "Sew Dress Together",
-            "text": "Guide fabric through sewing machine following dotted line. Use mouse or keyboard controls (Space + Arrow keys)."
+            "text": "Follow the seam guide and your build's on-screen controls. The released-game screenshot shows Space to sew, A/D to rotate, and W/S to change speed; older prototype controls differ."
           },
           {
             "@type": "HowToStep",
