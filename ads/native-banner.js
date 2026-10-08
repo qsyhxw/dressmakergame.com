@@ -53,10 +53,10 @@
   });
   const reportedBlocks = new Set();
   window.addEventListener("securitypolicyviolation", function (event) {
-    const detail = event.effectiveDirective + ": " + event.blockedURI;
+    const detail = event.disposition + ": " + event.effectiveDirective + ": " + event.blockedURI;
     if (reportedBlocks.has(detail) || reportedBlocks.size >= 10) return;
     reportedBlocks.add(detail);
-    send({ diagnostic: "resource-blocked", detail: detail.slice(0, 200) });
+    send({ diagnostic: event.disposition === "report" ? "resource-reported" : "resource-blocked", detail: detail.slice(0, 200) });
   });
 
   send({ diagnostic: "frame-ready" });

@@ -1,7 +1,8 @@
 /ads/*
   X-Robots-Tag: noindex, nofollow
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: sandbox allow-scripts allow-same-origin; frame-ancestors https://dressmakergame.com https://www.dressmakergame.com; script-src 'self' https://bauval.org/21/e650c65aadd95134c827779b7170fa6e; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'
+  Content-Security-Policy: sandbox allow-scripts allow-same-origin; frame-ancestors https://dressmakergame.com https://www.dressmakergame.com; object-src 'none'; base-uri 'none'
+  Content-Security-Policy-Report-Only: script-src 'self' https://bauval.org/21/e650c65aadd95134c827779b7170fa6e; frame-src 'none'; worker-src 'none'
 
 # The ad document must never become a same-origin iframe on the main site.
 https://dressmakergame.com/ads/*
