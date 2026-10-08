@@ -51,6 +51,13 @@
   window.addEventListener("unhandledrejection", function (event) {
     send({ diagnostic: "runtime-error", detail: String(event.reason).slice(0, 200) });
   });
+  const reportedBlocks = new Set();
+  window.addEventListener("securitypolicyviolation", function (event) {
+    const detail = event.effectiveDirective + ": " + event.blockedURI;
+    if (reportedBlocks.has(detail) || reportedBlocks.size >= 10) return;
+    reportedBlocks.add(detail);
+    send({ diagnostic: "resource-blocked", detail: detail.slice(0, 200) });
+  });
 
   send({ diagnostic: "frame-ready" });
   schedule();

@@ -15,7 +15,7 @@
     if (origin.username || origin.password || origin.pathname !== "/" || origin.search || origin.hash) return null;
     if (origin.origin === location.origin) return null;
     const frameUrl = new URL("/ads/native-banner.html", origin.origin);
-    frameUrl.searchParams.set("v", "20261008-origin1");
+    frameUrl.searchParams.set("v", "20261008-origin2");
     frameUrl.hash = new URLSearchParams({ parentOrigin: location.origin }).toString();
     return frameUrl;
   }
@@ -57,9 +57,13 @@
       const data = event.data;
       if (!data || data.type !== messageType) return;
       if (typeof data.diagnostic === "string") {
-        const valid = ["frame-ready", "script-loaded", "script-load-failed", "runtime-error"];
+        const valid = ["frame-ready", "script-loaded", "script-load-failed", "runtime-error", "resource-blocked"];
         if (!valid.includes(data.diagnostic)) return;
         wrapper.dataset.adsterraDiagnostic = data.diagnostic;
+        if (data.diagnostic === "resource-blocked") {
+          const detail = typeof data.detail === "string" ? data.detail.slice(0, 200) : "";
+          console.info("Adsterra CSP blocked an additional resource:", detail);
+        }
         if (data.diagnostic === "runtime-error") {
           const detail = typeof data.detail === "string" ? data.detail.slice(0, 200) : "";
           console.warn("Adsterra frame runtime error:", detail);
