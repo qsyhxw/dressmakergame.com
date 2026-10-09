@@ -67,20 +67,12 @@
       <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
         Dressmaker Mods, Cheats & Hacks: What You Need to Know
       </h1>
-      <p class="text-xl text-black/80 font-medium leading-relaxed mb-6">
-        Currently, there is <strong>no official mod support, cheat codes, or valid "hacked" versions</strong> for the
-        Dressmaker prototype. Be extremely careful when downloading claimed mods from third-party websites.
-      </p>
-      <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
-        <p class="font-semibold text-sm mb-1">⚠️ Security Warning</p>
-        <p class="text-sm">Many sites offering "Dressmaker unlocked APKs" or "cheats (взлом)" are distributing malware.
-          Dressmaker is already effectively <a href="/download/" class="text-appleBlue underline">free to download on
-            PC</a> natively.</p>
-      </div>
+      <p class="text-xl text-black/80 font-medium leading-relaxed mb-6">Community mods now exist for the <strong>Steam release of Dressmaker</strong>. Yuumeow’s unofficial ModLoader adds custom content and optional gameplay settings. It is separate from the free itch.io prototype and does not establish official Steam Workshop support.</p>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6"><p class="font-semibold text-sm mb-1">Before changing your game</p><p class="text-sm text-black/80">Check the author, platform, requirements and current file warnings. Keep a save backup. A community loader is not an official game download or a guarantee of compatibility.</p></div>
       <div class="mt-2 flex flex-wrap gap-3">
         <a href="/how-to-play"
           class="inline-flex items-center justify-center rounded-2xl bg-appleBg border border-black/10 px-5 py-3 font-medium text-appleBlue hover:bg-black/5 transition shadow-soft">
-          Master the Game Fairly
+          Explore the Base-Game Guides
         </a>
       </div>
     </section>
@@ -93,23 +85,28 @@
 
     
 <!-- Detailed Explanation Section -->
-    <article class="prose prose-lg max-w-none text-black/80 space-y-8">
-
-      <section>
-        <h2 class="text-2xl font-bold text-appleText tracking-tight mb-3">Are There Official Modding Tools?</h2>
-        <p>
-          As of the latest itch.io prototype build (0.5.5), <em>Dressmaker</em> does not have official modding
-          capabilities or Steam Workshop integration. The game is highly structured around its built-in physics and
-          tailoring mechanics.
-        </p>
-        <p class="mt-3">
-          While players in the community have expressed a strong desire to import <strong>custom fabrics</strong> or
-          design their own clothing patterns, the developers are currently focused on completing the core experience for
-          the <a href="/steam-release-date" class="text-appleBlue underline">full Steam release</a>. Mod support
-          could be a possibility in the future once the base game is finished.
-        </p>
+    <article class="mx-auto max-w-3xl text-black/80 space-y-8">
+      <section id="community-mods">
+        <h2 class="text-2xl font-bold tracking-tight mb-3">Community Mods and Official Support Are Different</h2>
+        <p class="leading-relaxed">Yuuma’s Dressmaker ModLoader by Yuumeow is a BepInEx-based community tool. Its author lists a fabric creator, accessory tools, a mod manager and optional gameplay changes. These are additions to the Steam game, not features of Prototype 0.5.5 or proof that the developers provide Workshop integration.</p>
+        <p class="mt-3 leading-relaxed">The <a href="https://www.nexusmods.com/dressmaker/mods/1?tab=description" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline" aria-label="author’s Nexus listing (external, opens in a new tab)">author’s Nexus listing ↗</a> listed version 0.7.4, updated October 8, when checked October 9, 2026. Its file list separates Windows, macOS and Steam Deck packages. Read the matching package’s requirements before choosing a file; a Windows archive is not a mobile APK.</p>
+        <p class="mt-3 text-sm leading-relaxed">At this check, Nexus displayed “Some suspicious files” in its scan status. That label does not establish whether a file is malicious, but it prevents us from presenting the download as safety verified. Review the current file notices and do not bypass a security block on the strength of this guide.</p>
       </section>
-
+      <figure>
+        <img src="/images/official/dressmaker-fabric-shop.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Dressmaker’s base-game fabric shop showing bolts and fabric tags" class="w-full rounded-2xl shadow-soft border border-black/10" />
+        <figcaption class="mt-3 text-sm text-black/60">Official Free Lives press-kit screenshot of the base-game shop. It illustrates the fabric workspace, not a modded installation or a custom fabric made by this site.</figcaption>
+      </figure>
+      <section id="loader-and-packs">
+        <h2 class="text-2xl font-bold tracking-tight mb-3">The Loader ZIP and a Fabric Pack Have Different Jobs</h2>
+        <p class="leading-relaxed">The <a href="https://threadbox.cc/modloader/index.php/Mod_Loader/Getting_started" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline" aria-label="Threadbox setup documentation (external, opens in a new tab)">Threadbox setup documentation ↗</a> distinguishes the initial loader setup from installing an individual content pack. Mixing those steps can leave the files in the wrong folder.</p>
+        <ol class="mt-4 list-decimal pl-6 space-y-3 leading-relaxed">
+          <li><strong>Find the actual game folder.</strong> In Steam, right-click Dressmaker and use Manage → Browse local files. On Windows, look for <code>Dressmaker.exe</code>.</li>
+          <li><strong>For the Windows loader, quit the game first.</strong> The documented setup copies the extracted package contents beside that executable. The expected loader path is <code class="break-all">BepInEx/plugins/DressmakerMods.dll</code>; avoid an extra outer folder such as <code>BepInEx/BepInEx</code>.</li>
+          <li><strong>Check the result before adding a pack.</strong> Start through Steam and look for Options → Mod Manager. A missing menu means the loader has not started; repeatedly adding fabric ZIPs will not solve that.</li>
+          <li><strong>For an individual mod, use Install/Update Mod.</strong> Select its ZIP, inspect the preview, confirm and restart Dressmaker. Do not apply the Windows loader’s extraction step to every pack. For Mac or Deck setup, follow the platform section of the documentation instead.</li>
+        </ol>
+        <p class="mt-3 text-sm leading-relaxed">These are documented checks, not an installation performed by this site. If the menu or content is absent, record your game build, loader version, platform and exact error for the mod author. Keep mod problems separate from unmodified-game bug reports.</p>
+      </section>
       <!-- Adsterra Native Banner -->
       <script src="/adsterra-native.js?v=20261008-origin3"></script>
       <section data-adsterra-native hidden class="my-10" aria-label="Sponsored content">
@@ -118,43 +115,15 @@
           <div data-adsterra-slot></div>
         </div>
       </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-appleText tracking-tight mb-3">Cheats and "Unlock All" Saves</h2>
-        <p>
-          Some players look for cheat codes or trainers to unlock all patterns and fabrics instantly. However,
-          Dressmaker doesn't have a hidden developer console or traditional cheat codes (like infinite money).
-        </p>
-        <p class="mt-3">
-          The prototype is relatively short (about 2-3 hours of gameplay). Unlocking everything through normal
-          progression is part of the cozy experience. If you are struggling to progress or earn enough funds, we highly
-          recommend checking out our guides instead of risking a corrupted save file:
-        </p>
-        <ul class="mt-4 list-disc pl-6 space-y-2 prose-ul">
-          <li><strong>Need better scores?</strong> Read the <a href="/sewing-tips"
-              class="text-appleBlue underline">100% Sewing Quality Score Guide</a> to get perfect stitches and maximum
-            payouts.</li>
-          <li><strong>Stuck on layout?</strong> See the <a href="/cutting-guide"
-              class="text-appleBlue underline">Cutting Efficiency Guide</a> to stop wasting valuable fabric.</li>
-          <li><strong>Confused by requests?</strong> Check the <a href="/customer-guide"
-              class="text-appleBlue underline">Customer Preferences Explainer</a>.</li>
-        </ul>
+      <section id="custom-fabrics-and-settings">
+        <h2 class="text-2xl font-bold tracking-tight mb-3">Custom Fabrics, Sandbox Settings and Ordinary Progression</h2>
+        <p class="leading-relaxed">The author describes creating fabrics from images and changing existing fabric properties. Optional settings include unlimited funds, content unlocks and completing sewing after the pieces are cut and placed. These are mod features; they are not evidence of a universal built-in cheat code, an official unlock route or achievement compatibility.</p>
+        <p class="mt-3 leading-relaxed">If you want to design within the original game’s gold and unlock limits, use the <a href="/off-the-rack-guide/" class="text-appleBlue underline">off-the-rack workflow</a>. For built-in sewing help, try <a href="/sewing-tips#sewing-assist" class="text-appleBlue underline">Sewing Assist</a>. Neither route needs a mod loader.</p>
       </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-appleText tracking-tight mb-3">Avoiding Scams, VIP Mods, and "Взлом"</h2>
-        <p>
-          In various regions, there are high search volumes for terms like <strong>"dressmaker взлом"</strong> (Russian
-          for hack/crack) or "Dressmaker VIP Android Mod".
-        </p>
-        <p class="mt-3">
-          Please be aware: <strong>Dressmaker is a Name-Your-Price game on PC.</strong> You do not need a modified file
-          to play it for free, nor is there an official mobile version to hack. Websites claiming to offer unlimited
-          money APKs for your phone are fake and likely contain viruses. Always use the <a href="/official-links"
-            class="text-appleBlue underline">official download links</a>.
-        </p>
+      <section id="prototype-and-mobile">
+        <h2 class="text-2xl font-bold tracking-tight mb-3">Free Prototype, Paid Steam Game and Mobile Claims</h2>
+        <p class="leading-relaxed">The itch.io prototype remains a separate name-your-price download; the full Steam game is paid. Community desktop mods do not turn either one into an official Android or iPhone release. Use the <a href="/download/mobile" class="text-appleBlue underline">mobile status page</a> for the announced port plans, and <a href="/official-links" class="text-appleBlue underline">official links</a> to choose the actual game version.</p>
       </section>
-
     </article>
 
   </main>
@@ -163,7 +132,7 @@
   <footer class="border-t border-black/10 mt-10">
     <div class="mx-auto max-w-6xl px-4 py-8 text-center text-sm text-black/60">
       © <span id="year"></span> DressmakerGame.com • This fan site provides guides and explanations and is not
-      affiliated with Free Lives or itch.io.
+      affiliated with Free Lives or itch.io. • <a href="/privacy" class="underline hover:text-appleBlue">Privacy</a> • <a href="/terms" class="underline hover:text-appleBlue">Terms</a>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
