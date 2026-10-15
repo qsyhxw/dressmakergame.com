@@ -215,7 +215,7 @@
         Dressmaker Lace, Trim & Piping Guide
       </h1>
       <p class="mt-4 text-lg text-black/70 max-w-3xl">
-        Lace, trim, piping, and pins are easier when you treat camera movement and placement as separate steps. The placement workflow below describes itch.io Prototype 0.5.5; the current Steam game's Build 403 trim-tag change is noted separately.
+        In Steam Build 443, select an end node to edit trim, click it again to extend, and use Duplicate to repeat its settings. Current controls come first below; older prototype tips and September removal reports are marked separately.
       </p>
 
       <div class="mt-6 flex flex-wrap gap-3">
@@ -235,7 +235,7 @@
       <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
         <h2 class="text-xl font-bold mb-3">Quick Answer</h2>
         <p class="text-black/75 leading-relaxed">
-          Set the mannequin angle first, then place trim. Do not rotate, zoom, and pin in the same motion. For sleeves, collars, and curved hems, place a few points, stop, reset the camera, then continue. If a pin lands in the wrong place, pause before adding more points and fix that single mistake while the camera is steady.
+          For Steam Build 443, click a trim end node to select it and click again to extend. You can drag to rotate the mannequin during placement. If selection is difficult, work in short sections and pause between adjustments. See the current trim-editing steps below before applying older prototype controls.
         </p>
         <div id="build-403-lace" class="mt-5 border-l-4 border-appleBlue bg-blue-50 p-4 rounded">
           <h3 class="font-semibold text-lg">Steam Build 403 and lace requirements</h3>
@@ -286,15 +286,7 @@
         <figcaption class="mt-3 text-sm text-black/60">Trim follows several separate edges on this official press-kit dress. The image illustrates placement; it does not show Alice's commission counter or prove that a particular item satisfies her requirement.</figcaption>
       </figure>
 
-      <section id="edit-trim">
-        <h2 class="text-3xl font-bold tracking-tight mb-4">Edit or Remove Placed Trim in the Steam Game</h2>
-        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
-          <p class="text-black/75">For a local correction, hover over a red trim pin and check the yellow highlight before clicking. SilverLyrics reports that selecting the highlighted trim and right-clicking backs up to the previous pin; left-clicking a highlighted pin lets you continue from that point.</p>
-          <p class="mt-3 text-black/75">To remove the entire selected strip, Seerolz reports clicking the trim once and then the square <strong>X</strong> at the top. Make sure the selected strip is the one you intend to remove before confirming.</p>
-          <p class="mt-3 text-sm text-black/60">These are player-reported controls from <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3807402551" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">SilverLyrics' trim guide ↗</a> (updated September 27) and <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3805958436" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Seerolz's gameplay notes ↗</a> (September 25), with no exact build stated. If your controls differ, follow the visible prompt and report the build. The prototype placement notes below are a separate version.</p>
-        </div>
-      </section>
-
+<section id="edit-trim" class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 mb-8"><h2 class="text-2xl font-bold mb-4">Select, Extend or Remove Trim: Check Your Build</h2><p class="mt-3 leading-relaxed text-black/75"><strong>Build 443:</strong> click a trim end node to select the strip; click the end again to extend it. A finished strip remains selected. The new duplicate button repeats height, size and tilt for another piece.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p><p class="mt-3 leading-relaxed text-black/75">To discard a whole strip, the older Seerolz player guide describes selecting it and using the square X. That September control is not independently retested in Build 443: check the selected item and visible remove control first. Removing an end pin and deleting a whole strip are different actions. <sup><a href="#source-trim-player">[2]</a></sup></p><p class="mt-3 leading-relaxed text-black/75">For fewer repeated clicks, try Fast Trim Placement. You can now drag to rotate the mannequin during placement. For cuff work, make a short section and inspect it from another angle before extending; the developers still identify cuffs as a difficult interaction.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p><p class="mt-3 leading-relaxed text-black/75">If an old dress’s lace now clips or sits differently, inspect its existing tilt before adding more pins. The patch changes some trim offsets; deleting and rebuilding every strip is not the first check.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p></section>
       <section id="before-placement">
         <h2 class="text-3xl font-bold tracking-tight mb-4">Before Placing Lace, Trim, or Piping</h2>
         <div class="grid md:grid-cols-3 gap-4">
@@ -308,14 +300,14 @@
           </div>
           <div class="bg-white rounded-2xl shadow-soft p-5 border border-black/5">
             <h3 class="font-semibold mb-2">Set the camera before the pin</h3>
-            <p class="text-sm text-black/70">Rotate and zoom first. Once you are placing points, keep the camera still until that short segment is done.</p>
+            <p class="text-sm text-black/70">Rotate and zoom to find the edge first. Build 443 also permits dragging to rotate during placement; stop between short sections if that makes selection easier.</p>
           </div>
         </div>
       </section>
 
 
 <section id="lace">
-        <h2 class="text-3xl font-bold tracking-tight mb-4">Lace Placement Workflow</h2>
+        <h2 class="text-3xl font-bold tracking-tight mb-4">Deliberate, Point-by-Point Lace Placement</h2>
         <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
           <ol class="space-y-3 text-black/75 list-decimal pl-6">
             <li>Pick a short, visible edge such as one side of a sleeve or a small neckline section.</li>
@@ -396,18 +388,8 @@
 
 
 
-<section id="camera">
-        <h2 class="text-3xl font-bold tracking-tight mb-4">Mannequin Zoom and Rotation Tips</h2>
-        <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
-          <ul class="space-y-3 text-black/75 list-disc pl-6">
-            <li>Use a medium zoom level for the first pass. Extreme zoom can make tiny camera movements feel larger.</li>
-            <li>Rotate the mannequin until the target edge faces you directly before placing points.</li>
-            <li>For sleeves, check both the front and side angle before pinning around the curve.</li>
-            <li>If a pin is easy to grab by accident, rotate slightly away from it before moving the camera.</li>
-            <li>If the camera or trim preview feels unstable, finish the dress without that decoration and report the case later.</li>
-          </ul>
-        </div>
-      </section>
+<section id="camera" class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 mb-8"><h2 class="text-2xl font-bold mb-4">Build 443 Mannequin Camera</h2><p class="mt-3 leading-relaxed text-black/75">Hold <strong>Ctrl + mousewheel</strong> to zoom; <strong>right-drag</strong> pans the view. Set the edge in view before editing a small strip. Use the <a href="/controls/#build-443-controls" class="text-appleBlue underline">controls guide</a> for the no-wheel limitation and scene hints.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p></section>
+
 
       <section id="trackpad">
         <h2 class="text-3xl font-bold tracking-tight mb-4">Trackpad and Laptop Tips</h2>
@@ -460,7 +442,7 @@
           </details>
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
             <summary class="cursor-pointer font-semibold text-lg">Did the developers improve trims?</summary>
-            <p class="mt-3 text-black/75 leading-relaxed">Prototype 0.5.1 included ease-of-use changes for trim placement. The later Steam Build 403 patch reports a separate fix for some items missing the lace-trim tag. Neither announcement establishes that every placement or commission-length problem is resolved.</p>
+            <p class="mt-3 text-black/75 leading-relaxed">Build 443 changes selection, duplication and placement; see the current controls above. Build 403’s lace-tag fix is separate. Neither is a universal fix for a commission counter that still will not change.</p>
           </details>
         </div>
       </section>
@@ -477,7 +459,8 @@
         </ul>
       </details>
 
-      <section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+      <section id="build-443-sources" class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 mb-8"><h2 class="text-2xl font-bold mb-4">Sources &amp; verification</h2><p id="source-build-443" class="text-sm text-black/70">[1] Dressmaker team, October 14, 2026: <a href="https://steamcommunity.com/app/4019220/allnews/" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline" aria-label="Steam Build 443 notes (external, opens in a new tab)">Steam Community — Build 443 notes ↗</a>. Checked October 15. These are developer-reported changes; this site has not tested the patch in game.</p><p id="source-trim-player" class="mt-3 text-sm text-black/70">[2] Seerolz, updated September 25, 2026: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3805958436" target="_blank" rel="noopener noreferrer" aria-label="Seerolz Steam guide (external, opens in a new tab)" class="text-appleBlue underline">Steam Community — gameplay notes ↗</a>. Historical whole-strip X action, exact build unstated.</p><p class="mt-3 text-sm"><a href="#main" class="text-appleBlue underline">Back to guide ↑</a></p></section>
+<section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
         <h2 class="text-2xl font-bold mb-4">Related Guides</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <a href="/controls/" class="group block p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition">
@@ -498,7 +481,8 @@
           </a>
         </div>
       </section>
-    </article>
+
+</article>
   </main>
 
   <footer class="border-t border-black/10 mt-12">
