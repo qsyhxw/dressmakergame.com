@@ -1,0 +1,10 @@
+/* Shared navigation; native details remains usable without JavaScript. */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid #ddd;font-family:ui-sans-serif,system-ui,sans-serif;color:#1d1d1f;backdrop-filter:blur(10px)}
+.site-header .site-header-inner{max-width:1280px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative;box-sizing:border-box}
+.site-header .site-brand{font-size:20px;font-weight:750;text-decoration:none;color:inherit;white-space:nowrap}
+.site-header a:focus-visible,.site-header summary:focus-visible{outline:3px solid #007aff;outline-offset:3px;border-radius:4px}
+.site-header .site-nav-wide{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.site-header .site-nav a{font-size:14px;line-height:1.5;color:#005bb5;text-decoration:none;padding:6px 0}
+.site-header .site-nav a:hover{text-decoration:underline}
+.site-header .site-menu{display:none}
+@media(max-width:1099px){.site-header .site-nav-wide{display:none}.site-header .site-menu{display:block}.site-header summary{cursor:pointer;font-size:14px;line-height:1.5;padding:8px 0}.site-header .site-nav-small{position:absolute;left:12px;right:12px;top:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 20px;padding:16px 20px;border:1px solid #ddd;border-radius:0 0 16px 16px;background:#fff;box-shadow:0 8px 18px #0001;max-height:75vh;overflow:auto}.site-header .site-nav-small a{display:block;padding:7px 0}.site-header .site-header-inner{padding:8px 16px;gap:12px}.site-header .site-brand{font-size:18px}}
