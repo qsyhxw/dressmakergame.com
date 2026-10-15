@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dressmakergame.com/</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/ru/download/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -84,7 +84,7 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/patch-notes</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -96,13 +96,13 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/controls/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://dressmakergame.com/lace-trim-piping-guide/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/customer-guide</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -144,7 +144,7 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/cutting-guide</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/troubleshooting</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -180,7 +180,7 @@
   </url>
   <url>
     <loc>https://dressmakergame.com/dressmaker-mods-cheats-guide</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -208,5 +208,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url><loc>https://dressmakergame.com/off-the-rack-guide/</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://dressmakergame.com/off-the-rack-guide/</loc><lastmod>2026-10-15</lastmod></url>
 </urlset>
