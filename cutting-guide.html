@@ -230,6 +230,8 @@
 
     <!-- Main Content -->
     <article class="mx-auto max-w-5xl px-4 py-8 space-y-12">
+<section id="build-443-cutting" class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 mb-8"><h2 class="text-2xl font-bold mb-4">Build 443: Collect Pieces Without Discarding Fabric</h2><p class="mt-3 leading-relaxed text-black/75">To throw fabric away, use the <strong>discard fabric</strong> button first. A separate new button collects all panel pieces. These do different jobs: check which action is active before clicking the scissors.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p><p class="mt-3 leading-relaxed text-black/75">If you need more working room, the patch adds drag-panning and wheel-panning while scissors are selected. Use the bottom scene hints and panel preview to identify a piece before moving or cutting it.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p><p class="mt-3 leading-relaxed text-black/75">The developer reports a fix preventing exit during the scissor animation. The stuck-scissors warning below is retained for the prototype; if the symptom recurs in the current Steam build, record the exact sequence rather than assuming the old restart advice is a verified patch-specific remedy.<sup><a href="#source-build-443" aria-label="Source 1: Build 443">[1]</a></sup></p></section>
+
 
       <!-- Grain Line Section -->
       <section id="grain-line">
@@ -343,9 +345,9 @@
           </ol>
 
           <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6 rounded">
-            <p class="font-semibold text-yellow-800">⚠️ Known Bug Alert</p>
+            <p class="font-semibold text-yellow-800">⚠️ Legacy Prototype Bug Alert</p>
             <p class="text-sm text-yellow-700">
-              If you leave the cutting table while a piece is mid-cut, the scissors will continue moving but not actually cut. The piece becomes stuck and cannot be used. <strong>Always wait for cutting to complete.</strong>
+              In Prototype 0.5.5, leaving mid-cut was reported to leave moving scissors and an unusable piece. Build 443 reports a fix preventing exit during the animation. <strong>Wait for cutting to complete and report any current-build recurrence.</strong>
             </p>
           </div>
         </div>
@@ -617,7 +619,8 @@
 
       
 <!-- Related Guides -->
-      <section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
+      <section id="build-443-sources" class="bg-white rounded-2xl shadow-soft p-6 border border-black/5 mb-8"><h2 class="text-2xl font-bold mb-4">Sources &amp; verification</h2><p id="source-build-443" class="text-sm text-black/70">[1] Dressmaker team, October 14, 2026: <a href="https://steamcommunity.com/app/4019220/allnews/" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline" aria-label="Steam Build 443 notes (external, opens in a new tab)">Steam Community — Build 443 notes ↗</a>. Checked October 15. These are developer-reported changes; this site has not tested the patch in game.</p><p class="mt-3 text-sm"><a href="#main" class="text-appleBlue underline">Back to guide ↑</a></p></section>
+<section class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
         <h2 class="text-2xl font-bold mb-4">📚 Related Guides</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           <a href="/how-to-play" class="group block p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition">
@@ -643,7 +646,8 @@
         </div>
       </section>
 
-    </article>
+
+</article>
 
     <!-- Bottom CTA -->
     <section class="mx-auto max-w-5xl px-4 py-12">
