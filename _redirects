@@ -4,6 +4,9 @@ https://www.dressmakergame.com/*  https://dressmakergame.com/:splat  301!
 http://www.dressmakergame.com/*   https://dressmakergame.com/:splat  301!
 http://dressmakergame.com/*       https://dressmakergame.com/:splat  301!
 
+# Nitro maintains the authorized sellers for verified site ID 2491.
+/ads.txt  https://api.nitropay.com/v1/ads-2491.txt  301
+
 /index.html  /  301
 /how-to-play.html  /how-to-play  301
 /how-to-play/  /how-to-play  301
