@@ -40,6 +40,13 @@ function htmlFiles(dir) {
       await page.addScriptTag({content:read('nitropay.js')});
       await page.waitForFunction(()=>window.calls.length===1);
       assert.equal(await page.locator('[data-nitro-slot]').first().evaluate(e=>e.getBoundingClientRect().height),0);
+      assert.equal(await page.locator('.nitro-slot-target').first().evaluate(e=>{
+        for(let node=e;node;node=node.parentElement){
+          const style=getComputedStyle(node);
+          if(style.visibility==='hidden'||style.display==='none')return false;
+        }
+        return true;
+      }),true,'Nitro must see visible ancestors even while the empty wrapper is collapsed');
       assert(await page.evaluate(()=>window.calls[0].options.sizes.every(s=>s[0]<=document.querySelector('[data-nitro-slot]').getBoundingClientRect().width)));
       const render = type => page.evaluate(type=>{
         const target=document.getElementById('dressmaker_content_1');

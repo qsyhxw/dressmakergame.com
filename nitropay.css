@@ -5,7 +5,8 @@
   padding: 0 !important;
   height: 0;
   overflow: hidden;
-  visibility: hidden;
+  /* Nitro waits for visible ancestors before creating a placement. Collapse
+     empty space with height/overflow only; never hide the ancestor visibility. */
   text-align: center;
 }
 .nitro-slot[data-filled="true"] {
