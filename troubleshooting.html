@@ -156,11 +156,9 @@
 
 
   <link rel="stylesheet" href="/assets/site-nav.css?v=20261015">
-<!-- Nitro: verified existing site ID 2491 -->
-  <link rel="stylesheet" href="/nitropay.css?v=20261019-visible">
-  <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments]);},queue:[]};</script>
-  <script data-cfasync="false" async src="https://s.nitropay.com/ads-2491.js"></script>
-  <script defer src="/nitropay.js?v=20261019"></script>
+<!-- Adsterra Native Banner: original dashboard code, direct integration -->
+  <link rel="stylesheet" href="/adsterra-native.css?v=20261022">
+  <script defer src="/adsterra-native.js?v=20261022"></script>
 </head>
 
 <body class="bg-appleBg apple-gradient text-appleText antialiased">
@@ -187,7 +185,7 @@
       <p class="mt-4 text-lg text-black/70">
         Check current Steam release fixes first, then use the platform-specific installation, display, and sewing notes for the older itch.io Prototype 0.5.5 on Windows, macOS, and Linux.
       </p>
-      
+
       <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
         <p class="font-semibold text-yellow-800 mb-2">⚠️ Version boundary</p>
         <p class="text-sm text-yellow-700">
@@ -229,17 +227,17 @@
       <!-- Mac Installation Issues -->
       <section id="mac-issues">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🍎 Mac Installation Issues</h2>
-        
+
         <div class="space-y-6">
           <!-- Issue 1: Gatekeeper Warning -->
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5" open>
             <summary class="cursor-pointer font-semibold text-lg">❌ "Can't be opened because Apple cannot check it for malicious software"</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-red-600">Problem:</strong> When you try to open Dressmaker.app, macOS displays a security warning and blocks the app.</p>
-              
+
               <p><strong>Why This Happens:</strong></p>
               <p class="text-sm">Dressmaker is <strong>not notarized by Apple</strong> because the developers don't have an Apple Developer account (source: <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">official itch.io page</a>). macOS Gatekeeper blocks unsigned apps by default for security.</p>
-              
+
               <p><strong>What this warning means:</strong> macOS is asking you to approve an app that is not notarized. Only continue when the file came from the official <a href="https://elyaradine.itch.io/dressmaker" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Dressmaker itch.io page</a>; this guide cannot verify files from other sources.</p>
 
               <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
@@ -275,7 +273,7 @@
             <summary class="cursor-pointer font-semibold text-lg">❌ Mac Version Shows Older Version (0.5.0 instead of 0.5.1+)</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-red-600">Problem:</strong> The download page shows version 0.5.0 for Mac even though newer versions (0.5.1, 0.5.5) exist for Windows/Linux.</p>
-              
+
               <p><strong>Status:</strong> This was reported by a player on September 24, 2025 (<a href="https://elyaradine.itch.io/dressmaker/devlog/1039264/051-bug-fixes-and-some-new-content" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">source</a>). The developers may have fixed this by now.</p>
 
               <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
@@ -300,14 +298,14 @@
 
 
         <h2 class="text-3xl font-bold tracking-tight mb-4">🪟 Windows Installation & Launch Issues</h2>
-        
+
         <div class="space-y-6">
           <!-- Issue 1: SmartScreen Warning -->
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
             <summary class="cursor-pointer font-semibold text-lg">❌ "Windows protected your PC" (SmartScreen Warning)</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-red-600">Problem:</strong> Windows Defender SmartScreen blocks the game when you try to run it for the first time.</p>
-              
+
               <p><strong>Why This Happens:</strong> Dressmaker is not digitally signed by Microsoft, so Windows treats it as an "unrecognized app."</p>
 
               <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
@@ -329,7 +327,7 @@
 
               <div class="bg-blue-50 border border-blue-200 rounded p-4 mt-4">
                 <p class="font-semibold text-blue-800 mb-3">✅ Solutions to Try:</p>
-                
+
                 <div class="space-y-3 text-sm text-blue-700">
                   <p><strong>1. Update Graphics Drivers:</strong></p>
                   <ul class="list-disc pl-6 space-y-1">
@@ -386,23 +384,24 @@
         </div>
       </section>
 
-      
+
 <!-- Linux Issues -->
-      <section class="nitro-slot" data-nitro-slot aria-label="Advertisement" aria-hidden="true">
-  <p class="nitro-slot-label">Advertisement</p>
-  <div id="dressmaker_content_1" class="nitro-slot-target"></div>
+      <section class="adsterra-slot" data-adsterra-native aria-label="Advertisement" aria-hidden="true">
+  <p class="adsterra-slot-label">Advertisement</p>
+  <script async="async" data-cfasync="false" src="https://bauval.org/21/e650c65aadd95134c827779b7170fa6e"></script>
+  <div id="container-e650c65aadd95134c827779b7170fa6e"></div>
 </section>
 
       <section id="linux-issues">
         <h2 class="text-3xl font-bold tracking-tight mb-4">🐧 Linux Issues</h2>
-        
+
         <div class="space-y-6">
           <!-- Issue 1: No Execute Permission -->
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
             <summary class="cursor-pointer font-semibold text-lg">❌ Nothing Happens When Double-Clicking Executable</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-red-600">Problem:</strong> Double-clicking Dressmaker.x86_64 does nothing.</p>
-              
+
               <p><strong>Cause:</strong> The file doesn't have execute permissions.</p>
 
               <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded mt-4">
@@ -449,7 +448,7 @@
           <p class="text-black/80">The developer reports that Build 403 fixes the mouse cursor disappearing during the cutting-room tutorial. It also restores the Back button in the store tutorial and fixes shop buttons on extremely wide screens. If you have the Steam release, let Steam finish updating before retrying the same step. If the cursor or button still fails, record your installed build, operating system, display size, and the exact tutorial step, then use the reporting section below. Avoid applying the prototype-only cutting advice as though it were a verified full-game workaround.</p>
           <p class="mt-2 text-sm text-black/70">The <a href="https://steamcommunity.com/app/4019220/allnews/" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">official Build 403 announcement ↗</a> reports the fixes; this site has not reproduced them. The same announcement says some lace trim tags and accepted-but-unpaid failed commissions were fixed. See the <a href="/lace-trim-piping-guide/" class="text-appleBlue underline">lace guide</a> or <a href="/customer-guide" class="text-appleBlue underline">customer guide</a> for those separate symptoms.</p>
         </div>
-        
+
         <div class="space-y-6">
           <!-- Bug 1: Lace Placement -->
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5" open>
@@ -481,7 +480,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Sewing Machine Hand Twitches/Shakes</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Possibly Fixed</strong> in v0.4.4 (Sept 9, 2025), but developers couldn't reproduce to confirm.</p>
-              
+
               <p><strong>Symptoms:</strong> The hand icon shakes or glitches during sewing, especially when not actively moving the fabric.</p>
               <p class="text-xs text-black/60 mt-1">Source: <a href="https://elyaradine.itch.io/dressmaker/devlog/1027697/hotfix-update" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Developer statement v0.4.4</a></p>
 
@@ -506,7 +505,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Sewing Guideline (Dotted Line) Disappears</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Intermittent bug, no official fix yet.</p>
-              
+
               <p><strong>Symptoms:</strong> The green dotted line showing where to sew disappears mid-seam, making it impossible to follow.</p>
               <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14100848" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Player report</a></p>
 
@@ -527,7 +526,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Scissors Keep Moving Without Cutting (Cutting Bug)</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Affects v0.5.5 and earlier.</p>
-              
+
               <p><strong>How it happens:</strong></p>
               <ol class="list-decimal pl-6 space-y-1 text-sm">
                 <li>You click scissors to start cutting a pattern piece</li>
@@ -550,7 +549,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Ruffle Skirt Panels Can't Reach 100% Grain Quality</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Reported Issue</strong> in v0.5.1+ (Sept 24, 2025) - No developer response yet.</p>
-              
+
               <p><strong>Symptoms:</strong> Some ruffle skirt panels (specifically Tier 2 and/or Tier 3 patterns) show green outline when aligned, but still can't achieve 100% grain quality score.</p>
               <p class="text-xs text-black/60 mt-1">Source: <a href="https://elyaradine.itch.io/dressmaker/devlog/1039264/051-bug-fixes-and-some-new-content" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Player comment on v0.5.1 devlog</a></p>
 
@@ -570,7 +569,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Tutorial Softlock (No Money for Accessories)</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Design Issue</strong> - Tutorial doesn't prevent overspending.</p>
-              
+
               <p><strong>How it happens:</strong> If you spend your entire budget on fabric during the tutorial, you won't have money left to buy the required accessory, causing a softlock (can't progress, can't undo).</p>
               <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14051595" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Player report</a></p>
 
@@ -587,7 +586,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Cut Fabric Pieces Reappear on Cutting Table</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Still occurring in v0.5.5.</p>
-              
+
               <p><strong>Symptoms:</strong> After discarding/using fabric pieces, they sometimes ghost back onto the cutting table, creating visual clutter (though they don't interfere with actual cutting).</p>
               <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14100848" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Player report</a></p>
 
@@ -603,7 +602,7 @@
             <summary class="cursor-pointer font-semibold text-lg">🪲 Can't Scroll Accessories Inventory When All Purchased</summary>
             <div class="mt-4 space-y-3 text-black/75">
               <p><strong class="text-orange-600">Status:</strong> <strong>Known Issue</strong> - Affects accessory menu.</p>
-              
+
               <p><strong>Symptoms:</strong> When you own at least one of every accessory type, the dressmaking menu doesn't allow scrolling, so bottom accessories are hidden.</p>
               <p class="text-xs text-black/60 mt-1">Source: <a href="https://itch.io/post/14100848" target="_blank" rel="noopener noreferrer" class="text-appleBlue underline">Player report</a></p>
 
@@ -618,15 +617,12 @@
 
 
 
-      
+
 <!-- Performance Issues -->
-      <section class="nitro-slot" data-nitro-slot aria-label="Advertisement" aria-hidden="true">
-  <p class="nitro-slot-label">Advertisement</p>
-  <div id="dressmaker_content_2" class="nitro-slot-target"></div>
-</section>
+
 <section id="performance">
         <h2 class="text-3xl font-bold tracking-tight mb-4">⚡ Performance Issues</h2>
-        
+
         <div class="space-y-6">
           <!-- Issue 1: Lag/Stuttering -->
           <details class="rounded-2xl bg-white shadow-soft px-5 py-4 border border-black/5">
@@ -638,7 +634,7 @@
                 <p class="font-semibold text-blue-800 mb-3">✅ Solutions:</p>
 
 
-                
+
                 <div class="space-y-2 text-sm text-blue-700">
                   <p><strong>1. Close Background Programs:</strong> Close browsers, Discord, streaming apps while playing.</p>
 
@@ -656,11 +652,11 @@
         </div>
       </section>
 
-      
+
 <!-- Reporting Bugs -->
       <section id="reporting">
         <h2 class="text-3xl font-bold tracking-tight mb-4">📢 How to Report Bugs</h2>
-        
+
         <div class="bg-white rounded-2xl shadow-soft p-6 border border-black/5">
           <p class="text-black/80 mb-4">
             The developers actively respond to bug reports and appreciate detailed information. Here's how to help:
