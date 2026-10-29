@@ -269,8 +269,8 @@
     {
       "id": "script-05",
       "kind": "runtime",
-      "enabled": true,
-      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "enabled": false,
+      "authorization": "ROADMAP ADPAUSE 2026-10-29: owner explicitly requested temporary Adsterra suspension; no automatic reactivation",
       "include": [
         "achievements/index.html",
         "console-release/index.html",
@@ -325,8 +325,8 @@
     {
       "id": "script-06",
       "kind": "runtime",
-      "enabled": true,
-      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "enabled": false,
+      "authorization": "ROADMAP ADPAUSE 2026-10-29: owner explicitly requested temporary Adsterra suspension; no automatic reactivation",
       "include": [
         "achievements/index.html",
         "console-release/index.html",
@@ -698,8 +698,8 @@
     {
       "id": "native-container",
       "kind": "advertising",
-      "enabled": true,
-      "authorization": "SITE_PROFILE original Adsterra 2026-10-22",
+      "enabled": false,
+      "authorization": "ROADMAP ADPAUSE 2026-10-29: owner explicitly requested temporary Adsterra suspension; no automatic reactivation",
       "include": [
         "customer-guide.html",
         "cutting-guide.html",
