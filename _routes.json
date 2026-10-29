@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "include": ["/config", "/config/*", "/scripts", "/scripts/*", "/tests", "/tests/*", "/_private/*", "/*.md", "/*.py", "/_template", "/_template.html"],
+  "exclude": []
+}

@@ -2,3 +2,4 @@
 *.csv
 /*.md
 /media-source/
+__pycache__/

@@ -52,12 +52,6 @@ http://dressmakergame.com/*       https://dressmakergame.com/:splat  301!
 /privacy.html  /privacy  301
 /terms.html  /terms  301
 
-/config/* /404.html 404!
-/scripts/* /404.html 404!
-/tests/* /404.html 404!
-/inject_tags.py /404.html 404!
-/_template.html /404.html 404!
-/*.md /404.html 404!
 
 # Unknown routes must return the custom page with a real 404 status.
 /*  /404.html  404
