@@ -1,0 +1,758 @@
+{
+  "version": 1,
+  "site": "dressmakergame.com",
+  "reviewed": true,
+  "integrations": [
+    {
+      "id": "script-00",
+      "kind": "analytics",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "404.html",
+        "_template.html",
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "official-links.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "privacy.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "terms.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "data-website-id": "70babeba-7de2-44a5-a72a-a0d9ac469573",
+            "src": "https://umami-nine-rust.vercel.app/script.js"
+          },
+          "boolean_attrs": [
+            "defer"
+          ],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "script-01",
+      "kind": "analytics",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "_template.html",
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "official-links.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "privacy.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "terms.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-RVY53PS7NP"
+          },
+          "boolean_attrs": [
+            "async"
+          ],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "script-02",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "_template.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "official-links.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "privacy.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "terms.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "bff2289fdfc07126f35f38b031d66480263d9748fb3a243c9dabd0285669851b"
+        }
+      ]
+    },
+    {
+      "id": "script-03",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "_template.html",
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "official-links.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "privacy.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "terms.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "src": "https://cdn.tailwindcss.com"
+          },
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "script-04",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "customer-guide.html",
+        "cutting-guide.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "index.html",
+        "lace-trim-piping-guide/index.html",
+        "pattern-pieces-guide/index.html",
+        "resolution-screen-fix/index.html",
+        "sewing-tips.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "6ab9f4298b51364733b97424cd38ef99155fb1005b7ec987a2d30e53c01ec9ea"
+        }
+      ]
+    },
+    {
+      "id": "script-05",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "src": "/adsterra-native.js?v=20261022"
+          },
+          "boolean_attrs": [
+            "defer"
+          ],
+          "count": 1,
+          "location": "head",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "script-06",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "async": "async",
+            "data-cfasync": "false",
+            "src": "https://bauval.org/21/e650c65aadd95134c827779b7170fa6e"
+          },
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "script-07",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "_template.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "official-links.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "5eafbd49d6ba2b77d54484eb73851f4da9c095807d404a1b92b9bdcca4ed50bc"
+        }
+      ]
+    },
+    {
+      "id": "script-08",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "demo.html",
+        "es/download/index.html",
+        "itch-io.html",
+        "pt-br/download/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "steam-release-date.html",
+        "system-requirements/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "887be56e27ff2297113f3905c747b8bc1657138e50a0aad4f66a9f2da31cedb3"
+        }
+      ]
+    },
+    {
+      "id": "script-09",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "_template.html",
+        "console-release/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "is-dressmaker-multiplayer.html",
+        "official-links.html",
+        "play-online.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "a2b09d01bab8d4330f383ed24394f14065220ce8b95fa8adde3e9d597c685c17"
+        }
+      ]
+    },
+    {
+      "id": "script-10",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "how-to-get-100-quality-score.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "1fdcdc1095e65a22d421fa2485be6948b546b008b9dc9c3f80adb94f7ba356a1"
+        }
+      ]
+    },
+    {
+      "id": "script-11",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "0eeb222a28acd0b07ad295cce46f1f90a1e108d61a7744c35722abe0bfa0675b"
+        }
+      ]
+    },
+    {
+      "id": "script-12",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "6c13d90662e7b3ed77ba5bc65c1e42f44d811e365cad6e02c34d3d731b09fc3b"
+        }
+      ]
+    },
+    {
+      "id": "script-13",
+      "kind": "analytics",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {
+            "crossorigin": "anonymous",
+            "data-cf-beacon": "{\"version\":\"2024.11.0\",\"token\":\"40904e482c7049dda582e00a0b49bb27\",\"r\":1,\"server_timing\":{\"name\":{\"cfCacheStatus\":true,\"cfEdge\":true,\"cfExtPri\":true,\"cfL4\":true,\"cfOrigin\":true,\"cfSpeedBrain\":true},\"location_startswith\":null}}",
+            "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==",
+            "src": "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+          },
+          "boolean_attrs": [
+            "defer"
+          ],
+          "count": 1,
+          "location": "body",
+          "tag": "script"
+        }
+      ]
+    },
+    {
+      "id": "script-14",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "controls/index.html",
+        "patch-notes.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "25e91de8684e5f3b7fdd1a6d04a18ed215e5797e9d7fd161634c4a21baefd8a1"
+        }
+      ]
+    },
+    {
+      "id": "script-15",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "privacy.html",
+        "terms.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "0a6920edf40b5d978fa5a237fbd9a14b3ad8635ebaa0a00a86554b45e4f6c80a"
+        }
+      ]
+    },
+    {
+      "id": "script-16",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "privacy.html",
+        "terms.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "ae74a296ac7bd32b0948835a6228d2395bc63b31b6bb34a0834b2779a2c09e7b"
+        }
+      ]
+    },
+    {
+      "id": "script-17",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "achievements/index.html",
+        "off-the-rack-guide/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "38278bd4310f5a46d9c2d821285fe07a4c17624f6515697302fd79702adc76a1"
+        }
+      ]
+    },
+    {
+      "id": "script-18",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "achievements/index.html",
+        "off-the-rack-guide/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "head",
+          "tag": "script",
+          "text_sha256": "c22deebc212b587c84ae14103353a89388b2b9a5ba3d66b0cb11eb25751dab36"
+        }
+      ]
+    },
+    {
+      "id": "script-19",
+      "kind": "runtime",
+      "enabled": true,
+      "authorization": "Existing site integrations retained per SITE_PROFILE and user 2026-10-29; GA4 G-RVY53PS7NP, Umami 70babeba-7de2-44a5-a72a-a0d9ac469573; original Adsterra placement authorized 2026-10-22. Exact local UI scripts reviewed; Tailwind configuration, year, menus and TOC. Platform Cloudflare beacon retained.",
+      "include": [
+        "achievements/index.html",
+        "off-the-rack-guide/index.html"
+      ],
+      "exclude": [],
+      "checks": [
+        {
+          "attrs": {},
+          "boolean_attrs": [],
+          "count": 1,
+          "location": "body",
+          "tag": "script",
+          "text_sha256": "09945e1ed731130a9cc3982bf16862ffb15d20a7e4cdbe0dd812e5a8655393bb"
+        }
+      ]
+    },
+    {
+      "id": "native-container",
+      "kind": "advertising",
+      "enabled": true,
+      "authorization": "SITE_PROFILE original Adsterra 2026-10-22",
+      "include": [
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "dressmaker-mods-cheats-guide.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "patch-notes.html",
+        "play-online.html",
+        "review.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "troubleshooting.html",
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "download/index.html",
+        "download/mobile.html",
+        "fabric-budget-guide/index.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "pattern-pieces-guide/index.html",
+        "resolution-screen-fix/index.html",
+        "system-requirements/index.html",
+        "es/download/index.html",
+        "pt-br/download/index.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "tr/download/index.html"
+      ],
+      "exclude": [
+        "privacy.html",
+        "terms.html",
+        "404.html",
+        "official-links.html",
+        "_template.html"
+      ],
+      "checks": [
+        {
+          "tag": "div",
+          "attrs": {
+            "id": "container-e650c65aadd95134c827779b7170fa6e"
+          },
+          "location": "body",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
