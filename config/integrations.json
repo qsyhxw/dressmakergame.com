@@ -753,6 +753,69 @@
           "count": 1
         }
       ]
+    },
+    {
+      "id": "adsense-existing-owner",
+      "kind": "advertising",
+      "enabled": true,
+      "authorization": "Existing owner commit 3dc36b2 on 2026-11-09 retained; current maintenance SOP excludes 404, Privacy and Terms.",
+      "include": [
+        "_template.html",
+        "achievements/index.html",
+        "console-release/index.html",
+        "controls/index.html",
+        "customer-guide.html",
+        "cutting-guide.html",
+        "demo.html",
+        "download/index.html",
+        "download/mobile.html",
+        "dressmaker-mods-cheats-guide.html",
+        "es/download/index.html",
+        "fabric-budget-guide/index.html",
+        "fabric-guide.html",
+        "games-like-dressmaker.html",
+        "how-to-fix-mac-malicious-software-dressmaker.html",
+        "how-to-get-100-quality-score.html",
+        "how-to-play.html",
+        "index.html",
+        "is-dressmaker-multiplayer.html",
+        "itch-io.html",
+        "lace-trim-piping-guide/index.html",
+        "off-the-rack-guide/index.html",
+        "official-links.html",
+        "patch-notes.html",
+        "pattern-pieces-guide/index.html",
+        "play-online.html",
+        "pt-br/download/index.html",
+        "resolution-screen-fix/index.html",
+        "review.html",
+        "ru/download/android.html",
+        "ru/download/index.html",
+        "sewing-tips.html",
+        "steam-release-date.html",
+        "system-requirements/index.html",
+        "tr/download/index.html",
+        "troubleshooting.html"
+      ],
+      "exclude": [
+        "404.html",
+        "privacy.html",
+        "terms.html"
+      ],
+      "checks": [
+        {
+          "tag": "script",
+          "attrs": {
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920",
+            "crossorigin": "anonymous"
+          },
+          "boolean_attrs": [
+            "async"
+          ],
+          "location": "head",
+          "count": 1
+        }
+      ]
     }
   ]
 }
