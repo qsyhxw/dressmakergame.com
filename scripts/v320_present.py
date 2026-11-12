@@ -23,12 +23,12 @@ from urllib.parse import urlparse
 
 SKIP_DIRS = {"_private", "node_modules", "dist", "build", "outputs", "scripts", "src",
              "config", "assets", "PAGE_REPORTS", "data", "tools", "templates", "work", "tests", "fixtures", "tmp", "backup", "backups"}
-TRUST = re.compile(r"^(about|contact|privacy|terms|disclaimer|editorial-policy)(/|$)")
+TRUST = re.compile(r"(?:^|/)(about|contact|privacy|privacy-policy|terms|disclaimer|editorial-policy)(/|\.html$|$)")
 
 SOURCE_HEAD = re.compile(
-    r"<h[23][^>]*>\s*(?:<[^>]+>\s*)*(?:Sources?(?:\s*(?:&amp;|&|and)\s*(?:verification|checks|evidence(?: limits)?|notes))?|"
-    r"References?|Sources for this update|Evidence boundary|检查依据|来源与核对|出典と確認範囲|出典|Fontes(?: e verificação)?|"
-    r"Quellen|Fuentes(?: y comprobaciones)?|Источники(?: и (?:проверка|ограничения))?|출처(?: 및 확인 범위)?)\s*(?:<[^>]+>\s*)*</h[23]>",
+    r"<h[23][^>]*>\s*(?:<[^>]+>\s*)*(?:(?:External\s+)?Sources?(?:\s*(?:&amp;|&|and)\s*(?:verification|checks|limits|version|evidence(?: limits)?|edition limits|notes))?(?:\s+for\s+[^<]{1,60})?|"
+    r"References?|Sources for this update|Evidence boundary|检查依据|来源与核对|出典[^<]{0,10}|Fontes(?: e verificação)?|"
+    r"Quellen|Fuentes(?: y comprobaciones)?|Источники(?: и (?:проверка|ограничения))?|출처[^<]{0,12}|來源[^<]{0,8}|出處[^<]{0,8}|来源[^<]{0,8}|情報源[^<]{0,8}|Quellen[^<]{0,20}|Fuentes[^<]{0,24}|Fontes[^<]{0,24})\s*(?:<[^>]+>\s*)*</h[23]>",
     re.I)
 CITE = re.compile(r'<sup\b[^>]*>\s*(?:<a\b[^>]*href="#[^"]*"[^>]*>.*?</a>\s*)+</sup>', re.S)
 CITE_A = re.compile(r'<a\b[^>]*class="[^"]*\breference\b[^"]*"[^>]*href="#[^"]*"[^>]*>.*?</a>', re.S)
@@ -127,7 +127,7 @@ def unwrap_links(main, domain):
         host = urlparse(url).netloc.lower()
         if not host or host.endswith(domain):
             return m.group(0)
-        plain = re.sub(r"\s*[↗➚⧉]\s*", "", text)
+        plain = re.sub(r"\s*(?:<span[^>]*>\s*)?[↗➚⧉](?:\s*</span>)?\s*", "", text)
         if is_evidence(url):
             return plain
         key = url.split("#")[0].rstrip("/")
@@ -185,6 +185,8 @@ def transform(html, domain):
     main = unwrap_links(main, domain)
     main = DANGLING.sub(lambda x: x.group(1), main)
     main = re.sub(r"<p>\s*</p>|<li>\s*</li>", "", main)
+    # Table-of-contents labels left behind after their sources section was removed.
+    main = re.sub(r"(?<=>)\s*Sources?\s*(?:&amp;|&)\s*(?:verification|checks|limits)\s*(?=</(?:nav|div|aside|ol|ul|li|p)>)", "", main)
     main = re.sub(r"@@KEEP(\d+)@@", lambda x: caps[int(x.group(1))], main)
     out = html[:a] + main + html[b:]
     # Unwrap in-page links whose target id disappeared with a removed section.
@@ -202,7 +204,7 @@ def iter_pages(root):
         parts = rel.parts
         if any(p in SKIP_DIRS or p.startswith(".") for p in parts[:-1]) or f.name == "404.html":
             continue
-        if TRUST.match(rel.as_posix()):
+        if TRUST.search(rel.as_posix()):
             continue
         yield f
 
