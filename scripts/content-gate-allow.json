@@ -1,0 +1,26 @@
+{
+  "/customer-guide": {
+    "max_external": 5,
+    "reason": "Official entries (v3.20 review 2026-11-12)"
+  },
+  "/download/": {
+    "max_external": 6,
+    "reason": "Platform/store download entries (v3.20 review 2026-11-12)"
+  },
+  "/": {
+    "max_external": 4,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  },
+  "/official-links": {
+    "max_external": 7,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  },
+  "/privacy": {
+    "max_external": 5,
+    "reason": "Required policy links (v3.20 review 2026-11-12)"
+  },
+  "/troubleshooting": {
+    "max_external": 7,
+    "reason": "Action entries (official site, store, download, support); evidence links removed (v3.20 review 2026-11-12)"
+  }
+}
